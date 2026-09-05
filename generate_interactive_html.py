@@ -157,12 +157,18 @@ def generate_html(days_data):
       --emerald-surface: #ECFDF5;
       --emerald-border: #A7F3D0;
       
-      --method-ls: #0369A1; /* Lei Seca Azul */
+      --method-ls: #0284C7;  /* Lei Seca Azul Pastel */
       --method-ls-bg: #E0F2FE;
-      --method-j: #7C3AED;  /* Jurisprudência Roxo */
+      --method-ls-border: #BAE6FD;
+      --method-j: #7C3AED;   /* Jurisprudência Lavanda Pastel */
       --method-j-bg: #EDE9FE;
-      --method-d: #B45309;  /* Doutrina Âmbar */
+      --method-j-border: #DDD6FE;
+      --method-d: #B45309;   /* Doutrina Âmbar Pastel */
       --method-d-bg: #FEF3C7;
+      --method-d-border: #FDE68A;
+      --method-er: #047857;  /* Estudo Reverso Verde Pastel */
+      --method-er-bg: #D1FAE5;
+      --method-er-border: #A7F3D0;
       
       --shadow-sm: 0 1px 2px 0 rgba(15, 23, 42, 0.05);
       --shadow-md: 0 4px 6px -1px rgba(15, 23, 42, 0.07), 0 2px 4px -2px rgba(15, 23, 42, 0.05);
@@ -198,12 +204,18 @@ def generate_html(days_data):
       --emerald-surface: #064E3B;
       --emerald-border: #047857;
 
-      --method-ls: #38BDF8;
-      --method-ls-bg: #0C4A6E;
-      --method-j: #A78BFA;
-      --method-j-bg: #4C1D95;
-      --method-d: #FBBF24;
-      --method-d-bg: #451A03;
+      --method-ls: #7DD3FC;
+      --method-ls-bg: rgba(56, 189, 248, 0.15);
+      --method-ls-border: rgba(56, 189, 248, 0.35);
+      --method-j: #C4B5FD;
+      --method-j-bg: rgba(167, 139, 250, 0.15);
+      --method-j-border: rgba(167, 139, 250, 0.35);
+      --method-d: #FDE68A;
+      --method-d-bg: rgba(245, 158, 11, 0.15);
+      --method-d-border: rgba(245, 158, 11, 0.35);
+      --method-er: #6EE7B7;
+      --method-er-bg: rgba(52, 211, 153, 0.15);
+      --method-er-border: rgba(52, 211, 153, 0.35);
 
       --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.5);
       --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.4);
@@ -935,22 +947,31 @@ def generate_html(days_data):
       font-size: 0.68rem;
       font-family: var(--font-mono);
       font-weight: 700;
-      padding: 0.15rem 0.4rem;
+      padding: 0.15rem 0.45rem;
       border-radius: var(--radius-sm);
       margin-top: 0.25rem;
+      border: 1px solid transparent;
+      transition: all var(--transition-fast);
     }}
-    .method-badge.ls {{ background: var(--method-ls-bg); color: var(--method-ls); }}
-    .method-badge.j {{ background: var(--method-j-bg); color: var(--method-j); }}
-    .method-badge.d {{ background: var(--method-d-bg); color: var(--method-d); }}
+    .method-badge.ls {{ 
+      background: var(--method-ls-bg); 
+      color: var(--method-ls); 
+      border-color: var(--method-ls-border); 
+    }}
+    .method-badge.j {{ 
+      background: var(--method-j-bg); 
+      color: var(--method-j); 
+      border-color: var(--method-j-border); 
+    }}
+    .method-badge.d {{ 
+      background: var(--method-d-bg); 
+      color: var(--method-d); 
+      border-color: var(--method-d-border); 
+    }}
     .method-badge.er {{ 
-      background: rgba(168, 85, 247, 0.12); 
-      color: #7E22CE; 
-      border: 1px solid rgba(168, 85, 247, 0.28); 
-    }}
-    [data-theme="dark"] .method-badge.er {{
-      background: rgba(192, 132, 252, 0.15); 
-      color: #C084FC; 
-      border-color: rgba(192, 132, 252, 0.35); 
+      background: var(--method-er-bg); 
+      color: var(--method-er); 
+      border-color: var(--method-er-border); 
     }}
 
     .tema-tag {{
