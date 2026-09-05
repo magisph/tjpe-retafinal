@@ -964,11 +964,7 @@ def generate_html(days_data):
       font-size: 0.72rem;
       border: 1px solid var(--border-subtle);
       margin-right: 0.25rem;
-    }}
-    .tema-sep {{
-      color: var(--judiciary-gold);
-      font-weight: 800;
-      margin: 0 0.4rem;
+      vertical-align: middle;
     }}
 
     .session-body {{
@@ -977,12 +973,87 @@ def generate_html(days_data):
       line-height: 1.5;
     }}
 
-    .session-activity {{
-      margin-top: 0.4rem;
-      padding-top: 0.4rem;
+    .session-temas-bullets {{
+      list-style: disc outside;
+      margin: 0.35rem 0 0.15rem 1.25rem;
+      padding: 0;
+    }}
+
+    .session-temas-bullets li {{
+      margin: 0.25rem 0;
+      line-height: 1.45;
+      color: var(--text-secondary);
+      font-size: 0.8rem;
+    }}
+
+    .session-temas-bullets li::marker {{
+      color: var(--judiciary-gold);
+      font-size: 0.85em;
+    }}
+
+    /* Accordion de Atividade Prática Retrátil */
+    .activity-accordion {{
+      margin-top: 0.45rem;
+      padding-top: 0.35rem;
       border-top: 1px dashed var(--border-subtle);
-      font-size: 0.76rem;
+      font-size: 0.78rem;
+    }}
+
+    .activity-summary {{
+      display: inline-flex;
+      align-items: center;
+      gap: 0.35rem;
+      cursor: pointer;
+      user-select: none;
+      list-style: none;
+      font-weight: 600;
+      font-size: 0.75rem;
       color: var(--text-muted);
+      transition: color var(--transition-fast);
+      padding: 0.15rem 0;
+    }}
+
+    .activity-summary::-webkit-details-marker {{
+      display: none;
+    }}
+
+    .activity-summary:hover {{
+      color: var(--primary-accent);
+    }}
+
+    .activity-summary:focus-visible {{
+      outline: 2px solid var(--primary-accent);
+      outline-offset: 2px;
+      border-radius: var(--radius-sm);
+    }}
+
+    .activity-toggle-icon {{
+      display: inline-block;
+      font-size: 0.95rem;
+      font-weight: 700;
+      line-height: 1;
+      transform-origin: center;
+      transition: transform var(--transition-fast);
+      color: var(--text-muted);
+    }}
+
+    .activity-summary:hover .activity-toggle-icon {{
+      color: var(--primary-accent);
+    }}
+
+    .activity-accordion[open] .activity-toggle-icon {{
+      transform: rotate(90deg);
+    }}
+
+    .activity-content {{
+      margin-top: 0.35rem;
+      padding: 0.45rem 0.65rem;
+      background: var(--bg-surface-elevated);
+      border-radius: var(--radius-sm);
+      border-left: 2px solid var(--judiciary-gold);
+      color: var(--text-secondary);
+      font-size: 0.76rem;
+      line-height: 1.45;
       font-style: italic;
     }}
 
@@ -1454,11 +1525,27 @@ def generate_html(days_data):
               if (session.method.includes("[ER]")) methodBadges += '<span class="method-badge er">[ER] Estudo Reverso FGV</span> ';
               if (!methodBadges) methodBadges = `<span class="method-badge">${{session.method}}</span>`;
 
-              // Formatação de Subtópicos (Tema A / Tema B)
-              let formattedSubtopics = session.subtopics
-                .replace(/\\*\\*(Tema [AB])\\*\\*:\\s*/g, '<span class="tema-tag">$1</span> ')
-                .replace(/\\*\\*(Tema [AB])\\*\\*/g, '<span class="tema-tag">$1</span>')
-                .replace(/\\s*\\|\\s*/g, ' <span class="tema-sep">◆</span> ');
+              // Formatação de Tópicos (Múltiplos temas vs Tópicos normais)
+              let topicsHtml = "";
+              const temaRegex = /(?:\\*\\*)?Tema A(?:\\*\\*)?:?\\s*(.*?)\\s*\\|\\s*(?:\\*\\*)?Tema B(?:\\*\\*)?:?\\s*(.*)/;
+              const temaMatch = session.subtopics ? session.subtopics.match(temaRegex) : null;
+
+              if (temaMatch) {{
+                const temaA = temaMatch[1].trim();
+                const temaB = temaMatch[2].trim();
+                topicsHtml = `
+                  <strong>Tópicos:</strong>
+                  <ul class="session-temas-bullets">
+                    <li><span class="tema-tag">Tema A</span> <span>${{temaA}}</span></li>
+                    <li><span class="tema-tag">Tema B</span> <span>${{temaB}}</span></li>
+                  </ul>
+                `;
+              }} else {{
+                let formattedSubtopics = (session.subtopics || "")
+                  .replace(/\\*\\*(Tema [AB])\\*\\*:\\s*/g, '<span class="tema-tag">$1</span> ')
+                  .replace(/\\*\\*(Tema [AB])\\*\\*/g, '<span class="tema-tag">$1</span>');
+                topicsHtml = `<strong>Tópicos:</strong> ${{formattedSubtopics}}`;
+              }}
 
               return `
                 <div class="session-item ${{isDone ? 'done' : ''}}" onclick="toggleSessionClick(event, '${{session.id}}')">
@@ -1477,11 +1564,17 @@ def generate_html(days_data):
                     </div>
                   </div>
                   <div class="session-body">
-                    <strong>Tópicos:</strong> ${{formattedSubtopics}}
+                    ${{topicsHtml}}
                   </div>
-                  <div class="session-activity">
-                    <strong>Atividade:</strong> ${{session.activity}}
-                  </div>
+                  <details class="activity-accordion" onclick="event.stopPropagation();">
+                    <summary class="activity-summary">
+                      <span class="activity-toggle-icon">›</span>
+                      <span class="activity-summary-text">Atividade Prática</span>
+                    </summary>
+                    <div class="activity-content">
+                      ${{session.activity}}
+                    </div>
+                  </details>
                 </div>
               `;
             }}).join("")}}
@@ -1516,8 +1609,8 @@ def generate_html(days_data):
     }}
 
     function toggleSessionClick(e, sessionId) {{
-      // Não reprocessar se o clique veio do próprio input checkbox
-      if (e.target && e.target.type === 'checkbox') return;
+      // Não reprocessar se o clique veio do próprio input checkbox ou do accordion de atividade
+      if (e.target && (e.target.type === 'checkbox' || e.target.closest('details') || e.target.closest('.activity-accordion'))) return;
       toggleSession(sessionId);
     }}
 
