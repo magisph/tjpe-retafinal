@@ -1,0 +1,1509 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TJ-PE 2026 | Cronograma Tático de Reta Final — Magistratura FGV</title>
+  
+  <!-- Progressive Web App (PWA) Manifest & Metatags -->
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#0F2137">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="TJPE 2026">
+  <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="icons/icon-192.png">
+  <link rel="apple-touch-icon" href="icons/icon-192.png">
+  
+  <!-- Fontes Tipográficas Oficiais do Design System -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,600;1,6..72,400&display=swap" rel="stylesheet">
+  
+  <!-- Chart.js via CDN para Visualizações Analíticas -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+
+  <style>
+    :root {
+      --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      --font-serif: 'Newsreader', Georgia, serif;
+      --font-mono: 'JetBrains Mono', monospace;
+
+      /* Paleta Tema Claro (Editorial Forense & High-Contrast) */
+      --bg-canvas: #F8FAFC;
+      --bg-surface: #FFFFFF;
+      --bg-surface-elevated: #F1F5F9;
+      --bg-surface-active: #E2E8F0;
+      --border-subtle: #E2E8F0;
+      --border-strong: #CBD5E1;
+      
+      --text-primary: #0F172A;
+      --text-secondary: #475569;
+      --text-muted: #64748B;
+      --text-inverse: #FFFFFF;
+
+      --primary-navy: #0F2137;
+      --primary-accent: #1E3A8A;
+      --judiciary-gold: #B45309;
+      --gold-surface: #FEF3C7;
+      
+      --emerald-success: #059669;
+      --emerald-surface: #ECFDF5;
+      --emerald-border: #A7F3D0;
+      
+      --method-ls: #0369A1; /* Lei Seca Azul */
+      --method-ls-bg: #E0F2FE;
+      --method-j: #7C3AED;  /* Jurisprudência Roxo */
+      --method-j-bg: #EDE9FE;
+      --method-d: #B45309;  /* Doutrina Âmbar */
+      --method-d-bg: #FEF3C7;
+      
+      --shadow-sm: 0 1px 2px 0 rgba(15, 23, 42, 0.05);
+      --shadow-md: 0 4px 6px -1px rgba(15, 23, 42, 0.07), 0 2px 4px -2px rgba(15, 23, 42, 0.05);
+      --shadow-lg: 0 10px 15px -3px rgba(15, 23, 42, 0.08), 0 4px 6px -4px rgba(15, 23, 42, 0.04);
+      --radius-sm: 6px;
+      --radius-md: 10px;
+      --radius-lg: 14px;
+      --radius-full: 9999px;
+      
+      --transition-fast: 0.15s ease;
+      --transition-smooth: 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    [data-theme="dark"] {
+      --bg-canvas: #090E17;
+      --bg-surface: #111927;
+      --bg-surface-elevated: #1A2436;
+      --bg-surface-active: #243147;
+      --border-subtle: #243147;
+      --border-strong: #334155;
+      
+      --text-primary: #F8FAFC;
+      --text-secondary: #94A3B8;
+      --text-muted: #64748B;
+      --text-inverse: #090E17;
+
+      --primary-navy: #38BDF8;
+      --primary-accent: #60A5FA;
+      --judiciary-gold: #FBBF24;
+      --gold-surface: #362808;
+      
+      --emerald-success: #10B981;
+      --emerald-surface: #064E3B;
+      --emerald-border: #047857;
+
+      --method-ls: #38BDF8;
+      --method-ls-bg: #0C4A6E;
+      --method-j: #A78BFA;
+      --method-j-bg: #4C1D95;
+      --method-d: #FBBF24;
+      --method-d-bg: #451A03;
+
+      --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.5);
+      --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.4);
+      --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.5);
+    }
+
+    /* Reset e Base */
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: var(--font-sans);
+      background-color: var(--bg-canvas);
+      color: var(--text-primary);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+      transition: background-color var(--transition-smooth), color var(--transition-smooth);
+      padding-bottom: 5rem;
+    }
+
+    /* Acessibilidade: Skip Link */
+    .skip-link {
+      position: absolute;
+      top: -40px;
+      left: 1rem;
+      background: var(--primary-accent);
+      color: #FFF;
+      padding: 0.5rem 1rem;
+      border-radius: var(--radius-sm);
+      z-index: 1000;
+      transition: top 0.2s ease;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    .skip-link:focus {
+      top: 1rem;
+      outline: 3px solid var(--judiciary-gold);
+    }
+
+    /* Header Institucional */
+    header.main-header {
+      background-color: var(--bg-surface);
+      border-bottom: 1px solid var(--border-subtle);
+      padding: 1.25rem 1.5rem;
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      backdrop-filter: blur(12px);
+      box-shadow: var(--shadow-sm);
+    }
+
+    .header-container {
+      max-width: 1320px;
+      margin: 0 auto;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+    }
+
+    .brand-group {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+
+    .brand-symbol {
+      width: 44px;
+      height: 44px;
+      background: linear-gradient(135deg, #0F2137 0%, #1E3A8A 100%);
+      color: #C5A059;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: var(--radius-md);
+      font-family: var(--font-serif);
+      font-weight: 700;
+      font-size: 1.35rem;
+      border: 1px solid var(--judiciary-gold);
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+
+    .brand-text h1 {
+      font-size: 1.15rem;
+      font-weight: 800;
+      color: var(--text-primary);
+      letter-spacing: -0.02em;
+      line-height: 1.2;
+    }
+
+    .brand-text p {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      font-weight: 500;
+    }
+
+    .header-actions {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      padding: 0.5rem 0.85rem;
+      font-size: 0.82rem;
+      font-weight: 600;
+      border-radius: var(--radius-sm);
+      border: 1px solid var(--border-subtle);
+      background-color: var(--bg-surface-elevated);
+      color: var(--text-primary);
+      cursor: pointer;
+      transition: all var(--transition-fast);
+      text-decoration: none;
+    }
+
+    .btn:hover {
+      background-color: var(--bg-surface-active);
+      border-color: var(--border-strong);
+    }
+
+    .btn:focus-visible {
+      outline: 2px solid var(--primary-accent);
+      outline-offset: 2px;
+    }
+
+    .btn-gold {
+      background: var(--gold-surface);
+      color: var(--judiciary-gold);
+      border-color: var(--judiciary-gold);
+      font-weight: 700;
+    }
+
+    .countdown-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      padding: 0.4rem 0.75rem;
+      border-radius: var(--radius-full);
+      background-color: var(--emerald-surface);
+      border: 1px solid var(--emerald-border);
+      color: var(--emerald-success);
+      font-weight: 700;
+      font-size: 0.8rem;
+      font-family: var(--font-mono);
+    }
+
+    /* Main Container */
+    main.app-layout {
+      max-width: 1320px;
+      margin: 1.5rem auto;
+      padding: 0 1.25rem;
+      display: grid;
+      gap: 1.75rem;
+    }
+
+    /* Dashboard Grid */
+    .dashboard-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 1rem;
+    }
+
+    .metric-card {
+      background: var(--bg-surface);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-lg);
+      padding: 1.25rem;
+      box-shadow: var(--shadow-sm);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .metric-card::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 3px;
+      background: var(--primary-accent);
+    }
+
+    .metric-card.gold::before {
+      background: var(--judiciary-gold);
+    }
+
+    .metric-card.emerald::before {
+      background: var(--emerald-success);
+    }
+
+    .metric-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 0.5rem;
+    }
+
+    .metric-title {
+      font-size: 0.8rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: var(--text-muted);
+    }
+
+    .metric-value-large {
+      font-size: 2rem;
+      font-weight: 800;
+      color: var(--text-primary);
+      font-family: var(--font-mono);
+      line-height: 1.1;
+      margin: 0.35rem 0;
+    }
+
+    .metric-detail {
+      font-size: 0.8rem;
+      color: var(--text-secondary);
+      font-weight: 500;
+    }
+
+    .progress-bar-container {
+      width: 100%;
+      height: 8px;
+      background-color: var(--bg-surface-elevated);
+      border-radius: var(--radius-full);
+      overflow: hidden;
+      margin-top: 0.75rem;
+    }
+
+    .progress-bar-fill {
+      height: 100%;
+      background: linear-gradient(90deg, #1E3A8A 0%, #10B981 100%);
+      border-radius: var(--radius-full);
+      transition: width 0.4s ease;
+    }
+
+    /* Sessão Gráfica */
+    .analytics-panel {
+      background: var(--bg-surface);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-lg);
+      padding: 1.5rem;
+      box-shadow: var(--shadow-sm);
+      display: grid;
+      grid-template-columns: 1fr 1.6fr;
+      gap: 1.5rem;
+      align-items: center;
+    }
+
+    @media (max-width: 900px) {
+      .analytics-panel {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .chart-box {
+      position: relative;
+      height: 220px;
+      width: 100%;
+    }
+
+    .chart-title {
+      font-size: 0.9rem;
+      font-weight: 700;
+      color: var(--text-primary);
+      margin-bottom: 0.75rem;
+    }
+
+    /* Barra de Controles e Filtros */
+    .controls-bar {
+      background: var(--bg-surface);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-lg);
+      padding: 1rem 1.25rem;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+      box-shadow: var(--shadow-sm);
+    }
+
+    .filter-group {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      flex-wrap: wrap;
+    }
+
+    .filter-pill {
+      padding: 0.4rem 0.85rem;
+      font-size: 0.78rem;
+      font-weight: 600;
+      border-radius: var(--radius-full);
+      border: 1px solid var(--border-subtle);
+      background: var(--bg-surface-elevated);
+      color: var(--text-secondary);
+      cursor: pointer;
+      transition: all var(--transition-fast);
+    }
+
+    .filter-pill:hover {
+      color: var(--text-primary);
+      border-color: var(--border-strong);
+    }
+
+    .filter-pill.active {
+      background: var(--primary-accent);
+      color: #FFF;
+      border-color: var(--primary-accent);
+    }
+
+    .search-input-box {
+      position: relative;
+      min-width: 260px;
+    }
+
+    .search-input-box input {
+      width: 100%;
+      padding: 0.45rem 0.85rem 0.45rem 2.2rem;
+      font-size: 0.82rem;
+      border-radius: var(--radius-md);
+      border: 1px solid var(--border-subtle);
+      background: var(--bg-surface-elevated);
+      color: var(--text-primary);
+      font-family: inherit;
+    }
+
+    .search-input-box input:focus {
+      outline: none;
+      border-color: var(--primary-accent);
+      background: var(--bg-surface);
+      box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.15);
+    }
+
+    .search-icon {
+      position: absolute;
+      left: 0.75rem;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      pointer-events: none;
+    }
+
+    /* Lista de Dias */
+    .schedule-feed {
+      display: flex;
+      flex-direction: column;
+      gap: 1.25rem;
+    }
+
+    .day-card {
+      background: var(--bg-surface);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-lg);
+      padding: 1.25rem;
+      box-shadow: var(--shadow-sm);
+      transition: all var(--transition-smooth);
+      position: relative;
+    }
+
+    .day-card.completed {
+      border-color: var(--emerald-border);
+      background: var(--emerald-surface);
+    }
+
+    .day-card.completed::after {
+      content: "DIA 100% CUMPRIDO ✓";
+      position: absolute;
+      top: 1rem;
+      right: 1.25rem;
+      font-size: 0.72rem;
+      font-weight: 800;
+      color: var(--emerald-success);
+      background: var(--bg-surface);
+      padding: 0.2rem 0.6rem;
+      border-radius: var(--radius-full);
+      border: 1px solid var(--emerald-border);
+      letter-spacing: 0.04em;
+    }
+
+    .day-header {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 0.75rem;
+      padding-bottom: 0.85rem;
+      border-bottom: 1px solid var(--border-subtle);
+      margin-bottom: 1rem;
+    }
+
+    .day-meta-left {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      flex-wrap: wrap;
+    }
+
+    .day-number-badge {
+      background: var(--primary-navy);
+      color: #FFF;
+      font-size: 0.85rem;
+      font-weight: 800;
+      font-family: var(--font-mono);
+      padding: 0.35rem 0.75rem;
+      border-radius: var(--radius-sm);
+    }
+
+    .day-title-text {
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: var(--text-primary);
+    }
+
+    .day-tags {
+      display: flex;
+      gap: 0.4rem;
+      align-items: center;
+    }
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      font-size: 0.72rem;
+      font-weight: 700;
+      padding: 0.2rem 0.55rem;
+      border-radius: var(--radius-full);
+      text-transform: uppercase;
+      letter-spacing: 0.03em;
+    }
+
+    .badge-fase1 { background: #E0E7FF; color: #3730A3; }
+    .badge-fase2 { background: #FEF3C7; color: #92400E; }
+    .badge-fase3 { background: #FCE7F3; color: #9D174D; }
+    .badge-hours { background: var(--bg-surface-elevated); color: var(--text-secondary); font-family: var(--font-mono); }
+
+    /* Sessões de Estudo */
+    .sessions-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 0.85rem;
+    }
+
+    .session-item {
+      background: var(--bg-surface-elevated);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-md);
+      padding: 0.95rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 0.6rem;
+      transition: all var(--transition-fast);
+      cursor: pointer;
+      position: relative;
+    }
+
+    .session-item:hover {
+      border-color: var(--border-strong);
+      transform: translateY(-1px);
+    }
+
+    .session-item.done {
+      background: var(--bg-surface);
+      border-color: var(--emerald-border);
+      opacity: 0.88;
+    }
+
+    .session-header {
+      display: flex;
+      align-items: flex-start;
+      gap: 0.65rem;
+    }
+
+    .custom-checkbox {
+      margin-top: 0.2rem;
+      width: 20px;
+      height: 20px;
+      accent-color: var(--emerald-success);
+      cursor: pointer;
+      flex-shrink: 0;
+    }
+
+    .session-heading-group {
+      flex: 1;
+    }
+
+    .session-title-line {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 0.5rem;
+    }
+
+    .session-subject {
+      font-size: 0.9rem;
+      font-weight: 700;
+      color: var(--text-primary);
+    }
+
+    .session-time {
+      font-size: 0.75rem;
+      font-family: var(--font-mono);
+      font-weight: 700;
+      color: var(--text-muted);
+      background: var(--bg-surface);
+      padding: 0.15rem 0.45rem;
+      border-radius: var(--radius-sm);
+      border: 1px solid var(--border-subtle);
+    }
+
+    .method-badge {
+      display: inline-block;
+      font-size: 0.68rem;
+      font-family: var(--font-mono);
+      font-weight: 700;
+      padding: 0.15rem 0.4rem;
+      border-radius: var(--radius-sm);
+      margin-top: 0.25rem;
+    }
+    .method-badge.ls { background: var(--method-ls-bg); color: var(--method-ls); }
+    .method-badge.j { background: var(--method-j-bg); color: var(--method-j); }
+    .method-badge.d { background: var(--method-d-bg); color: var(--method-d); }
+
+    .session-body {
+      font-size: 0.8rem;
+      color: var(--text-secondary);
+      line-height: 1.5;
+    }
+
+    .session-activity {
+      margin-top: 0.4rem;
+      padding-top: 0.4rem;
+      border-top: 1px dashed var(--border-subtle);
+      font-size: 0.76rem;
+      color: var(--text-muted);
+      font-style: italic;
+    }
+
+    .session-item.done .session-subject {
+      text-decoration: line-through;
+      color: var(--text-muted);
+    }
+
+    /* Rodapé */
+    footer.main-footer {
+      margin-top: 3rem;
+      border-top: 1px solid var(--border-subtle);
+      padding: 2rem 1.5rem;
+      text-align: center;
+      font-size: 0.82rem;
+      color: var(--text-muted);
+    }
+
+    /* Modal de Backup */
+    .modal-backdrop {
+      position: fixed;
+      inset: 0;
+      background: rgba(15, 23, 42, 0.6);
+      backdrop-filter: blur(4px);
+      z-index: 100;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      padding: 1rem;
+    }
+
+    .modal-backdrop.open {
+      display: flex;
+    }
+
+    .modal-dialog {
+      background: var(--bg-surface);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-lg);
+      padding: 1.5rem;
+      max-width: 480px;
+      width: 100%;
+      box-shadow: var(--shadow-lg);
+    }
+
+    .modal-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 1rem;
+    }
+
+    .modal-title {
+      font-size: 1.1rem;
+      font-weight: 700;
+    }
+
+    .modal-body {
+      font-size: 0.85rem;
+      color: var(--text-secondary);
+      margin-bottom: 1.5rem;
+      line-height: 1.6;
+    }
+
+    .modal-actions {
+      display: flex;
+      justify-content: flex-end;
+      gap: 0.75rem;
+    }
+
+    /* Impressão Limpa */
+    @media print {
+      header.main-header, .controls-bar, .analytics-panel, .header-actions {
+        display: none !important;
+      }
+      body {
+        background: #FFF !important;
+        color: #000 !important;
+      }
+      .day-card {
+        break-inside: avoid;
+        border: 1px solid #CCC !important;
+        box-shadow: none !important;
+        margin-bottom: 1.5rem;
+      }
+      .session-item {
+        background: #FFF !important;
+        border: 1px solid #DDD !important;
+      }
+    }
+  </style>
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Pular para o conteúdo principal</a>
+
+  <!-- Cabeçalho -->
+  <header class="main-header" role="banner">
+    <div class="header-container">
+      <div class="brand-group">
+        <div class="brand-symbol" aria-hidden="true">TJ</div>
+        <div class="brand-text">
+          <h1>TJ-PE 2026 · Magistratura Estadual</h1>
+          <p>Plano Tático de Estudos de Reta Final (Banca FGV)</p>
+        </div>
+      </div>
+
+      <div class="header-actions">
+        <div class="countdown-badge" id="countdown-display" title="Data da Prova: 27 de Setembro de 2026">
+          <span>📅</span> <span id="countdown-text">Calculando...</span>
+        </div>
+        <button class="btn btn-gold" id="btn-install-pwa" style="display: none;" title="Instalar aplicativo no seu dispositivo Android">
+          <span>📲</span> Instalar App
+        </button>
+        <button class="btn" id="btn-theme-toggle" aria-label="Alternar Tema Claro e Escuro">
+          <span id="theme-icon">🌙</span> <span id="theme-text">Escuro</span>
+        </button>
+        <button class="btn" id="btn-export" title="Exportar Backup do Progresso">
+          <span>📥</span> Exportar
+        </button>
+        <button class="btn" id="btn-import-trigger" title="Restaurar Backup">
+          <span>📤</span> Importar
+        </button>
+        <input type="file" id="import-file-input" accept=".json" style="display: none;">
+        <button class="btn btn-gold" id="btn-reset" title="Reiniciar Progresso">
+          <span>↺</span> Reiniciar
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Conteúdo Principal -->
+  <main class="app-layout" id="main-content" role="main">
+    
+    <!-- Painel de Métricas -->
+    <section class="dashboard-grid" aria-label="Métricas Consolidadas de Progresso">
+      <div class="metric-card gold">
+        <div class="metric-header">
+          <span class="metric-title">Progresso Global</span>
+          <span style="font-size: 1.1rem;">🎯</span>
+        </div>
+        <div class="metric-value-large" id="metric-percent">0%</div>
+        <div class="metric-detail" id="metric-ratio">0 de 66 sessões concluídas</div>
+        <div class="progress-bar-container">
+          <div class="progress-bar-fill" id="metric-progress-fill" style="width: 0%;"></div>
+        </div>
+      </div>
+
+      <div class="metric-card">
+        <div class="metric-header">
+          <span class="metric-title">Carga Horária Estudada</span>
+          <span style="font-size: 1.1rem;">⏱️</span>
+        </div>
+        <div class="metric-value-large" id="metric-hours">0h / 102h</div>
+        <div class="metric-detail" id="metric-hours-pct">Faltam 102.0 horas líquidas</div>
+      </div>
+
+      <div class="metric-card emerald">
+        <div class="metric-header">
+          <span class="metric-title">Dias 100% Cumpridos</span>
+          <span style="font-size: 1.1rem;">📆</span>
+        </div>
+        <div class="metric-value-large" id="metric-days">0 / 22</div>
+        <div class="metric-detail" id="metric-days-pct">0% da régua de 22 dias</div>
+      </div>
+
+      <div class="metric-card">
+        <div class="metric-header">
+          <span class="metric-title">Questões FGV Realizadas</span>
+          <span style="font-size: 1.1rem;">📝</span>
+        </div>
+        <div class="metric-value-large" id="metric-questions">0 / 460+</div>
+        <div class="metric-detail">Engenharia reversa em cada sessão</div>
+      </div>
+    </section>
+
+    <!-- Painel Analítico com Gráfico -->
+    <section class="analytics-panel" aria-label="Gráficos de Acompanhamento">
+      <div>
+        <h2 class="chart-title">Distribuição Geral de Progresso</h2>
+        <p style="font-size: 0.82rem; color: var(--text-secondary); margin-bottom: 1rem;">
+          Acompanhe visualmente a proporção de sessões concluídas versus pendentes ao longo de toda a reta final.
+        </p>
+        <div class="chart-box">
+          <canvas id="progressDoughnutChart"></canvas>
+        </div>
+      </div>
+
+      <div>
+        <h2 class="chart-title">Carga Horária Estudada por Fase (Horas)</h2>
+        <p style="font-size: 0.82rem; color: var(--text-secondary); margin-bottom: 1rem;">
+          Progresso detalhado por Fase I (Núcleo Duro), Fase II (Bloco III/Humanística) e Fase III (Blindagem).
+        </p>
+        <div class="chart-box">
+          <canvas id="phasesBarChart"></canvas>
+        </div>
+      </div>
+    </section>
+
+    <!-- Controles e Filtros -->
+    <section class="controls-bar" aria-label="Filtros e Busca">
+      <div class="filter-group" role="tablist" aria-label="Filtrar por Fase">
+        <button class="filter-pill active" data-filter="all" role="tab" aria-selected="true">Todos os 22 Dias</button>
+        <button class="filter-pill" data-filter="Fase I" role="tab" aria-selected="false">Fase I (D1 a D10)</button>
+        <button class="filter-pill" data-filter="Fase II" role="tab" aria-selected="false">Fase II (D11 a D18)</button>
+        <button class="filter-pill" data-filter="Fase III" role="tab" aria-selected="false">Fase III (D19 a D22)</button>
+      </div>
+
+      <div class="filter-group">
+        <button class="filter-pill" data-status="pending">Pendentes</button>
+        <button class="filter-pill" data-status="completed">Concluídos</button>
+      </div>
+
+      <div class="search-input-box">
+        <span class="search-icon">🔍</span>
+        <input type="text" id="search-input" placeholder="Buscar por tema ou disciplina..." aria-label="Buscar por tema ou disciplina">
+      </div>
+    </section>
+
+    <!-- Lista dos Dias do Cronograma -->
+    <section class="schedule-feed" id="schedule-container" aria-label="Cronograma Dia a Dia">
+      <!-- Inserido dinamicamente via JS -->
+    </section>
+
+  </main>
+
+  <!-- Rodapé -->
+  <footer class="main-footer" role="contentinfo">
+    <p><strong>TJ-PE 2026 · Cronograma de Reta Final para Magistratura Estadual</strong></p>
+    <p style="margin-top: 0.25rem;">Planejamento tático orientado pelo banco de dados de 1.800 questões históricas da Banca FGV.</p>
+  </footer>
+
+  <!-- Modal de Confirmação de Reset -->
+  <div class="modal-backdrop" id="reset-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <div class="modal-dialog">
+      <div class="modal-header">
+        <h3 class="modal-title" id="modal-title">Reiniciar Todo o Progresso?</h3>
+      </div>
+      <div class="modal-body">
+        Esta ação desmarcará todas as sessões concluídas e redefinirá os gráficos para 0%. Esta operação não pode ser desfeita, a menos que você tenha feito um backup exportado.
+      </div>
+      <div class="modal-actions">
+        <button class="btn" id="btn-cancel-reset">Cancelar</button>
+        <button class="btn btn-gold" id="btn-confirm-reset">Sim, Reiniciar</button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // Registro do Service Worker para suporte a PWA e funcionamento offline
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('./sw.js')
+          .then(reg => console.log('[PWA] ServiceWorker registrado com sucesso:', reg.scope))
+          .catch(err => console.warn('[PWA] Falha ao registrar ServiceWorker:', err));
+      });
+    }
+
+    // Gerenciamento de Instalação PWA no Android / Chrome
+    let deferredPrompt = null;
+    window.addEventListener('beforeinstallprompt', (e) => {
+      e.preventDefault();
+      deferredPrompt = e;
+      const btnInstall = document.getElementById('btn-install-pwa');
+      if (btnInstall) {
+        btnInstall.style.display = 'inline-flex';
+      }
+    });
+
+    window.addEventListener('appinstalled', () => {
+      deferredPrompt = null;
+      const btnInstall = document.getElementById('btn-install-pwa');
+      if (btnInstall) {
+        btnInstall.style.display = 'none';
+      }
+      console.log('[PWA] Aplicativo instalado com sucesso na tela inicial!');
+    });
+
+    // Base de dados completa dos 22 dias extraída do cronograma
+    const SCHEDULE_DATA = [{"dayNumber": 1, "date": "05/09/2026", "weekday": "Sábado", "faseCode": "Fase I", "faseTitle": "Fase I: Consolidação do Núcleo Duro e Varredura Top FGV", "totalHours": 6, "totalMinutes": 360, "sessions": [{"id": "d1_s1", "sessionNum": 1, "title": "Direito Administrativo", "minutes": 140, "subtopics": "Licitações e Contratos Administrativos sob a égide da Lei nº 14.133/2021 (modalidades, critérios de julgamento, contratação direta por dispensa e inexigibilidade, nulidades contratuais, matriz de riscos e sanções administrativas).", "method": "`[LS]` Artigos 1º a 32 e 71 a 95 da Lei nº 14.133/21 + `[J]` Súmulas do TCU e precedentes do STJ sobre vinculação ao instrumento convocatório e reequilíbrio econômico-financeiro.", "activity": "Leitura cruzada dos artigos mais cobrados com marcação de prazos de impugnação do edital + estudo das hipóteses taxativas de contratação direta."}, {"id": "d1_s2", "sessionNum": 2, "title": "Direito Empresarial", "minutes": 120, "subtopics": "Recuperação Judicial e Falência (Lei nº 11.101/2005 atualizada pela Lei nº 14.112/2020: créditos concursais e extraconcursais, trava bancária, cram down e poderes do juízo da recuperação versus juízo da execução fiscal).", "method": "`[LS]` Arts. 6º, 49, 50, 58, 83 e 84 da Lei nº 11.101/05 + `[J]` Teses repetitivas do STJ sobre a essencialidade de bens de capital e limites do stay period.", "activity": "Sistematização da ordem de classificação dos créditos na falência (art. 83) e regras do plano de recuperação com foco nas restrições de voto de credores."}, {"id": "d1_s3", "sessionNum": 3, "title": "Treino Tático de Questões FGV", "minutes": 100, "subtopics": "Direito Administrativo (Licitações) + Direito Empresarial (Falência e Recuperação).", "method": "Resolução de 25 questões recentes de Magistratura da banca FGV.", "activity": "Engenharia reversa dos distratores, identificação do padrão de cobrança e anotação imediata das pegadinhas de prazos no Caderno de Erros."}]}, {"dayNumber": 2, "date": "06/09/2026", "weekday": "Domingo", "faseCode": "Fase I", "faseTitle": "Fase I: Consolidação do Núcleo Duro e Varredura Top FGV", "totalHours": 6, "totalMinutes": 360, "sessions": [{"id": "d2_s1", "sessionNum": 1, "title": "Direito do Consumidor", "minutes": 140, "subtopics": "Responsabilidade pelo Fato do Produto/Serviço (acidente de consumo) versus Vício do Produto/Serviço; Prazos Decadenciais e Prescricionais (arts. 26 e 27 do CDC); Desconsideração da Personalidade Jurídica (Teoria Menor do art. 28, § 5º, CDC).", "method": "`[LS]` Arts. 12 a 28 do CDC + `[J]` Súmulas do STJ sobre Direito do Consumidor (Súmulas 297, 302, 321, 469, 532, 595, 608) e teses de responsabilidade civil de instituições financeiras (Súmula 479/STJ).", "activity": "Construção de quadro comparativo entre fato (prazo prescricional de 5 anos) e vício (prazos decadenciais de 30 e 90 dias com causas obstativas do art. 26, § 2º)."}, {"id": "d2_s2", "sessionNum": 2, "title": "Direito da Criança e do Adolescente - ECA", "minutes": 120, "subtopics": "Medidas de Proteção, Acolhimento Institucional e Familiar (princípios da excepcionalidade e brevidade), Procedimento de Perda e Suspensão do Poder Familiar e Adoção Nacional e Internacional (requisitos, estágios de convivência e vedações).", "method": "`[LS]` Arts. 19 a 52, 98 a 102 e 155 a 163 do ECA (Lei nº 8.069/90) + `[J]` Jurisprudência do STJ sobre a prevalência do melhor interesse da criança frente a regras formais de cadastro de adotantes.", "activity": "Mapeamento das regras de prioridade absoluta e prazos máximos para reavaliação de acolhimento institucional (trimestral) e conclusão do processo de adoção."}, {"id": "d2_s3", "sessionNum": 3, "title": "Treino Tático de Questões FGV", "minutes": 100, "subtopics": "Direito do Consumidor + ECA.", "method": "Resolução de 25 questões de provas objetivas da FGV (Magistratura e MP).", "activity": "Identificação da posição da banca sobre desconsideração menor da personalidade jurídica e hipóteses autorizadoras de adoção unilateral e intuitu personae."}]}, {"dayNumber": 3, "date": "07/09/2026", "weekday": "Segunda-feira", "faseCode": "Fase I", "faseTitle": "Fase I: Consolidação do Núcleo Duro e Varredura Top FGV", "totalHours": 4, "totalMinutes": 240, "sessions": [{"id": "d3_s1", "sessionNum": 1, "title": "Direito Processual Civil", "minutes": 90, "subtopics": "Tutelas Provisórias (de Urgência Antecipada e Cautelar, Requisitos do fumus boni iuris e periculum in mora, estabilização da tutela antecedente no art. 304 do CPC) e Tutela da Evidência (hipóteses do art. 311 do CPC).", "method": "`[LS]` Arts. 294 a 311 do CPC + `[J]` Teses repetitivas do STJ sobre os meios de impugnação cabíveis contra a estabilização da tutela antecedente (ação autônoma de desconstituição) e fungibilidade entre cautelar e satisfativa.", "activity": "Fixação da tabela dos requisitos das 4 hipóteses de tutela da evidência com foco nas situações que dispensam a comprovação do perigo de dano."}, {"id": "d3_s2", "sessionNum": 2, "title": "Direito Eleitoral", "minutes": 80, "subtopics": "Condições de Elegibilidade e Inelegibilidades Constitucionais e Infraconstitucionais (LC nº 64/90 com alterações da Lei da Ficha Limpa - LC 135/2010: causas de rejeição de contas, condenação por órgão colegiado e prazos de inelegibilidade).", "method": "`[LS]` Art. 14 da CF/88 + Arts. 1º e 2º da LC nº 64/90 + `[J]` Súmulas do TSE (Súmulas 41 a 70) e precedentes vinculantes do STF sobre a competência da Câmara Municipal para julgar contas de Chefe do Poder Executivo.", "activity": "Mapeamento das hipóteses de inelegibilidade reflexa (§ 7º do art. 14) e distinção entre causas de inelegibilidade absoluta e relativa."}, {"id": "d3_s3", "sessionNum": 3, "title": "Treino Tático de Questões FGV", "minutes": 70, "subtopics": "Direito Processual Civil (Tutelas Provisórias e Litisconsórcio).", "method": "Resolução de 18 questões FGV específicas para Magistratura Estadual.", "activity": "Análise crítica de casos práticos da FGV envolvendo indeferimento de tutela provisória e agravo de instrumento respectivo."}]}, {"dayNumber": 4, "date": "08/09/2026", "weekday": "Terça-feira", "faseCode": "Fase I", "faseTitle": "Fase I: Consolidação do Núcleo Duro e Varredura Top FGV", "totalHours": 4, "totalMinutes": 240, "sessions": [{"id": "d4_s1", "sessionNum": 1, "title": "Direito Civil", "minutes": 90, "subtopics": "Responsabilidade Civil (Contratual versus Extracontratual, Elementos: conduta, dano e nexo de causalidade; Teorias do nexo causal, Dano moral in re ipsa, Desvio produtivo do consumidor e Perda de uma chance).", "method": "`[LS]` Arts. 186, 187, 927 a 954 do Código Civil + `[J]` Súmulas do STJ sobre responsabilidade civil (Súmulas 37, 227, 385, 387, 388, 403, 599) e teses de responsabilidade civil médica e hospitalar.", "activity": "Leitura e memorização das causas de exclusão do nexo de causalidade (caso fortuito, força maior, fato exclusivo da vítima e de terceiro) e distinção entre fortuito interno e externo."}, {"id": "d4_s2", "sessionNum": 2, "title": "Direito Ambiental", "minutes": 80, "subtopics": "Responsabilidade Civil por Danos Ambientais (Natureza objetiva, teoria do risco integral, obrigação propter rem, imprescritibilidade da pretensão de reparação de dano ambiental) e Licenciamento Ambiental.", "method": "`[LS]` Art. 225 da CF/88 + Art. 14 da Lei nº 6.938/81 (PNMA) + `[J]` Tema 999 do STF (imprescritibilidade) e Súmulas 613, 618, 623, 629 e 652 do STJ (inadmissibilidade da teoria do fato consumado em matéria ambiental).", "activity": "Fixação da solidariedade passiva entre poluidor direto e indireto e limites da responsabilidade do Estado por omissão fiscalizatória."}, {"id": "d4_s3", "sessionNum": 3, "title": "Treino Tático de Questões FGV", "minutes": 70, "subtopics": "Direito Civil (Responsabilidade Civil).", "method": "Resolução de 18 questões FGV de concursos para Juiz Estadual.", "activity": "Resolução de enunciados longos e casuísticos típicos da FGV sobre quantificação do dano moral e direito de regresso."}]}, {"dayNumber": 5, "date": "09/09/2026", "weekday": "Quarta-feira", "faseCode": "Fase I", "faseTitle": "Fase I: Consolidação do Núcleo Duro e Varredura Top FGV", "totalHours": 4, "totalMinutes": 240, "sessions": [{"id": "d5_s1", "sessionNum": 1, "title": "Direito Penal", "minutes": 90, "subtopics": "Aplicação e Dosimetria da Pena (Critério trifásico do art. 68 do CP: 1ª fase - circunstâncias judiciais do art. 59; 2ª fase - atenuantes e agravantes, concurso entre elas; 3ª fase - causas de aumento e diminuição, concurso de crimes formal, material e continuado).", "method": "`[LS]` Arts. 59 a 76 do Código Penal + `[J]` Súmulas 231, 241, 269, 440, 443 e 444 do STJ e Tema 119/STF.", "activity": "Memorização do cálculo da fração de exasperação no crime continuado (critério do número de infrações) e proibição de fixação da pena aquém do mínimo legal na 2ª fase (Súmula 231)."}, {"id": "d5_s2", "sessionNum": 2, "title": "Direitos Humanos", "minutes": 80, "subtopics": "Sistema Interamericano de Proteção dos Direitos Humanos (Convenção Americana sobre Direitos Humanos - Pacto de San José da Costa Rica: direitos tutelados, funcionamento e competências da Comissão Interamericana e da Corte Interamericana de Direitos Humanos) e Controle de Convencionalidade.", "method": "`[LS]` Decreto nº 678/1992 (CADH) + `[J]` Precedentes da Corte IDH contra o Brasil (Casos Gomes Lund - Guerrilha do Araguaia, Vladimir Herzog, e Favela Nova Brasília) + Tema de Repercussão Geral do STF sobre a estatura supralegal dos tratados de direitos humanos.", "activity": "Esquematização dos modelos de controle de convencionalidade (difuso e concentrado) e parâmetros fixados pelo STF no RE 466.343/SP."}, {"id": "d5_s3", "sessionNum": 3, "title": "Treino Tático de Questões FGV", "minutes": 70, "subtopics": "Direito Penal (Dosimetria e Concurso de Crimes).", "method": "Resolução de 18 questões da FGV com foco em cálculos de pena e regimes prisionais.", "activity": "Identificação da fundamentação idônea e inidônea para exasperação da pena-base conforme jurisprudência do STJ cobrada pela FGV."}]}, {"dayNumber": 6, "date": "10/09/2026", "weekday": "Quinta-feira", "faseCode": "Fase I", "faseTitle": "Fase I: Consolidação do Núcleo Duro e Varredura Top FGV", "totalHours": 4, "totalMinutes": 240, "sessions": [{"id": "d6_s1", "sessionNum": 1, "title": "Direito Processual Penal", "minutes": 90, "subtopics": "Prisão em Flagrante, Prisão Preventiva e Medidas Cautelares Diversas da Prisão (Arts. 282 a 319 do CPP, com alterações do Pacote Anticrime - Lei 13.964/19: pressupostos, requisitos, contemporaneidade, audiência de custódia e revogação da prisão de ofício).", "method": "`[LS]` Arts. 282 a 350 do CPP + `[J]` ADI 6298 e correlatas (STF sobre juiz das garantias e audiência de custódia) + Precedentes do STJ sobre fundamentação concreta e ilegalidade de decretação ex officio na fase investigatória ou processual.", "activity": "Tabela comparativa dos requisitos objetivos da prisão preventiva (crimes dolosos com pena máxima superior a 4 anos, reincidência, violência doméstica)."}, {"id": "d6_s2", "sessionNum": 2, "title": "Noções Gerais de Direito e Formação Humanística", "minutes": 80, "subtopics": "Estatuto da Magistratura (LOMAN - Lei Complementar nº 35/1979: direitos, prerrogativas, deveres, vedações constitucionais e infraconstitucionais, garantias da magistratura e regime disciplinar) e Código de Ética da Magistratura Nacional (CNJ).", "method": "`[LS]` Arts. 93 e 95 da CF/88 + Arts. 35 a 56 da LOMAN + Resolução CNJ nº 60/2008 (Código de Ética da Magistratura).", "activity": "Mapeamento das penas disciplinares aplicáveis a magistrados e rito do Processo Administrativo Disciplinar (PAD) perante o Órgão Especial e o CNJ."}, {"id": "d6_s3", "sessionNum": 3, "title": "Treino Tático de Questões FGV", "minutes": 70, "subtopics": "Direito Processual Penal (Prisão e Liberdade Provisória).", "method": "Resolução de 18 questões de Magistratura Estadual da FGV.", "activity": "Análise de enunciados que cobram a exigência de contraditório prévio na imposição de cautelares diversas da prisão e prazos de conversão do flagrante."}]}, {"dayNumber": 7, "date": "11/09/2026", "weekday": "Sexta-feira", "faseCode": "Fase I", "faseTitle": "Fase I: Consolidação do Núcleo Duro e Varredura Top FGV", "totalHours": 4, "totalMinutes": 240, "sessions": [{"id": "d7_s1", "sessionNum": 1, "title": "Direito Constitucional", "minutes": 90, "subtopics": "Controle de Constitucionalidade (Controle Concentrado: ADI, ADC, ADO e ADPF; Legitimidade ativa, parâmetro de controle, medida cautelar, efeito vinculante, modulação temporal de efeitos no art. 27 da Lei 9.868/99; Controle Difuso e Cláusula de Reserva de Plenário no art. 97 da CF e Súmula Vinculante 10).", "method": "`[LS]` Art. 102 e 103 da CF/88 + Leis nº 9.868/99 e 9.882/99 + `[J]` Súmulas Vinculantes 10 e 40 e principais teses de controle abstrato do STF.", "activity": "Elaboração de matriz comparativa entre os requisitos de cabimento da ADI genérica e da ADPF (princípio da subsidiariedade e preceito fundamental violado)."}, {"id": "d7_s2", "sessionNum": 2, "title": "Direito Tributário e Financeiro", "minutes": 80, "subtopics": "Sistema Tributário Nacional e Limitações Constitucionais ao Poder de Tributar (Princípios da Legalidade, Anterioridade Anual e Nonagesimal, Irretroatividade, Não Confisco e Imunidades Tributárias: recíproca, templos de qualquer culto, partidos, entidades sindicais e livros/periódicos).", "method": "`[LS]` Arts. 145 a 152 da CF/88 + `[J]` Súmulas Vinculantes 50, 52, 57 e Súmulas 657 e 724 do STF (imunidade recíproca estendida a empresas públicas prestadoras de serviços públicos próprios).", "activity": "Memorização das exceções constitucionais aos princípios da anterioridade anual e anterioridade nonagesimal (tributos extrafiscais e de urgência)."}, {"id": "d7_s3", "sessionNum": 3, "title": "Treino Tático de Questões FGV", "minutes": 70, "subtopics": "Direito Constitucional (Controle de Constitucionalidade).", "method": "Resolução de 18 questões FGV de controle concentrado e difuso.", "activity": "Prática de identificação do instrumento correto perante a jurisprudência do STF (leis municipais em face da CF/88, normas pré-constitucionais e direito de trânsito)."}]}, {"dayNumber": 8, "date": "12/09/2026", "weekday": "Sábado", "faseCode": "Fase I", "faseTitle": "Fase I: Consolidação do Núcleo Duro e Varredura Top FGV", "totalHours": 6, "totalMinutes": 360, "sessions": [{"id": "d8_s1", "sessionNum": 1, "title": "Direito Administrativo", "minutes": 140, "subtopics": "Lei de Improbidade Administrativa reformada (Lei nº 8.429/1992 com alterações integrais da Lei nº 14.230/2021: tipificação exclusiva na modalidade dolosa, eliminação da culpa em dano ao erário, rol taxativo do art. 11, regime da indisponibilidade de bens, prescrição geral de 8 anos e regras de transição/retroatividade).", "method": "`[LS]` Arts. 1º a 23-C da Lei nº 8.429/92 (texto vigente) + `[J]` Tema 1199 do STF (irretroatividade da nova LIA salvo para atos sem condenação transitada em julgado quanto à revogação do tipo culposo e aplicação dos novos prazos prescricionais).", "activity": "Leitura exaustiva dos tipos de atos de enriquecimento ilícito (art. 9º), lesão ao patrimônio público (art. 10) e violação aos princípios administrativos (art. 11), marcando as alterações da Lei 14.230/21."}, {"id": "d8_s2", "sessionNum": 2, "title": "Direito Civil", "minutes": 120, "subtopics": "Contratos em Espécie (Compra e venda com cláusulas especiais, Doação e hipóteses de revogação por ingratidão, Fiança e benefício de ordem, Contrato de Locação e ações locatícias na Lei 8.245/91) e Teoria dos Fatos Jurídicos (Defeitos do negócio: erro, dolo, coação, estado de perigo, lesão e simulação).", "method": "`[LS]` Arts. 138 a 184 e 481 a 564 do Código Civil + `[J]` Súmulas 332 e 543 do STJ e teses sobre simulação como nulidade absoluta insanável e imprescritível.", "activity": "Quadro diferencial entre anulatibilidade (prazo decadencial de 4 anos do art. 178) e nulidade absoluta (art. 166 e 167) nos negócios jurídicos."}, {"id": "d8_s3", "sessionNum": 3, "title": "Treino Tático de Questões FGV", "minutes": 100, "subtopics": "Improbidade Administrativa (Lei 14.230/21) + Contratos e Negócio Jurídico.", "method": "Resolução de 25 questões da FGV com foco nas reformas legislativas.", "activity": "Auditoria de assertivas que misturam o texto antigo da LIA com o texto novo da Lei 14.230/21 e pegadinhas sobre a penhora de bem de família do fiador."}]}, {"dayNumber": 9, "date": "13/09/2026", "weekday": "Domingo", "faseCode": "Fase I", "faseTitle": "Fase I: Consolidação do Núcleo Duro e Varredura Top FGV", "totalHours": 6, "totalMinutes": 360, "sessions": [{"id": "d9_s1", "sessionNum": 1, "title": "Direito Processual Civil", "minutes": 140, "subtopics": "Teoria Geral dos Recursos e Recursos em Espécie (Apelação: efeito devolutivo, julgamento de causa madura no art. 1.013, § 3º; Agravo de Instrumento: rol do art. 1.015 e tese da taxatividade mitigada no Tema 988/STJ; Embargos de Declaração: efeitos infringentes e prequestionamento; Recursos para Tribunais Superiores).", "method": "`[LS]` Arts. 994 a 1.044 do CPC + `[J]` Súmulas 7 e 83 do STJ e Teses Repetitivas sobre fungibilidade recursal e preclusão pro judicato.", "activity": "Sistematização do cabimento do agravo de instrumento por urgência decorrente da inutilidade do julgamento da questão na apelação."}, {"id": "d9_s2", "sessionNum": 2, "title": "Direito Penal", "minutes": 120, "subtopics": "Crimes contra a Administração Pública Praticados por Funcionário Público (Arts. 312 a 326: peculato e suas formas, concussão, corrupção passiva, prevaricação e condescendência criminosa) e por Particular (Arts. 328 a 337-A: usurpação, desobediência, desacato e corrupção ativa) e Crimes contra o Patrimônio (Furto, Roubo, Extorsão e Estelionato).", "method": "`[LS]` Arts. 155 a 171 e 312 a 337-A do Código Penal + `[J]` Súmulas 567, 582, 599 do STJ (inaplicabilidade do princípio da insignificância aos crimes contra a administração pública) e tese sobre o momento consumativo do roubo e furto (teoria da apprehensio / amotio).", "activity": "Comparação entre concussão (exigir), corrupção passiva (solicitar/receber/aceitar) e corrupção ativa (oferecer/prometer)."}, {"id": "d9_s3", "sessionNum": 3, "title": "Treino Tático de Questões FGV", "minutes": 100, "subtopics": "Recursos no CPC + Crimes contra a Administração Pública e Patrimônio.", "method": "Resolução de 25 questões complexas da FGV para Magistratura.", "activity": "Treino de identificação de consumação em crimes formais versus materiais e aplicação da teoria da causa madura no CPC."}]}, {"dayNumber": 10, "date": "14/09/2026", "weekday": "Segunda-feira", "faseCode": "Fase I", "faseTitle": "Fase I: Consolidação do Núcleo Duro e Varredura Top FGV", "totalHours": 4, "totalMinutes": 240, "sessions": [{"id": "d10_s1", "sessionNum": 1, "title": "Direito Processual Civil", "minutes": 90, "subtopics": "Cumprimento de Sentença (Obrigação de pagar quantia, fazer, não fazer e entregar coisa; impugnação ao cumprimento de sentença, matérias cognoscíveis e efeito suspensivo) e Processo de Execução de Título Extrajudicial (Embargos à execução, prescrição intercorrente e fraude à execução no art. 792 do CPC e Súmula 375/STJ).", "method": "`[LS]` Arts. 513 a 538 e 771 a 805 do CPC + `[J]` Súmulas 375, 410, 517, 519 do STJ e Tema 569 do STJ sobre a multa e honorários do art. 523 do CPC.", "activity": "Mapeamento do termo inicial e contagem do prazo de 15 dias úteis para pagamento voluntário e subsequente prazo de 15 dias para impugnação."}, {"id": "d10_s2", "sessionNum": 2, "title": "Direito da Criança e do Adolescente - ECA", "minutes": 80, "subtopics": "Apuração de Ato Infracional Atribuído a Adolescente (Garantias processuais, apreensão em flagrante, internação provisória por até 45 dias), Medidas Socioeducativas (Advertência, obrigação de reparar o dano, prestação de serviços, liberdade assistida, semiliberdade e internação: hipóteses estritas do art. 122 do ECA e prazo máximo de 3 anos) e Remissão.", "method": "`[LS]` Arts. 103 a 128 e 171 a 190 do ECA + `[J]` Súmulas 108, 265, 338, 492 e 605 do STJ (a reiteração no cometimento de infrações graves deve ser de pelo menos 3 atos anteriores).", "activity": "Quadro comparativo entre remissão pré-processual (ministerial como exclusão) e processual (judicial como suspensão ou extinção do processo socioeducativo)."}, {"id": "d10_s3", "sessionNum": 3, "title": "Treino Tático de Questões FGV", "minutes": 70, "subtopics": "Cumprimento de Sentença (CPC) + Ato Infracional e Medidas Socioeducativas (ECA).", "method": "Resolução de 18 questões da FGV.", "activity": "Análise de casos sobre internação por descumprimento reiterado e injustificável de medida anteriormente imposta (limite máximo de 3 meses)."}]}, {"dayNumber": 11, "date": "15/09/2026", "weekday": "Terça-feira", "faseCode": "Fase II", "faseTitle": "Fase II: Travamento do Bloco III, Normas Especiais e Humanística", "totalHours": 4, "totalMinutes": 240, "sessions": [{"id": "d11_s1", "sessionNum": 1, "title": "Direito Civil", "minutes": 90, "subtopics": "Direito das Famílias (Regimes de Bens: comunhão parcial, comunhão universal, separação obrigatória e separação de bens com Súmula 377/STF; Alimentos: fixação, exoneração e prisão civil; Bem de Família legal na Lei 8.009/90 e voluntário) e Sucessão Legítima (Ordem de vocação hereditária do art. 1.829, direito real de habitação e sucessão do companheiro no Tema 809/STF).", "method": "`[LS]` Arts. 1.639 a 1.710 e 1.784 a 1.856 do Código Civil + `[J]` Temas 809 e 1071 do STF e Súmulas 309, 358, 364, 486, 596 do STJ.", "activity": "Desenho dos esquemas de concorrência do cônjuge/companheiro sobrevivente com descendentes conforme o regime matrimonial adotado."}, {"id": "d11_s2", "sessionNum": 2, "title": "Legislação Estadual de Pernambuco e COJ/PE", "minutes": 80, "subtopics": "Código de Organização Judiciária do Estado de Pernambuco (Lei Complementar Estadual nº 100/2007: Composição dos Órgãos do TJPE - Tribunal Pleno, Corte Especial, Câmaras Cíveis, Câmaras Criminais, Conselho da Magistratura e Corregedoria Geral da Justiça; Competência dos Juizados Especiais e Varas Privativas; Carreira e Atribuições do Juiz Substituto).", "method": "`[LS]` Artigos selecionados da LCE nº 100/2007 (COJ/PE) e do Regimento Interno do TJPE afetos à atuação em primeiro grau e competência dos órgãos fracionários.", "activity": "Mapeamento das regras de substituição automática de magistrados no âmbito do TJ-PE e competências das Varas da Fazenda Pública Estadual e Municipal."}, {"id": "d11_s3", "sessionNum": 3, "title": "Treino Tático de Questões FGV", "minutes": 70, "subtopics": "Direito Civil (Famílias e Sucessões).", "method": "Resolução de 18 questões FGV sobre sucessão do cônjuge meeiro/herdeiro e alimentos.", "activity": "Identificação da posição consolidada da FGV quanto à incomunicabilidade de bens adquiridos por doação ou herança na comunhão parcial."}]}, {"dayNumber": 12, "date": "16/09/2026", "weekday": "Quarta-feira", "faseCode": "Fase II", "faseTitle": "Fase II: Travamento do Bloco III, Normas Especiais e Humanística", "totalHours": 4, "totalMinutes": 240, "sessions": [{"id": "d12_s1", "sessionNum": 1, "title": "Direito Processual Penal", "minutes": 90, "subtopics": "Teoria Geral da Prova, Provas Ilícitas e Provas por Derivação (Fruits of the Poisonous Tree, nexo de causalidade atenuada e descoberta inevitável no art. 157 do CPP), Cadeia de Custódia da Prova (Arts. 158-A a 158-F do CPP, quebra da cadeia e consequências processuais), Busca e Apreensão Domiciliar e Interceptação Telefônica (Lei 9.296/96 e Lei 12.965/14).", "method": "`[LS]` Arts. 155 a 250 do CPP + Lei nº 9.296/96 + `[J]` Tema 280 do STF (busca domiciliar sem mandado e justa causa fundada em razões objetivas) e teses pacificadas da 5ª e 6ª Turmas do STJ sobre reconhecimento de pessoas (art. 226 do CPP).", "activity": "Quadro de requisitos indispensáveis para o reconhecimento presencial e fotográfico sob pena de nulidade absoluta e desentranhamento."}, {"id": "d12_s2", "sessionNum": 2, "title": "Noções Gerais de Direito e Formação Humanística", "minutes": 80, "subtopics": "Lógica do Razoável e Nova Hermenêutica (Luis Recaséns Siches, Robert Alexy e ponderação de princípios), Pragmatismo e Análise Econômica do Direito (LINDB - Arts. 20 a 30 introduzidos pela Lei 13.655/18: decisões baseadas em valores jurídicos abstratos, análise de consequências práticas e regime do erro grosseiro) e Direito da Antidiscriminação.", "method": "`[LS]` Arts. 20 a 30 do Decreto-Lei nº 4.657/1942 (LINDB) + `[D]` Filosofia e Sociologia do Direito aplicadas à jurisdição contemporânea e Protocolo para Julgamento com Perspectiva de Gênero (CNJ).", "activity": "Fixação da definição legal de \"erro grosseiro\" conforme o Decreto nº 9.830/19 e implicações do dever de deferência às escolhas discricionárias da administração."}, {"id": "d12_s3", "sessionNum": 3, "title": "Treino Tático de Questões FGV", "minutes": 70, "subtopics": "Provas no Processo Penal + Formação Humanística / LINDB.", "method": "Resolução de 18 questões FGV de Formação Humanística e nulidades probatórias.", "activity": "Resolução de itens que cobram as teorias da justiça (Rawls versus Nozick) e aplicação prática dos arts. 20 a 22 da LINDB."}]}, {"dayNumber": 13, "date": "17/09/2026", "weekday": "Quinta-feira", "faseCode": "Fase II", "faseTitle": "Fase II: Travamento do Bloco III, Normas Especiais e Humanística", "totalHours": 4, "totalMinutes": 240, "sessions": [{"id": "d13_s1", "sessionNum": 1, "title": "Direito Constitucional", "minutes": 90, "subtopics": "Direitos e Deveres Individuais e Coletivos (Art. 5º da CF/88: direito à vida, intimidade, sigilo bancário e fiscal, liberdade de expressão e reunião), Ações Constitucionais (Mandado de Segurança individual e coletivo na Lei 12.016/09, Habeas Data, Mandado de Injunção na Lei 13.300/16 e Ação Popular na Lei 4.717/65) e Poder Judiciário (Garantias institucionais e competências originárias).", "method": "`[LS]` Art. 5º e Arts. 92 a 105 da CF/88 + Leis nº 12.016/09 e 13.300/16 + `[J]` Súmulas 624, 625, 629, 630 do STF e Súmulas do STJ sobre decadência do mandado de segurança e execução contra a Fazenda Pública.", "activity": "Matriz das hipóteses de vedação à concessão de liminar em mandado de segurança contra o Poder Público e compatibilidade com o CPC/15."}, {"id": "d13_s2", "sessionNum": 2, "title": "Direito Tributário e Financeiro", "minutes": 80, "subtopics": "Crédito Tributário (Lançamento e suas modalidades, Causas de Suspensão da Exigibilidade do Crédito Tributário no art. 151 do CTN, Extinção no art. 156 e Exclusão no art. 175) e Responsabilidade Tributária (Sucessores, terceiros e redirecionamento de Execução Fiscal aos sócios administradores na Súmula 435/STJ e Tema 981/STJ).", "method": "`[LS]` Arts. 139 a 193 do CTN + `[J]` Súmulas 112, 392, 430, 435, 436, 555 e 558 do STJ e teses vinculantes sobre prescrição intercorrente na execução fiscal (Lei 6.830/80 e Tema 566/STJ).", "activity": "Mnemônico e distinção rigorosa entre causas que suspendem (ex: moratória, depósito, parcelamento), extinguem (ex: pagamento, compensação, decadência/prescrição) e excluem (isenção e anistia) o crédito."}, {"id": "d13_s3", "sessionNum": 3, "title": "Treino Tático de Questões FGV", "minutes": 70, "subtopics": "Remédios Constitucionais + Crédito Tributário e Execução Fiscal.", "method": "Resolução de 18 questões de Magistratura Estadual da FGV.", "activity": "Estudo reverso dos distratores que tentam confundir parcelamento (suspensão) com anistia (exclusão) e decadência tributária (art. 173 do CTN)."}]}, {"dayNumber": 14, "date": "18/09/2026", "weekday": "Sexta-feira", "faseCode": "Fase II", "faseTitle": "Fase II: Travamento do Bloco III, Normas Especiais e Humanística", "totalHours": 4, "totalMinutes": 240, "sessions": [{"id": "d14_s1", "sessionNum": 1, "title": "Direito Administrativo", "minutes": 90, "subtopics": "Teoria do Ato Administrativo (Requisitos de validade: competência, finalidade, forma, motivo e objeto; Atributos: presunção de legitimidade, imperatividade, autoexecutoriedade e tipicidade; Teoria dos Motivos Determinantes; Convalidação, Revogação e Anulação: prazos de decadência no art. 54 da Lei 9.784/99) e Poderes Administrativos.", "method": "`[LS]` Arts. 1º a 69 da Lei nº 9.784/1999 + Lei de Ação Popular (art. 2º da Lei 4.717/65) + `[J]` Súmulas 346 e 473 do STF e jurisprudência do STJ sobre a imprescritibilidade do controle de atos que configurem flagrante inconstitucionalidade.", "activity": "Mapeamento das hipóteses em que o vício de competência ou de forma autoriza convalidação (atos não privativos e vícios sanáveis)."}, {"id": "d14_s2", "sessionNum": 2, "title": "Direito Empresarial", "minutes": 80, "subtopics": "Direito Societário (Sociedades Limitadas no Código Civil: deliberações dos sócios, exclusão de sócio e cessão de quotas; Sociedades Anônimas na Lei 6.404/76: órgãos societários, direitos essenciais dos acionistas, capital social e responsabilidade dos administradores) e Desconsideração da Personalidade Jurídica no art. 50 do Código Civil (Teoria Maior e requisitos de desvio de finalidade e confusão patrimonial).", "method": "`[LS]` Arts. 50 e 1.052 a 1.087 do Código Civil + Arts. 109 a 158 da Lei nº 6.404/76 + `[J]` Súmulas e precedentes do STJ sobre desconsideração da personalidade jurídica inversa e requisitos de liquidação e apuração de haveres.", "activity": "Diferenciação das maiorias e quóruns de deliberação nas Sociedades Limitadas após as recentes alterações legislativas da Lei 14.451/22."}, {"id": "d14_s3", "sessionNum": 3, "title": "Treino Tático de Questões FGV", "minutes": 70, "subtopics": "Atos Administrativos + Direito Societário.", "method": "Resolução de 18 questões da FGV.", "activity": "Resolução de enunciados de prova sobre anulação versus revogação de ato administrativo e dissolução parcial de sociedade empresária."}]}, {"dayNumber": 15, "date": "19/09/2026", "weekday": "Sábado", "faseCode": "Fase II", "faseTitle": "Fase II: Travamento do Bloco III, Normas Especiais e Humanística", "totalHours": 6, "totalMinutes": 360, "sessions": [{"id": "d15_s1", "sessionNum": 1, "title": "Legislação Penal e Processual Penal Especial", "minutes": 140, "subtopics": "Lei de Drogas (Lei nº 11.343/2006: distinção entre usuário e traficante, art. 33, § 4º - tráfico privilegiado, sua natureza não hedionda e vedações inconstitucionais pelo STF), Lei Maria da Penha (Lei nº 11.340/2006: formas de violência, medidas protetivas de urgência, inconstitucionalidade de aplicação de penas pecuniárias e vedação aos Juizados Especiais), Lei das Organizações Criminosas (Lei nº 12.850/2013: colaboração premiada, infiltração de agentes e ação controlada) e Crimes de Abuso de Autoridade (Lei nº 13.869/2019: elemento subjetivo específico).", "method": "`[LS]` Leis nº 11.343/06, 11.340/06, 12.850/13 e 13.869/19 + `[J]` Súmulas 588, 589, 600, 607, 611 do STJ e Tema 707/STF.", "activity": "Análise do dolo específico exigido na Lei de Abuso de Autoridade (prejudicar outrem, beneficiar a si mesmo ou a terceiro, ou mero capricho) como cláusula de proteção do livre convencimento judicial."}, {"id": "d15_s2", "sessionNum": 2, "title": "Direito da Criança e do Adolescente + Consumidor Avançado", "minutes": 120, "subtopics": "Crimes no Estatuto da Criança e do Adolescente (Arts. 228 a 244-B: corrupção de menores no art. 244-B como crime formal, entrega de bebida alcoólica e pornografia infantil) + Práticas Comerciais Abusivas, Cobrança de Dívidas e Bancos de Dados no CDC (Arts. 39 a 45: envio de cartão de crédito não solicitado, negativação indevida e prazo máximo de 5 anos nos cadastros de inadimplentes).", "method": "`[LS]` Arts. 228 a 244-B do ECA + Arts. 39 a 54 do CDC + `[J]` Súmulas 323, 359, 385, 404, 500 do STJ (crime de corrupção de menores independe da prova de efetiva corrupção).", "activity": "Mapeamento das regras de cancelamento e notificação prévia do devedor em cadastros restritivos de crédito (Súmula 359 e 404/STJ)."}, {"id": "d15_s3", "sessionNum": 3, "title": "Treino Tático de Questões FGV", "minutes": 100, "subtopics": "Legislação Penal Especial (Drogas, Maria da Penha, Org. Criminosa) + CDC/ECA Crimes.", "method": "Resolução de 25 questões da FGV comentadas.", "activity": "Fixação de teses jurisprudenciais da FGV sobre colaboração premiada e medidas protetivas que dispensam inquérito ou ação penal em curso."}]}, {"dayNumber": 16, "date": "20/09/2026", "weekday": "Domingo", "faseCode": "Fase II", "faseTitle": "Fase II: Travamento do Bloco III, Normas Especiais e Humanística", "totalHours": 6, "totalMinutes": 360, "sessions": [{"id": "d16_s1", "sessionNum": 1, "title": "Direito Processual Civil", "minutes": 140, "subtopics": "Fase Postulatória e Probatória do Procedimento Comum (Petição Inicial e indeferimento de plano; Improcedência liminar do pedido no art. 332; Respostas do Réu: contestação, reconvenção e matérias de ordem pública; Saneamento e Organização do Processo no art. 357; Distribuição dinâmica do ônus da prova no art. 373, § 1º, e provas em espécie: documental, testemunhal e pericial).", "method": "`[LS]` Arts. 318 a 484 do CPC + `[J]` Teses repetitivas do STJ sobre momento adequado para inversão do ônus da prova (regra de instrução e não de julgamento).", "activity": "Tabela comparativa dos pressupostos da improcedência liminar do pedido (contrariedade a súmulas do STF/STJ, acórdãos repetitivos e enunciado de súmula de tribunal local)."}, {"id": "d16_s2", "sessionNum": 2, "title": "Direitos Humanos e Proteção de Grupos Vulneráveis", "minutes": 120, "subtopics": "Sistema Global de Direitos Humanos (Pacto Internacional de Direitos Civis e Políticos e Pacto Internacional de Direitos Econômicos, Sociais e Culturais), Convenção sobre os Direitos das Pessoas com Deficiência (incorporada sob rito de emenda constitucional no art. 5º, § 3º, da CF/88), Estatuto da Pessoa com Deficiência (Lei nº 13.146/15: capacidade civil e curatela restrita a atos patrimoniais) e Jurisprudência do STF sobre racismo, homotransfobia e povos indígenas.", "method": "`[LS]` Decreto nº 6.949/2009 (CDPD) + Lei nº 13.146/2015 + `[J]` ADO 26/DF e MI 4733/DF (equiparação de homofobia e transfobia ao crime de racismo).", "activity": "Estudo do novo regime da capacidade civil introduzido pelo Estatuto da Pessoa com Deficiência (plena capacidade para atos existenciais e afetivos)."}, {"id": "d16_s3", "sessionNum": 3, "title": "Treino Tático de Questões FGV", "minutes": 100, "subtopics": "Fase Postulatória/Probatória do CPC + Direitos Humanos.", "method": "Resolução de 25 questões de concursos de Magistratura da FGV.", "activity": "Análise detalhada das questões interdisciplinares de Direitos Humanos cobradas no Bloco III pela banca FGV."}]}, {"dayNumber": 17, "date": "21/09/2026", "weekday": "Segunda-feira", "faseCode": "Fase II", "faseTitle": "Fase II: Travamento do Bloco III, Normas Especiais e Humanística", "totalHours": 4, "totalMinutes": 240, "sessions": [{"id": "d17_s1", "sessionNum": 1, "title": "Direito Penal", "minutes": 90, "subtopics": "Teoria do Delito (Conceito analítico de crime: Fato Típico: conduta, resultado, nexo causal e tipicidade conglobante; Ilicitude: estado de necessidade, legítima defesa, estrito cumprimento do dever legal e exercício regular de direito; Culpabilidade: imputabilidade, potencial consciência da ilicitude e exigibilidade de conduta diversa; Teoria do Erro: erro de tipo essencial versus acidental, erro de proibição direto e indireto, descriminantes putativas).", "method": "`[LS]` Arts. 13 a 28 do Código Penal + `[D]` Dogmática penal alemã e funcionalismo penal adotado pela FGV (Roxin e Jakobs).", "activity": "Quadro de resolução das consequências do erro de tipo inescusável (exclui o dolo, pune a culpa se prevista em lei) versus erro de proibição inescusável (atenua a pena de um sexto a um terço)."}, {"id": "d17_s2", "sessionNum": 2, "title": "Direito Eleitoral", "minutes": 80, "subtopics": "Ações Eleitorais Judiciais e Procedimentos Especiais (Ação de Investigação Judicial Eleitoral - AIJE no art. 22 da LC 64/90: abuso de poder econômico, político e uso indevido dos meios de comunicação; Ação de Impugnação de Mandato Eletivo - AIME no art. 14, § 10 da CF/88; Recurso Contra Expedição de Diploma - RCED; Representações por propaganda eleitoral irregular) e Crimes Eleitorais.", "method": "`[LS]` Arts. 14, § 10, da CF/88 + Arts. 22 da LC 64/90 + Código Eleitoral (Lei 4.737/65) + `[J]` Súmulas do TSE (Súmulas 19, 38, 47, 58) e precedentes sobre a competência da Justiça Eleitoral para julgar crimes comuns conexos aos eleitorais (Inq 4435/STF).", "activity": "Tabela comparativa dos prazos de ajuizamento, legitimidade e consequências jurídicas entre AIJE, AIME e Representação Eleitoral."}, {"id": "d17_s3", "sessionNum": 3, "title": "Treino Tático de Questões FGV", "minutes": 70, "subtopics": "Teoria do Crime (Direito Penal) + Ações Eleitorais.", "method": "Resolução de 18 questões da banca FGV.", "activity": "Resolução de questões com casos hipotéticos envolvendo legítima defesa putativa e configuração de abuso de poder político nas eleições."}]}, {"dayNumber": 18, "date": "22/09/2026", "weekday": "Terça-feira", "faseCode": "Fase II", "faseTitle": "Fase II: Travamento do Bloco III, Normas Especiais e Humanística", "totalHours": 4, "totalMinutes": 240, "sessions": [{"id": "d18_s1", "sessionNum": 1, "title": "Direito Processual Penal", "minutes": 90, "subtopics": "Inquérito Policial (características e arquivamento conforme pacote anticrime), Ação Penal (pública e privada, condições, legitimidade, decadência e renúncia), Competência Jurisdicional (critérios de fixação territorial, prevenção, continência, conexão e prerrogativa de função) e Recursos Criminais (Apelação criminal, Recurso em Sentido Estrito - RESE no rol do art. 581, Embargos Infringentes e de Nulidade, e Habeas Corpus).", "method": "`[LS]` Arts. 4º a 23, 24 a 62, 69 a 91 e 574 a 608 do CPP + `[J]` Súmulas 704, 706, 708, 710 do STF e Súmula Vinculante 14.", "activity": "Fixação das hipóteses de cabimento privativo do RESE (decisão que não recebe denúncia, que indefere pronúncia ou que extingue punibilidade) versus Apelação."}, {"id": "d18_s2", "sessionNum": 2, "title": "Direito Ambiental", "minutes": 80, "subtopics": "Código Florestal (Lei nº 12.651/2012: Áreas de Preservação Permanente - APP, Reserva Legal, Cadastro Ambiental Rural - CAR e compensação ambiental), Sistema Nacional de Unidades de Conservação (Lei nº 9.985/2000: Unidades de Proteção Integral versus Uso Sustentável) e Lei de Crimes Ambientais (Lei nº 9.605/1998: crimes contra a fauna, flora e ordenamento urbano, responsabilidade penal da pessoa jurídica sem necessidade de dupla imputação).", "method": "`[LS]` Leis nº 12.651/12, 9.985/00 e 9.605/98 + `[J]` Precedentes do STF e STJ sobre a desnecessidade de dupla imputação simultânea de pessoa física e jurídica em crime ambiental.", "activity": "Tabela comparativa das categorias de Unidades de Conservação (Parque Nacional, Reserva Biológica versus APA e Floresta Nacional)."}, {"id": "d18_s3", "sessionNum": 3, "title": "Treino Tático de Questões FGV", "minutes": 70, "subtopics": "Ação Penal e Recursos no CPP + Código Florestal e Crimes Ambientais.", "method": "Resolução de 18 questões de Magistratura Estadual da FGV.", "activity": "Estudo focado nas exceções legais de intervenção em APP e regras processuais de queixa-crime subsidiária."}]}, {"dayNumber": 19, "date": "23/09/2026", "weekday": "Quarta-feira", "faseCode": "Fase III", "faseTitle": "Fase III: Blindagem de Véspera e Memorização Rápida", "totalHours": 4, "totalMinutes": 240, "sessions": [{"id": "d19_s1", "sessionNum": 1, "title": "Super-Revisão Bloco I: Civil e Processo Civil", "minutes": 90, "subtopics": "Prazos processuais do CPC (prazos do juiz e das partes, preclusões, contagem em dias úteis), Tabela de Prescrição e Decadência do Código Civil (art. 205 e 206), Legitimidade recursal, Precedentes vinculantes do art. 927 do CPC e Súmulas do STJ em Direito Privado.", "method": "`[LS]` Arts. 205-206 do CC + Arts. 218 a 235 e 927 do CPC + `[J]` Súmulas de Direito Civil e Processo Civil do STJ (revisão acelerada por tabelas sinópticas).", "activity": "Revisão rápida das teses fixadas em recurso repetitivo de maior cobrança pela FGV no Bloco I."}, {"id": "d19_s2", "sessionNum": 2, "title": "Super-Revisão Bloco I: Consumidor e ECA", "minutes": 80, "subtopics": "Prazos do CDC (prazos decadenciais, garantia legal e contratual, desconsideração), Prazos do ECA (acolhimento institucional, adoção e ato infracional), Jurisprudência unificada de proteção da infância e juventude e planos de saúde (Súmulas do STJ).", "method": "`[LS]` Artigos-chave do CDC e ECA + `[J]` Súmulas do STJ aplicáveis ao Bloco I.", "activity": "Fixação de números e prazos críticos para assegurar 100% de aproveitamento nas questões curtas de lei seca do Bloco I."}, {"id": "d19_s3", "sessionNum": 3, "title": "Treino Tático de Questões FGV de Fechamento", "minutes": 70, "subtopics": "Simulado Setorial do Bloco I (Civil, Processo Civil, Consumidor e ECA).", "method": "Resolução de 20 questões da FGV estritamente selecionadas entre os temas de maior incidência.", "activity": "Correção imediata com engenharia reversa das alternativas e marcação de eventuais pontos cegos remanescentes."}]}, {"dayNumber": 20, "date": "24/09/2026", "weekday": "Quinta-feira", "faseCode": "Fase III", "faseTitle": "Fase III: Blindagem de Véspera e Memorização Rápida", "totalHours": 4, "totalMinutes": 240, "sessions": [{"id": "d20_s1", "sessionNum": 1, "title": "Super-Revisão Bloco II: Penal e Processo Penal", "minutes": 90, "subtopics": "Pacote Anticrime (Lei 13.964/19: alterações em prisão, liberdade, progressão de regime, livramento condicional e ANPP no art. 28-A do CPP), Prazos da prescrição penal (art. 109 do CP e termo inicial), Súmulas Penais do STF e STJ.", "method": "`[LS]` Art. 109 do CP + Art. 28-A e arts. 310 a 316 do CPP + `[J]` Súmulas vinculantes penais e súmulas do STJ.", "activity": "Varredura visual de tabela de prescrição da pretensão punitiva e executória e requisitos do Acordo de Não Persecução Penal."}, {"id": "d20_s2", "sessionNum": 2, "title": "Super-Revisão Bloco II: Constitucional e Eleitoral", "minutes": 80, "subtopics": "Competências originárias e recursais do STF e STJ nos arts. 102 e 105 da CF, Súmulas Vinculantes de Direito Constitucional, Quóruns de votação no Congresso Nacional, Hipóteses de inelegibilidade da LC 64/90 e prazos de desincompatibilização eleitoral.", "method": "`[LS]` Arts. 102 e 105 da CF + Súmulas Vinculantes + Art. 1º da LC 64/90.", "activity": "Memorização das competências cruzadas entre STF e STJ para não errar questões de pegadinha de competência jurisdicional."}, {"id": "d20_s3", "sessionNum": 3, "title": "Treino Tático de Questões FGV de Fechamento", "minutes": 70, "subtopics": "Simulado Setorial do Bloco II (Penal, Processo Penal, Constitucional e Eleitoral).", "method": "Resolução de 20 questões recentes da FGV.", "activity": "Auditoria de assertivas com análise de distratores de direito penal e processo penal."}]}, {"dayNumber": 21, "date": "25/09/2026", "weekday": "Sexta-feira", "faseCode": "Fase III", "faseTitle": "Fase III: Blindagem de Véspera e Memorização Rápida", "totalHours": 4, "totalMinutes": 240, "sessions": [{"id": "d21_s1", "sessionNum": 1, "title": "Super-Revisão Bloco III: Administrativo e Empresarial", "minutes": 90, "subtopics": "Prazos e modalidades da Nova Lei de Licitações (Lei 14.133/21), Tipos e prescrição da Lei de Improbidade Administrativa (Lei 14.230/21), Ordem de preferência de créditos na Falência e prazos do processo de Recuperação Judicial.", "method": "`[LS]` Artigos fundamentais das Leis 14.133/21, 14.230/21 e 11.101/05 + `[J]` Temas 1199 e repercussões gerais da FGV.", "activity": "Leitura dos dispositivos mais literais das reformas recentes do Direito Administrativo e Empresarial."}, {"id": "d21_s2", "sessionNum": 2, "title": "Super-Revisão Bloco III: Tributário, Ambiental, Humanística, Direitos Humanos e TJPE", "minutes": 80, "subtopics": "Limitações ao poder de tributar e prazos decadenciais tributários, Súmulas de Direito Ambiental do STJ, Casos emblemáticos da Corte IDH contra o Brasil, Artigos 20 a 30 da LINDB, LOMAN e Código de Organização Judiciária do TJ-PE (LCE 100/2007).", "method": "`[LS]` LINDB + LOMAN + COJ/PE + `[J]` Informativos e casos da Corte IDH.", "activity": "Blindagem dos pontos mínimos obrigatórios do Bloco III para afastar qualquer risco de reprovação por nota de corte setorial."}, {"id": "d21_s3", "sessionNum": 3, "title": "Treino Tático de Questões FGV de Fechamento", "minutes": 70, "subtopics": "Simulado Setorial do Bloco III (Administrativo, Empresarial, Tributário, Ambiental, Humanística e Direitos Humanos).", "method": "Resolução de 20 questões da FGV com foco nos temas transversais.", "activity": "Anotação das últimas pegadinhas conceituais no Caderno de Erros."}]}, {"dayNumber": 22, "date": "26/09/2026", "weekday": "Sábado — Véspera da Prova", "faseCode": "Fase III", "faseTitle": "Fase III: Blindagem de Véspera e Memorização Rápida", "totalHours": 6, "totalMinutes": 360, "sessions": [{"id": "d22_s1", "sessionNum": 1, "title": "Súmulas Vinculantes e Teses de Repercussão Geral do STF", "minutes": 140, "subtopics": "Leitura integral de todas as Súmulas Vinculantes em vigor (1 a 58) e das principais teses de repercussão geral e recursos repetitivos julgados no último ano afetos à Magistratura Estadual.", "method": "`[J]` Súmulas Vinculantes do STF + Súmulas do STJ organizadas por matéria.", "activity": "Revisão de enunciados e exceções admitidas pela jurisprudência dos Tribunais Superiores."}, {"id": "d22_s2", "sessionNum": 2, "title": "Prazos, Números e Legislação do TJ-PE", "minutes": 120, "subtopics": "Releitura expressa de prazos processuais (CPC, CPP, CDC, ECA, Legislação Penal Especial), quóruns constitucionais, regras de transição da LIA e competência dos órgãos fracionários do Tribunal de Justiça de Pernambuco (COJ/PE).", "method": "`[LS]` Leitura rápida de tabelas sinópticas de prazos e do COJ/PE.", "activity": "Memorização fotográfica de números e prazos para ganho de agilidade no dia da prova."}, {"id": "d22_s3", "sessionNum": 3, "title": "Auditoria Final do Caderno de Erros da Reta Final", "minutes": 100, "subtopics": "Releitura exclusiva de todos os apontamentos, pegadinhas e erros cometidos durante os 21 dias de resolução de questões da FGV.", "method": "Leitura orientada e ativa das anotações pessoais.", "activity": "Fechamento psicológico e cognitivo da preparação. Parada programada e descanso noturno para a Prova Objetiva do Dia 27/09/2026."}]}];
+
+    // Estado da Aplicação e Persistência em LocalStorage
+    const STORAGE_KEY = "tjpe_2026_study_progress";
+    let completedSessions = new Set();
+    let currentFilterFase = "all";
+    let currentFilterStatus = "all";
+    let currentSearchTerm = "";
+
+    // Instâncias do Chart.js
+    let doughnutChart = null;
+    let barChart = null;
+
+    // Inicialização
+    function initApp() {
+      loadProgress();
+      setupTheme();
+      initCountdown();
+      initCharts();
+      renderSchedule();
+      updateMetrics();
+      setupEventListeners();
+    }
+
+    // Carregar progresso do LocalStorage
+    function loadProgress() {
+      try {
+        const raw = localStorage.getItem(STORAGE_KEY);
+        if (raw) {
+          const arr = JSON.parse(raw);
+          if (Array.isArray(arr)) {
+            completedSessions = new Set(arr);
+          }
+        }
+      } catch (e) {
+        console.error("Erro ao carregar do localStorage:", e);
+      }
+    }
+
+    // Salvar progresso
+    function saveProgress() {
+      try {
+        localStorage.setItem(STORAGE_KEY, JSON.stringify(Array.from(completedSessions)));
+      } catch (e) {
+        console.error("Erro ao salvar no localStorage:", e);
+      }
+    }
+
+    // Configuração de Tema Claro / Escuro
+    function setupTheme() {
+      const savedTheme = localStorage.getItem("tjpe_theme") || "light";
+      document.documentElement.setAttribute("data-theme", savedTheme);
+      updateThemeButton(savedTheme);
+    }
+
+    function updateThemeButton(theme) {
+      const icon = document.getElementById("theme-icon");
+      const text = document.getElementById("theme-text");
+      if (theme === "dark") {
+        icon.textContent = "☀️";
+        text.textContent = "Claro";
+      } else {
+        icon.textContent = "🌙";
+        text.textContent = "Escuro";
+      }
+    }
+
+    function toggleTheme() {
+      const current = document.documentElement.getAttribute("data-theme") || "light";
+      const next = current === "light" ? "dark" : "light";
+      document.documentElement.setAttribute("data-theme", next);
+      localStorage.setItem("tjpe_theme", next);
+      updateThemeButton(next);
+      updateChartsTheme();
+    }
+
+    // Contagem Regressiva para a Prova (27/09/2026)
+    function initCountdown() {
+      const examDate = new Date(2026, 8, 27, 8, 0, 0); // 27/09/2026
+      const now = new Date();
+      const diffMs = examDate - now;
+      const diffDays = Math.ceil(diffMs / (1000 * 60 * 60 * 24));
+      
+      const el = document.getElementById("countdown-text");
+      if (diffDays > 0) {
+        el.textContent = `Prova em ${diffDays} dias (27/09/2026)`;
+      } else if (diffDays === 0) {
+        el.textContent = "É HOJE! Boa Prova!";
+      } else {
+        el.textContent = "Prova Realizada em 27/09/2026";
+      }
+    }
+
+    // Renderização do Cronograma
+    function renderSchedule() {
+      const container = document.getElementById("schedule-container");
+      container.innerHTML = "";
+
+      let visibleCount = 0;
+
+      SCHEDULE_DATA.forEach(day => {
+        // Filtro por Fase
+        if (currentFilterFase !== "all" && !day.faseCode.startsWith(currentFilterFase)) {
+          return;
+        }
+
+        // Verificar sessões concluídas do dia
+        const totalDaySessions = day.sessions.length;
+        const doneDaySessions = day.sessions.filter(s => completedSessions.has(s.id)).length;
+        const isDayComplete = totalDaySessions > 0 && doneDaySessions === totalDaySessions;
+
+        // Filtro por Status
+        if (currentFilterStatus === "completed" && !isDayComplete) {
+          return;
+        }
+        if (currentFilterStatus === "pending" && isDayComplete) {
+          return;
+        }
+
+        // Filtro por Busca de Texto
+        if (currentSearchTerm) {
+          const term = currentSearchTerm.toLowerCase();
+          const matchDay = day.weekday.toLowerCase().includes(term) || day.date.includes(term);
+          const matchSessions = day.sessions.some(s => 
+            s.title.toLowerCase().includes(term) || 
+            s.subtopics.toLowerCase().includes(term) || 
+            s.activity.toLowerCase().includes(term)
+          );
+          if (!matchDay && !matchSessions) {
+            return;
+          }
+        }
+
+        visibleCount++;
+
+        // Determinar badge da Fase
+        let faseBadgeClass = "badge-fase1";
+        if (day.faseCode.includes("II")) faseBadgeClass = "badge-fase2";
+        if (day.faseCode.includes("III")) faseBadgeClass = "badge-fase3";
+
+        const card = document.createElement("article");
+        card.className = `day-card ${isDayComplete ? "completed" : ""}`;
+        card.id = `day-card-${day.dayNumber}`;
+
+        card.innerHTML = `
+          <div class="day-header">
+            <div class="day-meta-left">
+              <span class="day-number-badge">DIA ${String(day.dayNumber).padStart(2, '0')}</span>
+              <span class="day-title-text">${day.date} (${day.weekday})</span>
+              <div class="day-tags">
+                <span class="badge ${faseBadgeClass}">${day.faseCode}</span>
+                <span class="badge badge-hours">${day.totalHours}h (${day.totalMinutes} min)</span>
+              </div>
+            </div>
+            <div>
+              <button class="btn btn-gold" onclick="toggleAllDaySessions(${day.dayNumber})">
+                ${isDayComplete ? "Desmarcar Dia" : "Concluir Dia Inteiro"}
+              </button>
+            </div>
+          </div>
+
+          <div class="sessions-container">
+            ${day.sessions.map(session => {
+              const isDone = completedSessions.has(session.id);
+              
+              // Extração de tags de método ([LS], [J], [D])
+              let methodBadges = "";
+              if (session.method.includes("[LS]")) methodBadges += '<span class="method-badge ls">[LS] Lei Seca</span> ';
+              if (session.method.includes("[J]")) methodBadges += '<span class="method-badge j">[J] Jurisprudência</span> ';
+              if (session.method.includes("[D]")) methodBadges += '<span class="method-badge d">[D] Doutrina</span> ';
+              if (!methodBadges) methodBadges = `<span class="method-badge">${session.method}</span>`;
+
+              return `
+                <div class="session-item ${isDone ? 'done' : ''}" onclick="toggleSessionClick(event, '${session.id}')">
+                  <div class="session-header">
+                    <input type="checkbox" class="custom-checkbox" 
+                           id="chk-${session.id}" 
+                           ${isDone ? 'checked' : ''} 
+                           aria-label="Marcar ${session.title} como concluído"
+                           onclick="event.stopPropagation(); toggleSession('${session.id}');">
+                    <div class="session-heading-group">
+                      <div class="session-title-line">
+                        <span class="session-subject">Sessão ${session.sessionNum}: ${session.title}</span>
+                        <span class="session-time">${session.minutes} min</span>
+                      </div>
+                      <div>${methodBadges}</div>
+                    </div>
+                  </div>
+                  <div class="session-body">
+                    <strong>Tópicos:</strong> ${session.subtopics}
+                  </div>
+                  <div class="session-activity">
+                    <strong>Atividade:</strong> ${session.activity}
+                  </div>
+                </div>
+              `;
+            }).join("")}
+          </div>
+        `;
+
+        container.appendChild(card);
+      });
+
+      if (visibleCount === 0) {
+        container.innerHTML = `
+          <div style="text-align: center; padding: 3rem; background: var(--bg-surface); border-radius: var(--radius-lg); border: 1px dashed var(--border-strong);">
+            <div style="font-size: 2rem; margin-bottom: 0.5rem;">🔍</div>
+            <h3 style="font-size: 1.1rem; font-weight: 700;">Nenhum dia localizado</h3>
+            <p style="font-size: 0.85rem; color: var(--text-muted); margin-top: 0.25rem;">Tente ajustar os filtros ou o termo de busca.</p>
+          </div>
+        `;
+      }
+    }
+
+    // Alternar sessão individual
+    function toggleSession(sessionId) {
+      if (completedSessions.has(sessionId)) {
+        completedSessions.delete(sessionId);
+      } else {
+        completedSessions.add(sessionId);
+      }
+      saveProgress();
+      renderSchedule();
+      updateMetrics();
+      updateCharts();
+    }
+
+    function toggleSessionClick(e, sessionId) {
+      // Não reprocessar se o clique veio do próprio input checkbox
+      if (e.target && e.target.type === 'checkbox') return;
+      toggleSession(sessionId);
+    }
+
+    // Alternar todas as sessões do dia
+    function toggleAllDaySessions(dayNumber) {
+      const day = SCHEDULE_DATA.find(d => d.dayNumber === dayNumber);
+      if (!day) return;
+
+      const allDone = day.sessions.every(s => completedSessions.has(s.id));
+      day.sessions.forEach(s => {
+        if (allDone) {
+          completedSessions.delete(s.id);
+        } else {
+          completedSessions.add(s.id);
+        }
+      });
+
+      saveProgress();
+      renderSchedule();
+      updateMetrics();
+      updateCharts();
+    }
+
+    // Atualização de Métricas
+    function updateMetrics() {
+      const totalSessions = 66; // 22 dias * 3 sessões
+      const completedCount = completedSessions.size;
+      const pct = Math.round((completedCount / totalSessions) * 100);
+
+      // Horas
+      let completedMins = 0;
+      let totalMins = 0;
+      let completedDays = 0;
+
+      SCHEDULE_DATA.forEach(d => {
+        totalMins += d.totalMinutes;
+        const allDayDone = d.sessions.length > 0 && d.sessions.every(s => completedSessions.has(s.id));
+        if (allDayDone) completedDays++;
+
+        d.sessions.forEach(s => {
+          if (completedSessions.has(s.id)) {
+            completedMins += s.minutes;
+          }
+        });
+      });
+
+      const completedHours = (completedMins / 60).toFixed(1);
+      const totalHours = (totalMins / 60).toFixed(1);
+      const remainingHours = ((totalMins - completedMins) / 60).toFixed(1);
+
+      document.getElementById("metric-percent").textContent = `${pct}%`;
+      document.getElementById("metric-ratio").textContent = `${completedCount} de ${totalSessions} sessões concluídas`;
+      document.getElementById("metric-progress-fill").style.width = `${pct}%`;
+
+      document.getElementById("metric-hours").textContent = `${completedHours}h / ${totalHours}h`;
+      document.getElementById("metric-hours-pct").textContent = `Faltam ${remainingHours} horas líquidas`;
+
+      document.getElementById("metric-days").textContent = `${completedDays} / 22`;
+      document.getElementById("metric-days-pct").textContent = `${Math.round((completedDays/22)*100)}% da régua de 22 dias`;
+
+      // Estimativa de questões (média de 21 questões por sessão 3 realizada)
+      const qSessionsDone = Array.from(completedSessions).filter(id => id.endsWith("_s3")).length;
+      const estimatedQuestions = qSessionsDone * 21;
+      document.getElementById("metric-questions").textContent = `${estimatedQuestions} / 460+`;
+    }
+
+    // Inicialização dos Gráficos Chart.js
+    function initCharts() {
+      const isDark = document.documentElement.getAttribute("data-theme") === "dark";
+      const textColor = isDark ? "#94A3B8" : "#475569";
+      const gridColor = isDark ? "#243147" : "#E2E8F0";
+
+      // 1. Donut Chart de Conclusão Global
+      const ctxDoughnut = document.getElementById("progressDoughnutChart").getContext("2d");
+      doughnutChart = new Chart(ctxDoughnut, {
+        type: "doughnut",
+        data: {
+          labels: ["Concluído", "Pendente"],
+          datasets: [{
+            data: [0, 66],
+            backgroundColor: ["#10B981", isDark ? "#1E293B" : "#E2E8F0"],
+            borderColor: isDark ? "#111927" : "#FFFFFF",
+            borderWidth: 2,
+            hoverOffset: 4
+          }]
+        },
+        options: {
+          responsive: true,
+          maintainAspectRatio: false,
+          cutout: "75%",
+          plugins: {
+            legend: {
+              position: "bottom",
+              labels: { color: textColor, font: { family: "'Plus Jakarta Sans', sans-serif", size: 11 } }
+            },
+            tooltip: {
+              callbacks: {
+                label: function(context) {
+                  const label = context.label || "";
+                  const val = context.raw || 0;
+                  const pct = Math.round((val / 66) * 100);
+                  return `${label}: ${val} sessões (${pct}%)`;
+                }
+              }
+            }
+          }
+        }
+      });
+
+      // 2. Bar Chart de Horas por Fase
+      const ctxBar = document.getElementById("phasesBarChart").getContext("2d");
+      barChart = new Chart(ctxBar, {
+        type: "bar",
+        data: {
+          labels: ["Fase I (D1-10)", "Fase II (D11-18)", "Fase III (D19-22)"],
+          datasets: [
+            {
+              label: "Horas Cumpridas",
+              data: [0, 0, 0],
+              backgroundColor: "#10B981",
+              borderRadius: 4
+            },
+            {
+              label: "Horas Pendentes",
+              data: [48, 36, 18],
+              backgroundColor: isDark ? "#1E293B" : "#CBD5E1",
+              borderRadius: 4
+            }
+          ]
+        },
+        options: {
+          responsive: true,
+          maintainAspectRatio: false,
+          scales: {
+            x: {
+              stacked: true,
+              grid: { display: false },
+              ticks: { color: textColor, font: { family: "'Plus Jakarta Sans', sans-serif", size: 11 } }
+            },
+            y: {
+              stacked: true,
+              grid: { color: gridColor },
+              ticks: { color: textColor, font: { family: "'Plus Jakarta Sans', sans-serif", size: 11 } },
+              title: { display: true, text: "Horas Líquidas", color: textColor, font: { size: 11, weight: 600 } }
+            }
+          },
+          plugins: {
+            legend: {
+              position: "bottom",
+              labels: { color: textColor, font: { family: "'Plus Jakarta Sans', sans-serif", size: 11 } }
+            }
+          }
+        }
+      });
+
+      updateCharts();
+    }
+
+    function updateCharts() {
+      if (!doughnutChart || !barChart) return;
+
+      const doneCount = completedSessions.size;
+      const pendingCount = 66 - doneCount;
+
+      doughnutChart.data.datasets[0].data = [doneCount, pendingCount];
+      doughnutChart.update();
+
+      // Calcular horas por fase
+      let fase1DoneMins = 0, fase1TotalMins = 0;
+      let fase2DoneMins = 0, fase2TotalMins = 0;
+      let fase3DoneMins = 0, fase3TotalMins = 0;
+
+      SCHEDULE_DATA.forEach(d => {
+        const isF1 = d.faseCode.includes("Fase I");
+        const isF2 = d.faseCode.includes("Fase II");
+        const isF3 = d.faseCode.includes("Fase III");
+
+        d.sessions.forEach(s => {
+          if (isF1) {
+            fase1TotalMins += s.minutes;
+            if (completedSessions.has(s.id)) fase1DoneMins += s.minutes;
+          } else if (isF2) {
+            fase2TotalMins += s.minutes;
+            if (completedSessions.has(s.id)) fase2DoneMins += s.minutes;
+          } else if (isF3) {
+            fase3TotalMins += s.minutes;
+            if (completedSessions.has(s.id)) fase3DoneMins += s.minutes;
+          }
+        });
+      });
+
+      const f1DoneH = +(fase1DoneMins / 60).toFixed(1);
+      const f1PendH = +((fase1TotalMins - fase1DoneMins) / 60).toFixed(1);
+
+      const f2DoneH = +(fase2DoneMins / 60).toFixed(1);
+      const f2PendH = +((fase2TotalMins - fase2DoneMins) / 60).toFixed(1);
+
+      const f3DoneH = +(fase3DoneMins / 60).toFixed(1);
+      const f3PendH = +((fase3TotalMins - fase3DoneMins) / 60).toFixed(1);
+
+      barChart.data.datasets[0].data = [f1DoneH, f2DoneH, f3DoneH];
+      barChart.data.datasets[1].data = [f1PendH, f2PendH, f3PendH];
+      barChart.update();
+    }
+
+    function updateChartsTheme() {
+      const isDark = document.documentElement.getAttribute("data-theme") === "dark";
+      const textColor = isDark ? "#94A3B8" : "#475569";
+      const gridColor = isDark ? "#243147" : "#E2E8F0";
+
+      if (doughnutChart) {
+        doughnutChart.data.datasets[0].backgroundColor[1] = isDark ? "#1E293B" : "#E2E8F0";
+        doughnutChart.data.datasets[0].borderColor = isDark ? "#111927" : "#FFFFFF";
+        doughnutChart.options.plugins.legend.labels.color = textColor;
+        doughnutChart.update();
+      }
+
+      if (barChart) {
+        barChart.data.datasets[1].backgroundColor = isDark ? "#1E293B" : "#CBD5E1";
+        barChart.options.scales.x.ticks.color = textColor;
+        barChart.options.scales.y.ticks.color = textColor;
+        barChart.options.scales.y.grid.color = gridColor;
+        barChart.options.scales.y.title.color = textColor;
+        barChart.options.plugins.legend.labels.color = textColor;
+        barChart.update();
+      }
+    }
+
+    // Configuração dos Event Listeners
+    function setupEventListeners() {
+      // Tema
+      document.getElementById("btn-theme-toggle").addEventListener("click", toggleTheme);
+
+      // Filtros de Fase
+      document.querySelectorAll("[data-filter]").forEach(btn => {
+        btn.addEventListener("click", function() {
+          document.querySelectorAll("[data-filter]").forEach(b => b.classList.remove("active"));
+          this.classList.add("active");
+          currentFilterFase = this.getAttribute("data-filter");
+          renderSchedule();
+        });
+      });
+
+      // Filtros de Status
+      document.querySelectorAll("[data-status]").forEach(btn => {
+        btn.addEventListener("click", function() {
+          const isSelected = this.classList.contains("active");
+          document.querySelectorAll("[data-status]").forEach(b => b.classList.remove("active"));
+          if (!isSelected) {
+            this.classList.add("active");
+            currentFilterStatus = this.getAttribute("data-status");
+          } else {
+            currentFilterStatus = "all";
+          }
+          renderSchedule();
+        });
+      });
+
+      // Campo de Busca
+      const searchInput = document.getElementById("search-input");
+      searchInput.addEventListener("input", function(e) {
+        currentSearchTerm = e.target.value.trim();
+        renderSchedule();
+      });
+
+      // Reset Modal
+      const modal = document.getElementById("reset-modal");
+      document.getElementById("btn-reset").addEventListener("click", () => {
+        modal.classList.add("open");
+      });
+      document.getElementById("btn-cancel-reset").addEventListener("click", () => {
+        modal.classList.remove("open");
+      });
+      document.getElementById("btn-confirm-reset").addEventListener("click", () => {
+        completedSessions.clear();
+        saveProgress();
+        renderSchedule();
+        updateMetrics();
+        updateCharts();
+        modal.classList.remove("open");
+      });
+
+      // Exportar Backup
+      document.getElementById("btn-export").addEventListener("click", () => {
+        const payload = {
+          exportedAt: new Date().toISOString(),
+          exam: "TJ-PE 2026 - Magistratura",
+          completedCount: completedSessions.size,
+          sessions: Array.from(completedSessions)
+        };
+        const blob = new Blob([JSON.stringify(payload, null, 2)], { type: "application/json" });
+        const url = URL.createObjectURL(blob);
+        const a = document.createElement("a");
+        a.href = url;
+        a.download = `progresso_tjpe_2026_${new Date().toISOString().slice(0,10)}.json`;
+        a.click();
+        URL.revokeObjectURL(url);
+      });
+
+      // Importar Backup
+      const fileInput = document.getElementById("import-file-input");
+      document.getElementById("btn-import-trigger").addEventListener("click", () => {
+        fileInput.click();
+      });
+
+      fileInput.addEventListener("change", (e) => {
+        const file = e.target.files[0];
+        if (!file) return;
+        const reader = new FileReader();
+        reader.onload = (event) => {
+          try {
+            const data = JSON.parse(event.target.result);
+            if (data && Array.isArray(data.sessions)) {
+              completedSessions = new Set(data.sessions);
+              saveProgress();
+              renderSchedule();
+              updateMetrics();
+              updateCharts();
+              alert(`Backup importado com sucesso! ${data.sessions.length} sessões restauradas.`);
+            } else {
+              alert("Arquivo de backup inválido.");
+            }
+          } catch (err) {
+            alert("Erro ao ler o arquivo de backup.");
+          }
+        };
+        reader.readAsText(file);
+      });
+
+      // Instalação PWA no Android / Desktop
+      const btnInstall = document.getElementById("btn-install-pwa");
+      if (btnInstall) {
+        btnInstall.addEventListener("click", async () => {
+          if (!deferredPrompt) {
+            alert("Para instalar no Android:\n1. Abra este link no Google Chrome.\n2. Toque nos 3 pontinhos (⋮) no topo direito.\n3. Selecione 'Instalar aplicativo' ou 'Adicionar à tela inicial'.");
+            return;
+          }
+          deferredPrompt.prompt();
+          const choice = await deferredPrompt.userChoice;
+          console.log('[PWA] Escolha do usuário:', choice.outcome);
+          deferredPrompt = null;
+          btnInstall.style.display = "none";
+        });
+      }
+    }
+
+    // Iniciar tudo ao carregar o DOM
+    document.addEventListener("DOMContentLoaded", initApp);
+  </script>
+</body>
+</html>

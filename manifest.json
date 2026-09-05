@@ -1,0 +1,50 @@
+{
+  "id": "tjpe-2026-cronograma-reta-final",
+  "name": "TJ-PE 2026 · Cronograma Reta Final",
+  "short_name": "TJPE 2026",
+  "description": "Cronograma Tático de Estudos de Reta Final para o concurso de Juiz Substituto do TJ-PE (Banca FGV)",
+  "lang": "pt-BR",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "display_override": ["standalone", "window-controls-overlay", "minimal-ui"],
+  "background_color": "#0F2137",
+  "theme_color": "#0F2137",
+  "orientation": "any",
+  "categories": ["education", "productivity"],
+  "icons": [
+    {
+      "src": "icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "icons/icon-maskable-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "icons/icon-maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Painel de Métricas",
+      "short_name": "Métricas",
+      "description": "Visualizar gráficos e progresso das 102 horas",
+      "url": "./index.html#main-content",
+      "icons": [{ "src": "icons/icon-192.png", "sizes": "192x192" }]
+    }
+  ]
+}

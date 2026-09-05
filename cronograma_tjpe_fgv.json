@@ -1,0 +1,6640 @@
+{
+  "metadata": {
+    "exam": "TJ-PE - Magistratura Estadual - Prova Objetiva - Banca FGV",
+    "startDate": "2026-06-11",
+    "endDate": "2026-09-26",
+    "totalDays": 108,
+    "weekdayMinutes": 180,
+    "weekendMinutes": 240,
+    "revisionStartsOnDay": 8,
+    "canonicalSources": [
+      "references/Media_Questoes.md",
+      "references/Mapeamento_Magis_Estadual_FGV.md"
+    ],
+    "generationRules": {
+      "subjectsPerDay": 2,
+      "fixedWeeklyPairings": true,
+      "cycles": 4,
+      "revisionFromSecondWeek": "30% do tempo diário",
+      "noInventedSubtopics": true
+    }
+  },
+  "disciplineRanking": [
+    {
+      "name": "Direito Civil",
+      "totalQuestions": 247,
+      "averagePerExam": 13.72,
+      "rank": 1
+    },
+    {
+      "name": "Direito Processual Civil",
+      "totalQuestions": 244,
+      "averagePerExam": 13.56,
+      "rank": 2
+    },
+    {
+      "name": "Direito Penal",
+      "totalQuestions": 180,
+      "averagePerExam": 10.0,
+      "rank": 3
+    },
+    {
+      "name": "Direito Processual Penal",
+      "totalQuestions": 176,
+      "averagePerExam": 9.78,
+      "rank": 4
+    },
+    {
+      "name": "Direito Constitucional",
+      "totalQuestions": 163,
+      "averagePerExam": 9.06,
+      "rank": 5
+    },
+    {
+      "name": "Direito Administrativo",
+      "totalQuestions": 153,
+      "averagePerExam": 8.5,
+      "rank": 6
+    },
+    {
+      "name": "Direito do Consumidor",
+      "totalQuestions": 110,
+      "averagePerExam": 6.11,
+      "rank": 7
+    },
+    {
+      "name": "Direito da Criança e do Adolescente",
+      "totalQuestions": 104,
+      "averagePerExam": 5.78,
+      "rank": 8
+    },
+    {
+      "name": "Direito Empresarial",
+      "totalQuestions": 90,
+      "averagePerExam": 5.0,
+      "rank": 9
+    },
+    {
+      "name": "Direito Tributário e Financeiro",
+      "totalQuestions": 84,
+      "averagePerExam": 4.67,
+      "rank": 10
+    },
+    {
+      "name": "Noções Gerais de Direito e Formação Humanística",
+      "totalQuestions": 71,
+      "averagePerExam": 3.94,
+      "rank": 11
+    },
+    {
+      "name": "Direitos Humanos",
+      "totalQuestions": 68,
+      "averagePerExam": 3.78,
+      "rank": 12
+    },
+    {
+      "name": "Direito Ambiental",
+      "totalQuestions": 62,
+      "averagePerExam": 3.44,
+      "rank": 13
+    },
+    {
+      "name": "Direito Eleitoral",
+      "totalQuestions": 48,
+      "averagePerExam": 2.67,
+      "rank": 14
+    }
+  ],
+  "weeklyPairings": {
+    "monday": [
+      "Direito Processual Civil",
+      "Direito Eleitoral"
+    ],
+    "tuesday": [
+      "Direito Civil",
+      "Direito Ambiental"
+    ],
+    "wednesday": [
+      "Direito Penal",
+      "Direitos Humanos"
+    ],
+    "thursday": [
+      "Direito Processual Penal",
+      "Noções Gerais de Direito e Formação Humanística"
+    ],
+    "friday": [
+      "Direito Constitucional",
+      "Direito Tributário e Financeiro"
+    ],
+    "saturday": [
+      "Direito Administrativo",
+      "Direito Empresarial"
+    ],
+    "sunday": [
+      "Direito do Consumidor",
+      "Direito da Criança e do Adolescente"
+    ]
+  },
+  "cycleStrategy": [
+    {
+      "cycle": 1,
+      "title": "Ciclo 1: Semanas 1 a 4 (Sólida Inicialização)",
+      "activities": [
+        "leitura ativa da fonte normativa",
+        "fixação por quadro curto",
+        "questões FGV com identificação de padrão de cobrança"
+      ]
+    },
+    {
+      "cycle": 2,
+      "title": "Ciclo 2: Semanas 5 a 8 (Avanço e Densidade)",
+      "activities": [
+        "leitura dirigida com comparação entre institutos",
+        "marcação de exceções e prazos",
+        "questões FGV com engenharia reversa das alternativas"
+      ]
+    },
+    {
+      "cycle": 3,
+      "title": "Ciclo 3: Semanas 9 a 12 (Legislação Local e Humanística)",
+      "activities": [
+        "releitura orientada por incidência",
+        "mapa de pegadinhas normativas",
+        "questões FGV com registro de erro recorrente"
+      ]
+    },
+    {
+      "cycle": 4,
+      "title": "Ciclo 4: Semanas 13 a 17 (Simulados e Blindagem de Erros)",
+      "activities": [
+        "simulado setorial cronometrado",
+        "correção ativa do caderno de erros",
+        "revisão final por assertivas FGV"
+      ]
+    }
+  ],
+  "days": [
+    {
+      "dayNumber": 1,
+      "date": "2026-06-11",
+      "weekday": "thursday",
+      "weekdayPt": "quinta-feira",
+      "cycle": 1,
+      "totalMinutes": 180,
+      "newStudyMinutes": 180,
+      "revisionMinutes": 0,
+      "subjects": [
+        {
+          "name": "Direito Processual Penal",
+          "minutes": 90,
+          "subtopics": [
+            "Prisão e Medidas Cautelares"
+          ],
+          "sourceSubtopicIds": [
+            "dpp-1"
+          ],
+          "activities": [
+            "leitura ativa da fonte normativa",
+            "fixação por quadro curto",
+            "questões FGV com identificação de padrão de cobrança"
+          ]
+        },
+        {
+          "name": "Noções Gerais de Direito e Formação Humanística",
+          "minutes": 90,
+          "subtopics": [
+            "Legislação Estadual"
+          ],
+          "sourceSubtopicIds": [
+            "ng-1"
+          ],
+          "activities": [
+            "leitura ativa da fonte normativa",
+            "fixação por quadro curto",
+            "questões FGV com identificação de padrão de cobrança"
+          ]
+        }
+      ],
+      "revisionPlan": null
+    },
+    {
+      "dayNumber": 2,
+      "date": "2026-06-12",
+      "weekday": "friday",
+      "weekdayPt": "sexta-feira",
+      "cycle": 1,
+      "totalMinutes": 180,
+      "newStudyMinutes": 180,
+      "revisionMinutes": 0,
+      "subjects": [
+        {
+          "name": "Direito Constitucional",
+          "minutes": 90,
+          "subtopics": [
+            "Repartição de competências"
+          ],
+          "sourceSubtopicIds": [
+            "dconst-1"
+          ],
+          "activities": [
+            "leitura ativa da fonte normativa",
+            "fixação por quadro curto",
+            "questões FGV com identificação de padrão de cobrança"
+          ]
+        },
+        {
+          "name": "Direito Tributário e Financeiro",
+          "minutes": 90,
+          "subtopics": [
+            "Imunidades tributárias"
+          ],
+          "sourceSubtopicIds": [
+            "dtrib-1"
+          ],
+          "activities": [
+            "leitura ativa da fonte normativa",
+            "fixação por quadro curto",
+            "questões FGV com identificação de padrão de cobrança"
+          ]
+        }
+      ],
+      "revisionPlan": null
+    },
+    {
+      "dayNumber": 3,
+      "date": "2026-06-13",
+      "weekday": "saturday",
+      "weekdayPt": "sábado",
+      "cycle": 1,
+      "totalMinutes": 240,
+      "newStudyMinutes": 240,
+      "revisionMinutes": 0,
+      "subjects": [
+        {
+          "name": "Direito Administrativo",
+          "minutes": 120,
+          "subtopics": [
+            "Servidores Públicos"
+          ],
+          "sourceSubtopicIds": [
+            "dadm-1"
+          ],
+          "activities": [
+            "leitura ativa da fonte normativa",
+            "fixação por quadro curto",
+            "questões FGV com identificação de padrão de cobrança"
+          ]
+        },
+        {
+          "name": "Direito Empresarial",
+          "minutes": 120,
+          "subtopics": [
+            "Recuperação judicial"
+          ],
+          "sourceSubtopicIds": [
+            "demp-1"
+          ],
+          "activities": [
+            "leitura ativa da fonte normativa",
+            "fixação por quadro curto",
+            "questões FGV com identificação de padrão de cobrança"
+          ]
+        }
+      ],
+      "revisionPlan": null
+    },
+    {
+      "dayNumber": 4,
+      "date": "2026-06-14",
+      "weekday": "sunday",
+      "weekdayPt": "domingo",
+      "cycle": 1,
+      "totalMinutes": 240,
+      "newStudyMinutes": 240,
+      "revisionMinutes": 0,
+      "subjects": [
+        {
+          "name": "Direito do Consumidor",
+          "minutes": 120,
+          "subtopics": [
+            "Responsabilidade pelo fato e do produto e do serviço"
+          ],
+          "sourceSubtopicIds": [
+            "dcons-1"
+          ],
+          "activities": [
+            "leitura ativa da fonte normativa",
+            "fixação por quadro curto",
+            "questões FGV com identificação de padrão de cobrança"
+          ]
+        },
+        {
+          "name": "Direito da Criança e do Adolescente",
+          "minutes": 120,
+          "subtopics": [
+            "Ato Infracional e Medidas Socioeducativas"
+          ],
+          "sourceSubtopicIds": [
+            "dca-1"
+          ],
+          "activities": [
+            "leitura ativa da fonte normativa",
+            "fixação por quadro curto",
+            "questões FGV com identificação de padrão de cobrança"
+          ]
+        }
+      ],
+      "revisionPlan": null
+    },
+    {
+      "dayNumber": 5,
+      "date": "2026-06-15",
+      "weekday": "monday",
+      "weekdayPt": "segunda-feira",
+      "cycle": 1,
+      "totalMinutes": 180,
+      "newStudyMinutes": 180,
+      "revisionMinutes": 0,
+      "subjects": [
+        {
+          "name": "Direito Processual Civil",
+          "minutes": 90,
+          "subtopics": [
+            "Apelação (Recursos em espécie)"
+          ],
+          "sourceSubtopicIds": [
+            "dpc-1"
+          ],
+          "activities": [
+            "leitura ativa da fonte normativa",
+            "fixação por quadro curto",
+            "questões FGV com identificação de padrão de cobrança"
+          ]
+        },
+        {
+          "name": "Direito Eleitoral",
+          "minutes": 90,
+          "subtopics": [
+            "Crimes eleitorais"
+          ],
+          "sourceSubtopicIds": [
+            "del-1"
+          ],
+          "activities": [
+            "leitura ativa da fonte normativa",
+            "fixação por quadro curto",
+            "questões FGV com identificação de padrão de cobrança"
+          ]
+        }
+      ],
+      "revisionPlan": null
+    },
+    {
+      "dayNumber": 6,
+      "date": "2026-06-16",
+      "weekday": "tuesday",
+      "weekdayPt": "terça-feira",
+      "cycle": 1,
+      "totalMinutes": 180,
+      "newStudyMinutes": 180,
+      "revisionMinutes": 0,
+      "subjects": [
+        {
+          "name": "Direito Civil",
+          "minutes": 90,
+          "subtopics": [
+            "Regimes de bens (Direito das Famílias)"
+          ],
+          "sourceSubtopicIds": [
+            "dc-1"
+          ],
+          "activities": [
+            "leitura ativa da fonte normativa",
+            "fixação por quadro curto",
+            "questões FGV com identificação de padrão de cobrança"
+          ]
+        },
+        {
+          "name": "Direito Ambiental",
+          "minutes": 90,
+          "subtopics": [
+            "Código Florestal (incluindo APP, CAR, etc.)"
+          ],
+          "sourceSubtopicIds": [
+            "damb-1"
+          ],
+          "activities": [
+            "leitura ativa da fonte normativa",
+            "fixação por quadro curto",
+            "questões FGV com identificação de padrão de cobrança"
+          ]
+        }
+      ],
+      "revisionPlan": null
+    },
+    {
+      "dayNumber": 7,
+      "date": "2026-06-17",
+      "weekday": "wednesday",
+      "weekdayPt": "quarta-feira",
+      "cycle": 1,
+      "totalMinutes": 180,
+      "newStudyMinutes": 180,
+      "revisionMinutes": 0,
+      "subjects": [
+        {
+          "name": "Direito Penal",
+          "minutes": 90,
+          "subtopics": [
+            "Crimes contra a administração pública"
+          ],
+          "sourceSubtopicIds": [
+            "dp-1"
+          ],
+          "activities": [
+            "leitura ativa da fonte normativa",
+            "fixação por quadro curto",
+            "questões FGV com identificação de padrão de cobrança"
+          ]
+        },
+        {
+          "name": "Direitos Humanos",
+          "minutes": 90,
+          "subtopics": [
+            "Sistema regional interamericano de proteção"
+          ],
+          "sourceSubtopicIds": [
+            "dhum-1"
+          ],
+          "activities": [
+            "leitura ativa da fonte normativa",
+            "fixação por quadro curto",
+            "questões FGV com identificação de padrão de cobrança"
+          ]
+        }
+      ],
+      "revisionPlan": null
+    },
+    {
+      "dayNumber": 8,
+      "date": "2026-06-18",
+      "weekday": "thursday",
+      "weekdayPt": "quinta-feira",
+      "cycle": 1,
+      "totalMinutes": 180,
+      "newStudyMinutes": 126,
+      "revisionMinutes": 54,
+      "subjects": [
+        {
+          "name": "Direito Processual Penal",
+          "minutes": 70,
+          "subtopics": [
+            "Recursos em Geral"
+          ],
+          "sourceSubtopicIds": [
+            "dpp-2"
+          ],
+          "activities": [
+            "leitura ativa da fonte normativa",
+            "fixação por quadro curto",
+            "questões FGV com identificação de padrão de cobrança"
+          ]
+        },
+        {
+          "name": "Noções Gerais de Direito e Formação Humanística",
+          "minutes": 56,
+          "subtopics": [
+            "Lógica do razoável"
+          ],
+          "sourceSubtopicIds": [
+            "ng-2"
+          ],
+          "activities": [
+            "leitura ativa da fonte normativa",
+            "fixação por quadro curto",
+            "questões FGV com identificação de padrão de cobrança"
+          ]
+        }
+      ],
+      "revisionPlan": {
+        "minutes": 54,
+        "items": [
+          {
+            "discipline": "Direito Processual Penal",
+            "subtopics": [
+              "Prisão e Medidas Cautelares"
+            ],
+            "method": "questões FGV + releitura do erro ou destaque do estudo anterior"
+          },
+          {
+            "discipline": "Noções Gerais de Direito e Formação Humanística",
+            "subtopics": [
+              "Legislação Estadual"
+            ],
+            "method": "questões FGV + releitura do erro ou destaque do estudo anterior"
+          }
+        ]
+      }
+    },
+    {
+      "dayNumber": 9,
+      "date": "2026-06-19",
+      "weekday": "friday",
+      "weekdayPt": "sexta-feira",
+      "cycle": 1,
+      "totalMinutes": 180,
+      "newStudyMinutes": 126,
+      "revisionMinutes": 54,
+      "subjects": [
+        {
+          "name": "Direito Constitucional",
+          "minutes": 70,
+          "subtopics": [
+            "Controle de constitucionalidade"
+          ],
+          "sourceSubtopicIds": [
+            "dconst-2"
+          ],
+          "activities": [
+            "leitura ativa da fonte normativa",
+            "fixação por quadro curto",
+            "questões FGV com identificação de padrão de cobrança"
+          ]
+        },
+        {
+          "name": "Direito Tributário e Financeiro",
+          "minutes": 56,
+          "subtopics": [
+            "ICMS"
+          ],
+          "sourceSubtopicIds": [
+            "dtrib-2"
+          ],
+          "activities": [
+            "leitura ativa da fonte normativa",
+            "fixação por quadro curto",
+            "questões FGV com identificação de padrão de cobrança"
+          ]
+        }
+      ],
+      "revisionPlan": {
+        "minutes": 54,
+        "items": [
+          {
+            "discipline": "Direito Constitucional",
+            "subtopics": [
+              "Repartição de competências"
+            ],
+            "method": "questões FGV + releitura do erro ou destaque do estudo anterior"
+          },
+          {
+            "discipline": "Direito Tributário e Financeiro",
+            "subtopics": [
+              "Imunidades tributárias"
+            ],
+            "method": "questões FGV + releitura do erro ou destaque do estudo anterior"
+          }
+        ]
+      }
+    },
+    {
+      "dayNumber": 10,
+      "date": "2026-06-20",
+      "weekday": "saturday",
+      "weekdayPt": "sábado",
+      "cycle": 1,
+      "totalMinutes": 240,
+      "newStudyMinutes": 168,
+      "revisionMinutes": 72,
+      "subjects": [
+        {
+          "name": "Direito Administrativo",
+          "minutes": 92,
+          "subtopics": [
+            "Improbidade administrativa"
+          ],
+          "sourceSubtopicIds": [
+            "dadm-2"
+          ],
+          "activities": [
+            "leitura ativa da fonte normativa",
+            "fixação por quadro curto",
+            "questões FGV com identificação de padrão de cobrança"
+          ]
+        },
+        {
+          "name": "Direito Empresarial",
+          "minutes": 76,
+          "subtopics": [
+            "Sociedade anônima"
+          ],
+          "sourceSubtopicIds": [
+            "demp-2"
+          ],
+          "activities": [
+            "leitura ativa da fonte normativa",
+            "fixação por quadro curto",
+            "questões FGV com identificação de padrão de cobrança"
+          ]
+        }
+      ],
+      "revisionPlan": {
+        "minutes": 72,
+        "items": [
+          {
+            "discipline": "Direito Administrativo",
+            "subtopics": [
+              "Servidores Públicos"
+            ],
+            "method": "questões FGV + releitura do erro ou destaque do estudo anterior"
+          },
+          {
+            "discipline": "Direito Empresarial",
+            "subtopics": [
+              "Recuperação judicial"
+            ],
+            "method": "questões FGV + releitura do erro ou destaque do estudo anterior"
+          }
+        ]
+      }
+    },
+    {
+      "dayNumber": 11,
+      "date": "2026-06-21",
+      "weekday": "sunday",
+      "weekdayPt": "domingo",
+      "cycle": 1,
+      "totalMinutes": 240,
+      "newStudyMinutes": 168,
+      "revisionMinutes": 72,
+      "subjects": [
+        {
+          "name": "Direito do Consumidor",
+          "minutes": 92,
+          "subtopics": [
+            "Defesa dos Direitos do Consumidor em Juízo"
+          ],
+          "sourceSubtopicIds": [
+            "dcons-2"
+          ],
+          "activities": [
+            "leitura ativa da fonte normativa",
+            "fixação por quadro curto",
+            "questões FGV com identificação de padrão de cobrança"
+          ]
+        },
+        {
+          "name": "Direito da Criança e do Adolescente",
+          "minutes": 76,
+          "subtopics": [
+            "Adoção (ECA)"
+          ],
+          "sourceSubtopicIds": [
+            "dca-2"
+          ],
+          "activities": [
+            "leitura ativa da fonte normativa",
+            "fixação por quadro curto",
+            "questões FGV com identificação de padrão de cobrança"
+          ]
+        }
+      ],
+      "revisionPlan": {
+        "minutes": 72,
+        "items": [
+          {
+            "discipline": "Direito do Consumidor",
+            "subtopics": [
+              "Responsabilidade pelo fato e do produto e do serviço"
+            ],
+            "method": "questões FGV + releitura do erro ou destaque do estudo anterior"
+          },
+          {
+            "discipline": "Direito da Criança e do Adolescente",
+            "subtopics": [
+              "Ato Infracional e Medidas Socioeducativas"
+            ],
+            "method": "questões FGV + releitura do erro ou destaque do estudo anterior"
+          }
+        ]
+      }
+    },
+    {
+      "dayNumber": 12,
+      "date": "2026-06-22",
+      "weekday": "monday",
+      "weekdayPt": "segunda-feira",
+      "cycle": 1,
+      "totalMinutes": 180,
+      "newStudyMinutes": 126,
+      "revisionMinutes": 54,
+      "subjects": [
+        {
+          "name": "Direito Processual Civil",
+          "minutes": 70,
+          "subtopics": [
+            "Tutelas provisórias"
+          ],
+          "sourceSubtopicIds": [
+            "dpc-2"
+          ],
+          "activities": [
+            "leitura ativa da fonte normativa",
+            "fixação por quadro curto",
+            "questões FGV com identificação de padrão de cobrança"
+          ]
+        },
+        {
+          "name": "Direito Eleitoral",
+          "minutes": 56,
+          "subtopics": [
+            "Registro de candidatos"
+          ],
+          "sourceSubtopicIds": [
+            "del-2"
+          ],
+          "activities": [
+            "leitura ativa da fonte normativa",
+            "fixação por quadro curto",
+            "questões FGV com identificação de padrão de cobrança"
+          ]
+        }
+      ],
+      "revisionPlan": {
+        "minutes": 54,
+        "items": [
+          {
+            "discipline": "Direito Processual Civil",
+            "subtopics": [
+              "Apelação (Recursos em espécie)"
+            ],
+            "method": "questões FGV + releitura do erro ou destaque do estudo anterior"
+          },
+          {
+            "discipline": "Direito Eleitoral",
+            "subtopics": [
+              "Crimes eleitorais"
+            ],
+            "method": "questões FGV + releitura do erro ou destaque do estudo anterior"
+          }
+        ]
+      }
+    },
+    {
+      "dayNumber": 13,
+      "date": "2026-06-23",
+      "weekday": "tuesday",
+      "weekdayPt": "terça-feira",
+      "cycle": 1,
+      "totalMinutes": 180,
+      "newStudyMinutes": 126,
+      "revisionMinutes": 54,
+      "subjects": [
+        {
+          "name": "Direito Civil",
+          "minutes": 70,
+          "subtopics": [
+            "Doação (Contratos em espécie)"
+          ],
+          "sourceSubtopicIds": [
+            "dc-2"
+          ],
+          "activities": [
+            "leitura ativa da fonte normativa",
+            "fixação por quadro curto",
+            "questões FGV com identificação de padrão de cobrança"
+          ]
+        },
+        {
+          "name": "Direito Ambiental",
+          "minutes": 56,
+          "subtopics": [
+            "Reparação do Dano Ambiental"
+          ],
+          "sourceSubtopicIds": [
+            "damb-2"
+          ],
+          "activities": [
+            "leitura ativa da fonte normativa",
+            "fixação por quadro curto",
+            "questões FGV com identificação de padrão de cobrança"
+          ]
+        }
+      ],
+      "revisionPlan": {
+        "minutes": 54,
+        "items": [
+          {
+            "discipline": "Direito Civil",
+            "subtopics": [
+              "Regimes de bens (Direito das Famílias)"
+            ],
+            "method": "questões FGV + releitura do erro ou destaque do estudo anterior"
+          },
+          {
+            "discipline": "Direito Ambiental",
+            "subtopics": [
+              "Código Florestal (incluindo APP, CAR, etc.)"
+            ],
+            "method": "questões FGV + releitura do erro ou destaque do estudo anterior"
+          }
+        ]
+      }
+    },
+    {
+      "dayNumber": 14,
+      "date": "2026-06-24",
+      "weekday": "wednesday",
+      "weekdayPt": "quarta-feira",
+      "cycle": 1,
+      "totalMinutes": 180,
+      "newStudyMinutes": 126,
+      "revisionMinutes": 54,
+      "subjects": [
+        {
+          "name": "Direito Penal",
+          "minutes": 70,
+          "subtopics": [
+            "Crimes contra o patrimônio"
+          ],
+          "sourceSubtopicIds": [
+            "dp-2"
+          ],
+          "activities": [
+            "leitura ativa da fonte normativa",
+            "fixação por quadro curto",
+            "questões FGV com identificação de padrão de cobrança"
+          ]
+        },
+        {
+          "name": "Direitos Humanos",
+          "minutes": 56,
+          "subtopics": [
+            "Teoria Geral dos Direitos Humanos"
+          ],
+          "sourceSubtopicIds": [
+            "dhum-2"
+          ],
+          "activities": [
+            "leitura ativa da fonte normativa",
+            "fixação por quadro curto",
+            "questões FGV com identificação de padrão de cobrança"
+          ]
+        }
+      ],
+      "revisionPlan": {
+        "minutes": 54,
+        "items": [
+          {
+            "discipline": "Direito Penal",
+            "subtopics": [
+              "Crimes contra a administração pública"
+            ],
+            "method": "questões FGV + releitura do erro ou destaque do estudo anterior"
+          },
+          {
+            "discipline": "Direitos Humanos",
+            "subtopics": [
+              "Sistema regional interamericano de proteção"
+            ],
+            "method": "questões FGV + releitura do erro ou destaque do estudo anterior"
+          }
+        ]
+      }
+    },
+    {
+      "dayNumber": 15,
+      "date": "2026-06-25",
+      "weekday": "thursday",
+      "weekdayPt": "quinta-feira",
+      "cycle": 1,
+      "totalMinutes": 180,
+      "newStudyMinutes": 126,
+      "revisionMinutes": 54,
+      "subjects": [
+        {
+          "name": "Direito Processual Penal",
+          "minutes": 70,
+          "subtopics": [
+            "Prova"
+          ],
+          "sourceSubtopicIds": [
+            "dpp-3"
+          ],
+          "activities": [
+            "leitura ativa da fonte normativa",
+            "fixação por quadro curto",
+            "questões FGV com identificação de padrão de cobrança"
+          ]
+        },
+        {
+          "name": "Noções Gerais de Direito e Formação Humanística",
+          "minutes": 56,
+          "subtopics": [
+            "Estatuto da Magistratura"
+          ],
+          "sourceSubtopicIds": [
+            "ng-3"
+          ],
+          "activities": [
+            "leitura ativa da fonte normativa",
+            "fixação por quadro curto",
+            "questões FGV com identificação de padrão de cobrança"
+          ]
+        }
+      ],
+      "revisionPlan": {
+        "minutes": 54,
+        "items": [
+          {
+            "discipline": "Direito Processual Penal",
+            "subtopics": [
+              "Recursos em Geral"
+            ],
+            "method": "questões FGV + releitura do erro ou destaque do estudo anterior"
+          },
+          {
+            "discipline": "Noções Gerais de Direito e Formação Humanística",
+            "subtopics": [
+              "Lógica do razoável"
+            ],
+            "method": "questões FGV + releitura do erro ou destaque do estudo anterior"
+          }
+        ]
+      }
+    },
+    {
+      "dayNumber": 16,
+      "date": "2026-06-26",
+      "weekday": "friday",
+      "weekdayPt": "sexta-feira",
+      "cycle": 1,
+      "totalMinutes": 180,
+      "newStudyMinutes": 126,
+      "revisionMinutes": 54,
+      "subjects": [
+        {
+          "name": "Direito Constitucional",
+          "minutes": 70,
+          "subtopics": [
+            "Direitos sociais"
+          ],
+          "sourceSubtopicIds": [
+            "dconst-3"
+          ],
+          "activities": [
+            "leitura ativa da fonte normativa",
+            "fixação por quadro curto",
+            "questões FGV com identificação de padrão de cobrança"
+          ]
+        },
+        {
+          "name": "Direito Tributário e Financeiro",
+          "minutes": 56,
+          "subtopics": [
+            "IPVA"
+          ],
+          "sourceSubtopicIds": [
+            "dtrib-3"
+          ],
+          "activities": [
+            "leitura ativa da fonte normativa",
+            "fixação por quadro curto",
+            "questões FGV com identificação de padrão de cobrança"
+          ]
+        }
+      ],
+      "revisionPlan": {
+        "minutes": 54,
+        "items": [
+          {
+            "discipline": "Direito Constitucional",
+            "subtopics": [
+              "Controle de constitucionalidade"
+            ],
+            "method": "questões FGV + releitura do erro ou destaque do estudo anterior"
+          },
+          {
+            "discipline": "Direito Tributário e Financeiro",
+            "subtopics": [
+              "ICMS"
+            ],
+            "method": "questões FGV + releitura do erro ou destaque do estudo anterior"
+          }
+        ]
+      }
+    },
+    {
+      "dayNumber": 17,
+      "date": "2026-06-27",
+      "weekday": "saturday",
+      "weekdayPt": "sábado",
+      "cycle": 1,
+      "totalMinutes": 240,
+      "newStudyMinutes": 168,
+      "revisionMinutes": 72,
+      "subjects": [
+        {
+          "name": "Direito Administrativo",
+          "minutes": 92,
+          "subtopics": [
+            "Licitação"
+          ],
+          "sourceSubtopicIds": [
+            "dadm-3"
+          ],
+          "activities": [
+            "leitura ativa da fonte normativa",
+            "fixação por quadro curto",
+            "questões FGV com identificação de padrão de cobrança"
+          ]
+        },
+        {
+          "name": "Direito Empresarial",
+          "minutes": 76,
+          "subtopics": [
+            "Falência"
+          ],
+          "sourceSubtopicIds": [
+            "demp-3"
+          ],
+          "activities": [
+            "leitura ativa da fonte normativa",
+            "fixação por quadro curto",
+            "questões FGV com identificação de padrão de cobrança"
+          ]
+        }
+      ],
+      "revisionPlan": {
+        "minutes": 72,
+        "items": [
+          {
+            "discipline": "Direito Administrativo",
+            "subtopics": [
+              "Improbidade administrativa"
+            ],
+            "method": "questões FGV + releitura do erro ou destaque do estudo anterior"
+          },
+          {
+            "discipline": "Direito Empresarial",
+            "subtopics": [
+              "Sociedade anônima"
+            ],
+            "method": "questões FGV + releitura do erro ou destaque do estudo anterior"
+          }
+        ]
+      }
+    },
+    {
+      "dayNumber": 18,
+      "date": "2026-06-28",
+      "weekday": "sunday",
+      "weekdayPt": "domingo",
+      "cycle": 1,
+      "totalMinutes": 240,
+      "newStudyMinutes": 168,
+      "revisionMinutes": 72,
+      "subjects": [
+        {
+          "name": "Direito do Consumidor",
+          "minutes": 92,
+          "subtopics": [
+            "Relação de Consumo"
+          ],
+          "sourceSubtopicIds": [
+            "dcons-3"
+          ],
+          "activities": [
+            "leitura ativa da fonte normativa",
+            "fixação por quadro curto",
+            "questões FGV com identificação de padrão de cobrança"
+          ]
+        },
+        {
+          "name": "Direito da Criança e do Adolescente",
+          "minutes": 76,
+          "subtopics": [
+            "Infrações Administrativas (ECA)"
+          ],
+          "sourceSubtopicIds": [
+            "dca-3"
+          ],
+          "activities": [
+            "leitura ativa da fonte normativa",
+            "fixação por quadro curto",
+            "questões FGV com identificação de padrão de cobrança"
+          ]
+        }
+      ],
+      "revisionPlan": {
+        "minutes": 72,
+        "items": [
+          {
+            "discipline": "Direito do Consumidor",
+            "subtopics": [
+              "Defesa dos Direitos do Consumidor em Juízo"
+            ],
+            "method": "questões FGV + releitura do erro ou destaque do estudo anterior"
+          },
+          {
+            "discipline": "Direito da Criança e do Adolescente",
+            "subtopics": [
+              "Adoção (ECA)"
+            ],
+            "method": "questões FGV + releitura do erro ou destaque do estudo anterior"
+          }
+        ]
+      }
+    },
+    {
+      "dayNumber": 19,
+      "date": "2026-06-29",
+      "weekday": "monday",
+      "weekdayPt": "segunda-feira",
+      "cycle": 1,
+      "totalMinutes": 180,
+      "newStudyMinutes": 126,
+      "revisionMinutes": 54,
+      "subjects": [
+        {
+          "name": "Direito Processual Civil",
+          "minutes": 70,
+          "subtopics": [
+            "Litisconsórcio (Sujeitos do processo)"
+          ],
+          "sourceSubtopicIds": [
+            "dpc-3"
+          ],
+          "activities": [
+            "leitura ativa da fonte normativa",
+            "fixação por quadro curto",
+            "questões FGV com identificação de padrão de cobrança"
+          ]
+        },
+        {
+          "name": "Direito Eleitoral",
+          "minutes": 56,
+          "subtopics": [
+            "Propaganda eleitoral"
+          ],
+          "sourceSubtopicIds": [
+            "del-3"
+          ],
+          "activities": [
+            "leitura ativa da fonte normativa",
+            "fixação por quadro curto",
+            "questões FGV com identificação de padrão de cobrança"
+          ]
+        }
+      ],
+      "revisionPlan": {
+        "minutes": 54,
+        "items": [
+          {
+            "discipline": "Direito Processual Civil",
+            "subtopics": [
+              "Tutelas provisórias"
+            ],
+            "method": "questões FGV + releitura do erro ou destaque do estudo anterior"
+          },
+          {
+            "discipline": "Direito Eleitoral",
+            "subtopics": [
+              "Registro de candidatos"
+            ],
+            "method": "questões FGV + releitura do erro ou destaque do estudo anterior"
+          }
+        ]
+      }
+    },
+    {
+      "dayNumber": 20,
+      "date": "2026-06-30",
+      "weekday": "tuesday",
+      "weekdayPt": "terça-feira",
+      "cycle": 1,
+      "totalMinutes": 180,
+      "newStudyMinutes": 126,
+      "revisionMinutes": 54,
+      "subjects": [
+        {
+          "name": "Direito Civil",
+          "minutes": 70,
+          "subtopics": [
+            "Sucessão legítima (Do Direito das Sucessões)"
+          ],
+          "sourceSubtopicIds": [
+            "dc-3"
+          ],
+          "activities": [
+            "leitura ativa da fonte normativa",
+            "fixação por quadro curto",
+            "questões FGV com identificação de padrão de cobrança"
+          ]
+        },
+        {
+          "name": "Direito Ambiental",
+          "minutes": 56,
+          "subtopics": [
+            "Competência legislativa em matéria ambiental"
+          ],
+          "sourceSubtopicIds": [
+            "damb-3"
+          ],
+          "activities": [
+            "leitura ativa da fonte normativa",
+            "fixação por quadro curto",
+            "questões FGV com identificação de padrão de cobrança"
+          ]
+        }
+      ],
+      "revisionPlan": {
+        "minutes": 54,
+        "items": [
+          {
+            "discipline": "Direito Civil",
+            "subtopics": [
+              "Doação (Contratos em espécie)"
+            ],
+            "method": "questões FGV + releitura do erro ou destaque do estudo anterior"
+          },
+          {
+            "discipline": "Direito Ambiental",
+            "subtopics": [
+              "Reparação do Dano Ambiental"
+            ],
+            "method": "questões FGV + releitura do erro ou destaque do estudo anterior"
+          }
+        ]
+      }
+    },
+    {
+      "dayNumber": 21,
+      "date": "2026-07-01",
+      "weekday": "wednesday",
+      "weekdayPt": "quarta-feira",
+      "cycle": 1,
+      "totalMinutes": 180,
+      "newStudyMinutes": 126,
+      "revisionMinutes": 54,
+      "subjects": [
+        {
+          "name": "Direito Penal",
+          "minutes": 70,
+          "subtopics": [
+            "Crimes contra a dignidade sexual"
+          ],
+          "sourceSubtopicIds": [
+            "dp-3"
+          ],
+          "activities": [
+            "leitura ativa da fonte normativa",
+            "fixação por quadro curto",
+            "questões FGV com identificação de padrão de cobrança"
+          ]
+        },
+        {
+          "name": "Direitos Humanos",
+          "minutes": 56,
+          "subtopics": [
+            "Relação entre direito internacional e direito brasileiro"
+          ],
+          "sourceSubtopicIds": [
+            "dhum-3"
+          ],
+          "activities": [
+            "leitura ativa da fonte normativa",
+            "fixação por quadro curto",
+            "questões FGV com identificação de padrão de cobrança"
+          ]
+        }
+      ],
+      "revisionPlan": {
+        "minutes": 54,
+        "items": [
+          {
+            "discipline": "Direito Penal",
+            "subtopics": [
+              "Crimes contra o patrimônio"
+            ],
+            "method": "questões FGV + releitura do erro ou destaque do estudo anterior"
+          },
+          {
+            "discipline": "Direitos Humanos",
+            "subtopics": [
+              "Teoria Geral dos Direitos Humanos"
+            ],
+            "method": "questões FGV + releitura do erro ou destaque do estudo anterior"
+          }
+        ]
+      }
+    },
+    {
+      "dayNumber": 22,
+      "date": "2026-07-02",
+      "weekday": "thursday",
+      "weekdayPt": "quinta-feira",
+      "cycle": 1,
+      "totalMinutes": 180,
+      "newStudyMinutes": 126,
+      "revisionMinutes": 54,
+      "subjects": [
+        {
+          "name": "Direito Processual Penal",
+          "minutes": 70,
+          "subtopics": [
+            "Ação Penal"
+          ],
+          "sourceSubtopicIds": [
+            "dpp-4"
+          ],
+          "activities": [
+            "leitura ativa da fonte normativa",
+            "fixação por quadro curto",
+            "questões FGV com identificação de padrão de cobrança"
+          ]
+        },
+        {
+          "name": "Noções Gerais de Direito e Formação Humanística",
+          "minutes": 56,
+          "subtopics": [
+            "Direito Digital"
+          ],
+          "sourceSubtopicIds": [
+            "ng-4"
+          ],
+          "activities": [
+            "leitura ativa da fonte normativa",
+            "fixação por quadro curto",
+            "questões FGV com identificação de padrão de cobrança"
+          ]
+        }
+      ],
+      "revisionPlan": {
+        "minutes": 54,
+        "items": [
+          {
+            "discipline": "Direito Processual Penal",
+            "subtopics": [
+              "Prova"
+            ],
+            "method": "questões FGV + releitura do erro ou destaque do estudo anterior"
+          },
+          {
+            "discipline": "Noções Gerais de Direito e Formação Humanística",
+            "subtopics": [
+              "Estatuto da Magistratura"
+            ],
+            "method": "questões FGV + releitura do erro ou destaque do estudo anterior"
+          }
+        ]
+      }
+    },
+    {
+      "dayNumber": 23,
+      "date": "2026-07-03",
+      "weekday": "friday",
+      "weekdayPt": "sexta-feira",
+      "cycle": 1,
+      "totalMinutes": 180,
+      "newStudyMinutes": 126,
+      "revisionMinutes": 54,
+      "subjects": [
+        {
+          "name": "Direito Constitucional",
+          "minutes": 70,
+          "subtopics": [
+            "Processo legislativo"
+          ],
+          "sourceSubtopicIds": [
+            "dconst-4"
+          ],
+          "activities": [
+            "leitura ativa da fonte normativa",
+            "fixação por quadro curto",
+            "questões FGV com identificação de padrão de cobrança"
+          ]
+        },
+        {
+          "name": "Direito Tributário e Financeiro",
+          "minutes": 56,
+          "subtopics": [
+            "Execução fiscal"
+          ],
+          "sourceSubtopicIds": [
+            "dtrib-4"
+          ],
+          "activities": [
+            "leitura ativa da fonte normativa",
+            "fixação por quadro curto",
+            "questões FGV com identificação de padrão de cobrança"
+          ]
+        }
+      ],
+      "revisionPlan": {
+        "minutes": 54,
+        "items": [
+          {
+            "discipline": "Direito Constitucional",
+            "subtopics": [
+              "Direitos sociais"
+            ],
+            "method": "questões FGV + releitura do erro ou destaque do estudo anterior"
+          },
+          {
+            "discipline": "Direito Tributário e Financeiro",
+            "subtopics": [
+              "IPVA"
+            ],
+            "method": "questões FGV + releitura do erro ou destaque do estudo anterior"
+          }
+        ]
+      }
+    },
+    {
+      "dayNumber": 24,
+      "date": "2026-07-04",
+      "weekday": "saturday",
+      "weekdayPt": "sábado",
+      "cycle": 1,
+      "totalMinutes": 240,
+      "newStudyMinutes": 168,
+      "revisionMinutes": 72,
+      "subjects": [
+        {
+          "name": "Direito Administrativo",
+          "minutes": 92,
+          "subtopics": [
+            "Responsabilidade civil do Estado"
+          ],
+          "sourceSubtopicIds": [
+            "dadm-4"
+          ],
+          "activities": [
+            "leitura ativa da fonte normativa",
+            "fixação por quadro curto",
+            "questões FGV com identificação de padrão de cobrança"
+          ]
+        },
+        {
+          "name": "Direito Empresarial",
+          "minutes": 76,
+          "subtopics": [
+            "Sociedade limitada"
+          ],
+          "sourceSubtopicIds": [
+            "demp-4"
+          ],
+          "activities": [
+            "leitura ativa da fonte normativa",
+            "fixação por quadro curto",
+            "questões FGV com identificação de padrão de cobrança"
+          ]
+        }
+      ],
+      "revisionPlan": {
+        "minutes": 72,
+        "items": [
+          {
+            "discipline": "Direito Administrativo",
+            "subtopics": [
+              "Licitação"
+            ],
+            "method": "questões FGV + releitura do erro ou destaque do estudo anterior"
+          },
+          {
+            "discipline": "Direito Empresarial",
+            "subtopics": [
+              "Falência"
+            ],
+            "method": "questões FGV + releitura do erro ou destaque do estudo anterior"
+          }
+        ]
+      }
+    },
+    {
+      "dayNumber": 25,
+      "date": "2026-07-05",
+      "weekday": "sunday",
+      "weekdayPt": "domingo",
+      "cycle": 1,
+      "totalMinutes": 240,
+      "newStudyMinutes": 168,
+      "revisionMinutes": 72,
+      "subjects": [
+        {
+          "name": "Direito do Consumidor",
+          "minutes": 92,
+          "subtopics": [
+            "Superendividamento"
+          ],
+          "sourceSubtopicIds": [
+            "dcons-4"
+          ],
+          "activities": [
+            "leitura ativa da fonte normativa",
+            "fixação por quadro curto",
+            "questões FGV com identificação de padrão de cobrança"
+          ]
+        },
+        {
+          "name": "Direito da Criança e do Adolescente",
+          "minutes": 76,
+          "subtopics": [
+            "Depoimento especial e Escuta especializada"
+          ],
+          "sourceSubtopicIds": [
+            "dca-4"
+          ],
+          "activities": [
+            "leitura ativa da fonte normativa",
+            "fixação por quadro curto",
+            "questões FGV com identificação de padrão de cobrança"
+          ]
+        }
+      ],
+      "revisionPlan": {
+        "minutes": 72,
+        "items": [
+          {
+            "discipline": "Direito do Consumidor",
+            "subtopics": [
+              "Relação de Consumo"
+            ],
+            "method": "questões FGV + releitura do erro ou destaque do estudo anterior"
+          },
+          {
+            "discipline": "Direito da Criança e do Adolescente",
+            "subtopics": [
+              "Infrações Administrativas (ECA)"
+            ],
+            "method": "questões FGV + releitura do erro ou destaque do estudo anterior"
+          }
+        ]
+      }
+    },
+    {
+      "dayNumber": 26,
+      "date": "2026-07-06",
+      "weekday": "monday",
+      "weekdayPt": "segunda-feira",
+      "cycle": 1,
+      "totalMinutes": 180,
+      "newStudyMinutes": 126,
+      "revisionMinutes": 54,
+      "subjects": [
+        {
+          "name": "Direito Processual Civil",
+          "minutes": 70,
+          "subtopics": [
+            "Cumprimento de Sentença"
+          ],
+          "sourceSubtopicIds": [
+            "dpc-4"
+          ],
+          "activities": [
+            "leitura ativa da fonte normativa",
+            "fixação por quadro curto",
+            "questões FGV com identificação de padrão de cobrança"
+          ]
+        },
+        {
+          "name": "Direito Eleitoral",
+          "minutes": 56,
+          "subtopics": [
+            "Direitos políticos"
+          ],
+          "sourceSubtopicIds": [
+            "del-4"
+          ],
+          "activities": [
+            "leitura ativa da fonte normativa",
+            "fixação por quadro curto",
+            "questões FGV com identificação de padrão de cobrança"
+          ]
+        }
+      ],
+      "revisionPlan": {
+        "minutes": 54,
+        "items": [
+          {
+            "discipline": "Direito Processual Civil",
+            "subtopics": [
+              "Litisconsórcio (Sujeitos do processo)"
+            ],
+            "method": "questões FGV + releitura do erro ou destaque do estudo anterior"
+          },
+          {
+            "discipline": "Direito Eleitoral",
+            "subtopics": [
+              "Propaganda eleitoral"
+            ],
+            "method": "questões FGV + releitura do erro ou destaque do estudo anterior"
+          }
+        ]
+      }
+    },
+    {
+      "dayNumber": 27,
+      "date": "2026-07-07",
+      "weekday": "tuesday",
+      "weekdayPt": "terça-feira",
+      "cycle": 1,
+      "totalMinutes": 180,
+      "newStudyMinutes": 126,
+      "revisionMinutes": 54,
+      "subjects": [
+        {
+          "name": "Direito Civil",
+          "minutes": 70,
+          "subtopics": [
+            "Prescrição e decadência"
+          ],
+          "sourceSubtopicIds": [
+            "dc-4"
+          ],
+          "activities": [
+            "leitura ativa da fonte normativa",
+            "fixação por quadro curto",
+            "questões FGV com identificação de padrão de cobrança"
+          ]
+        },
+        {
+          "name": "Direito Ambiental",
+          "minutes": 56,
+          "subtopics": [
+            "Licenciamento Ambiental"
+          ],
+          "sourceSubtopicIds": [
+            "damb-4"
+          ],
+          "activities": [
+            "leitura ativa da fonte normativa",
+            "fixação por quadro curto",
+            "questões FGV com identificação de padrão de cobrança"
+          ]
+        }
+      ],
+      "revisionPlan": {
+        "minutes": 54,
+        "items": [
+          {
+            "discipline": "Direito Civil",
+            "subtopics": [
+              "Sucessão legítima (Do Direito das Sucessões)"
+            ],
+            "method": "questões FGV + releitura do erro ou destaque do estudo anterior"
+          },
+          {
+            "discipline": "Direito Ambiental",
+            "subtopics": [
+              "Competência legislativa em matéria ambiental"
+            ],
+            "method": "questões FGV + releitura do erro ou destaque do estudo anterior"
+          }
+        ]
+      }
+    },
+    {
+      "dayNumber": 28,
+      "date": "2026-07-08",
+      "weekday": "wednesday",
+      "weekdayPt": "quarta-feira",
+      "cycle": 1,
+      "totalMinutes": 180,
+      "newStudyMinutes": 126,
+      "revisionMinutes": 54,
+      "subjects": [
+        {
+          "name": "Direito Penal",
+          "minutes": 70,
+          "subtopics": [
+            "Violência doméstica e familiar"
+          ],
+          "sourceSubtopicIds": [
+            "dp-4"
+          ],
+          "activities": [
+            "leitura ativa da fonte normativa",
+            "fixação por quadro curto",
+            "questões FGV com identificação de padrão de cobrança"
+          ]
+        },
+        {
+          "name": "Direitos Humanos",
+          "minutes": 56,
+          "subtopics": [
+            "Sistema global de proteção"
+          ],
+          "sourceSubtopicIds": [
+            "dhum-4"
+          ],
+          "activities": [
+            "leitura ativa da fonte normativa",
+            "fixação por quadro curto",
+            "questões FGV com identificação de padrão de cobrança"
+          ]
+        }
+      ],
+      "revisionPlan": {
+        "minutes": 54,
+        "items": [
+          {
+            "discipline": "Direito Penal",
+            "subtopics": [
+              "Crimes contra a dignidade sexual"
+            ],
+            "method": "questões FGV + releitura do erro ou destaque do estudo anterior"
+          },
+          {
+            "discipline": "Direitos Humanos",
+            "subtopics": [
+              "Relação entre direito internacional e direito brasileiro"
+            ],
+            "method": "questões FGV + releitura do erro ou destaque do estudo anterior"
+          }
+        ]
+      }
+    },
+    {
+      "dayNumber": 29,
+      "date": "2026-07-09",
+      "weekday": "thursday",
+      "weekdayPt": "quinta-feira",
+      "cycle": 2,
+      "totalMinutes": 180,
+      "newStudyMinutes": 126,
+      "revisionMinutes": 54,
+      "subjects": [
+        {
+          "name": "Direito Processual Penal",
+          "minutes": 70,
+          "subtopics": [
+            "Juizados Especiais Criminais"
+          ],
+          "sourceSubtopicIds": [
+            "dpp-8"
+          ],
+          "activities": [
+            "leitura dirigida com comparação entre institutos",
+            "marcação de exceções e prazos",
+            "questões FGV com engenharia reversa das alternativas"
+          ]
+        },
+        {
+          "name": "Noções Gerais de Direito e Formação Humanística",
+          "minutes": 56,
+          "subtopics": [
+            "Judicialização da política"
+          ],
+          "sourceSubtopicIds": [
+            "ng-8"
+          ],
+          "activities": [
+            "leitura dirigida com comparação entre institutos",
+            "marcação de exceções e prazos",
+            "questões FGV com engenharia reversa das alternativas"
+          ]
+        }
+      ],
+      "revisionPlan": {
+        "minutes": 54,
+        "items": [
+          {
+            "discipline": "Direito Processual Penal",
+            "subtopics": [
+              "Ação Penal"
+            ],
+            "method": "questões FGV + releitura do erro ou destaque do estudo anterior"
+          },
+          {
+            "discipline": "Noções Gerais de Direito e Formação Humanística",
+            "subtopics": [
+              "Direito Digital"
+            ],
+            "method": "questões FGV + releitura do erro ou destaque do estudo anterior"
+          }
+        ]
+      }
+    },
+    {
+      "dayNumber": 30,
+      "date": "2026-07-10",
+      "weekday": "friday",
+      "weekdayPt": "sexta-feira",
+      "cycle": 2,
+      "totalMinutes": 180,
+      "newStudyMinutes": 126,
+      "revisionMinutes": 54,
+      "subjects": [
+        {
+          "name": "Direito Constitucional",
+          "minutes": 70,
+          "subtopics": [
+            "Servidores Públicos"
+          ],
+          "sourceSubtopicIds": [
+            "dconst-8"
+          ],
+          "activities": [
+            "leitura dirigida com comparação entre institutos",
+            "marcação de exceções e prazos",
+            "questões FGV com engenharia reversa das alternativas"
+          ]
+        },
+        {
+          "name": "Direito Tributário e Financeiro",
+          "minutes": 56,
+          "subtopics": [
+            "Decadência"
+          ],
+          "sourceSubtopicIds": [
+            "dtrib-8"
+          ],
+          "activities": [
+            "leitura dirigida com comparação entre institutos",
+            "marcação de exceções e prazos",
+            "questões FGV com engenharia reversa das alternativas"
+          ]
+        }
+      ],
+      "revisionPlan": {
+        "minutes": 54,
+        "items": [
+          {
+            "discipline": "Direito Constitucional",
+            "subtopics": [
+              "Processo legislativo"
+            ],
+            "method": "questões FGV + releitura do erro ou destaque do estudo anterior"
+          },
+          {
+            "discipline": "Direito Tributário e Financeiro",
+            "subtopics": [
+              "Execução fiscal"
+            ],
+            "method": "questões FGV + releitura do erro ou destaque do estudo anterior"
+          }
+        ]
+      }
+    },
+    {
+      "dayNumber": 31,
+      "date": "2026-07-11",
+      "weekday": "saturday",
+      "weekdayPt": "sábado",
+      "cycle": 2,
+      "totalMinutes": 240,
+      "newStudyMinutes": 168,
+      "revisionMinutes": 72,
+      "subjects": [
+        {
+          "name": "Direito Administrativo",
+          "minutes": 92,
+          "subtopics": [
+            "Organização administrativa"
+          ],
+          "sourceSubtopicIds": [
+            "dadm-8"
+          ],
+          "activities": [
+            "leitura dirigida com comparação entre institutos",
+            "marcação de exceções e prazos",
+            "questões FGV com engenharia reversa das alternativas"
+          ]
+        },
+        {
+          "name": "Direito Empresarial",
+          "minutes": 76,
+          "subtopics": [
+            "Sociedade Cooperativa"
+          ],
+          "sourceSubtopicIds": [
+            "demp-8"
+          ],
+          "activities": [
+            "leitura dirigida com comparação entre institutos",
+            "marcação de exceções e prazos",
+            "questões FGV com engenharia reversa das alternativas"
+          ]
+        }
+      ],
+      "revisionPlan": {
+        "minutes": 72,
+        "items": [
+          {
+            "discipline": "Direito Administrativo",
+            "subtopics": [
+              "Responsabilidade civil do Estado"
+            ],
+            "method": "questões FGV + releitura do erro ou destaque do estudo anterior"
+          },
+          {
+            "discipline": "Direito Empresarial",
+            "subtopics": [
+              "Sociedade limitada"
+            ],
+            "method": "questões FGV + releitura do erro ou destaque do estudo anterior"
+          }
+        ]
+      }
+    },
+    {
+      "dayNumber": 32,
+      "date": "2026-07-12",
+      "weekday": "sunday",
+      "weekdayPt": "domingo",
+      "cycle": 2,
+      "totalMinutes": 240,
+      "newStudyMinutes": 168,
+      "revisionMinutes": 72,
+      "subjects": [
+        {
+          "name": "Direito do Consumidor",
+          "minutes": 92,
+          "subtopics": [
+            "Cadastro Positivo"
+          ],
+          "sourceSubtopicIds": [
+            "dcons-8"
+          ],
+          "activities": [
+            "leitura dirigida com comparação entre institutos",
+            "marcação de exceções e prazos",
+            "questões FGV com engenharia reversa das alternativas"
+          ]
+        },
+        {
+          "name": "Direito da Criança e do Adolescente",
+          "minutes": 76,
+          "subtopics": [
+            "Autorização de viagem"
+          ],
+          "sourceSubtopicIds": [
+            "dca-8"
+          ],
+          "activities": [
+            "leitura dirigida com comparação entre institutos",
+            "marcação de exceções e prazos",
+            "questões FGV com engenharia reversa das alternativas"
+          ]
+        }
+      ],
+      "revisionPlan": {
+        "minutes": 72,
+        "items": [
+          {
+            "discipline": "Direito do Consumidor",
+            "subtopics": [
+              "Superendividamento"
+            ],
+            "method": "questões FGV + releitura do erro ou destaque do estudo anterior"
+          },
+          {
+            "discipline": "Direito da Criança e do Adolescente",
+            "subtopics": [
+              "Depoimento especial e Escuta especializada"
+            ],
+            "method": "questões FGV + releitura do erro ou destaque do estudo anterior"
+          }
+        ]
+      }
+    },
+    {
+      "dayNumber": 33,
+      "date": "2026-07-13",
+      "weekday": "monday",
+      "weekdayPt": "segunda-feira",
+      "cycle": 2,
+      "totalMinutes": 180,
+      "newStudyMinutes": 126,
+      "revisionMinutes": 54,
+      "subjects": [
+        {
+          "name": "Direito Processual Civil",
+          "minutes": 70,
+          "subtopics": [
+            "Competência"
+          ],
+          "sourceSubtopicIds": [
+            "dpc-8"
+          ],
+          "activities": [
+            "leitura dirigida com comparação entre institutos",
+            "marcação de exceções e prazos",
+            "questões FGV com engenharia reversa das alternativas"
+          ]
+        },
+        {
+          "name": "Direito Eleitoral",
+          "minutes": 56,
+          "subtopics": [
+            "Ação de impugnação de mandato eletivo"
+          ],
+          "sourceSubtopicIds": [
+            "del-8"
+          ],
+          "activities": [
+            "leitura dirigida com comparação entre institutos",
+            "marcação de exceções e prazos",
+            "questões FGV com engenharia reversa das alternativas"
+          ]
+        }
+      ],
+      "revisionPlan": {
+        "minutes": 54,
+        "items": [
+          {
+            "discipline": "Direito Processual Civil",
+            "subtopics": [
+              "Cumprimento de Sentença"
+            ],
+            "method": "questões FGV + releitura do erro ou destaque do estudo anterior"
+          },
+          {
+            "discipline": "Direito Eleitoral",
+            "subtopics": [
+              "Direitos políticos"
+            ],
+            "method": "questões FGV + releitura do erro ou destaque do estudo anterior"
+          }
+        ]
+      }
+    },
+    {
+      "dayNumber": 34,
+      "date": "2026-07-14",
+      "weekday": "tuesday",
+      "weekdayPt": "terça-feira",
+      "cycle": 2,
+      "totalMinutes": 180,
+      "newStudyMinutes": 126,
+      "revisionMinutes": 54,
+      "subjects": [
+        {
+          "name": "Direito Civil",
+          "minutes": 70,
+          "subtopics": [
+            "Desconsideração da personalidade jurídica"
+          ],
+          "sourceSubtopicIds": [
+            "dc-8"
+          ],
+          "activities": [
+            "leitura dirigida com comparação entre institutos",
+            "marcação de exceções e prazos",
+            "questões FGV com engenharia reversa das alternativas"
+          ]
+        },
+        {
+          "name": "Direito Ambiental",
+          "minutes": 56,
+          "subtopics": [
+            "Política Nacional de Recursos Hídricos"
+          ],
+          "sourceSubtopicIds": [
+            "damb-8"
+          ],
+          "activities": [
+            "leitura dirigida com comparação entre institutos",
+            "marcação de exceções e prazos",
+            "questões FGV com engenharia reversa das alternativas"
+          ]
+        }
+      ],
+      "revisionPlan": {
+        "minutes": 54,
+        "items": [
+          {
+            "discipline": "Direito Civil",
+            "subtopics": [
+              "Prescrição e decadência"
+            ],
+            "method": "questões FGV + releitura do erro ou destaque do estudo anterior"
+          },
+          {
+            "discipline": "Direito Ambiental",
+            "subtopics": [
+              "Licenciamento Ambiental"
+            ],
+            "method": "questões FGV + releitura do erro ou destaque do estudo anterior"
+          }
+        ]
+      }
+    },
+    {
+      "dayNumber": 35,
+      "date": "2026-07-15",
+      "weekday": "wednesday",
+      "weekdayPt": "quarta-feira",
+      "cycle": 2,
+      "totalMinutes": 180,
+      "newStudyMinutes": 126,
+      "revisionMinutes": 54,
+      "subjects": [
+        {
+          "name": "Direito Penal",
+          "minutes": 70,
+          "subtopics": [
+            "Direito Penal Militar"
+          ],
+          "sourceSubtopicIds": [
+            "dp-8"
+          ],
+          "activities": [
+            "leitura dirigida com comparação entre institutos",
+            "marcação de exceções e prazos",
+            "questões FGV com engenharia reversa das alternativas"
+          ]
+        },
+        {
+          "name": "Direitos Humanos",
+          "minutes": 56,
+          "subtopics": [
+            "Súmula Vinculante"
+          ],
+          "sourceSubtopicIds": [
+            "dhum-8"
+          ],
+          "activities": [
+            "leitura dirigida com comparação entre institutos",
+            "marcação de exceções e prazos",
+            "questões FGV com engenharia reversa das alternativas"
+          ]
+        }
+      ],
+      "revisionPlan": {
+        "minutes": 54,
+        "items": [
+          {
+            "discipline": "Direito Penal",
+            "subtopics": [
+              "Violência doméstica e familiar"
+            ],
+            "method": "questões FGV + releitura do erro ou destaque do estudo anterior"
+          },
+          {
+            "discipline": "Direitos Humanos",
+            "subtopics": [
+              "Sistema global de proteção"
+            ],
+            "method": "questões FGV + releitura do erro ou destaque do estudo anterior"
+          }
+        ]
+      }
+    },
+    {
+      "dayNumber": 36,
+      "date": "2026-07-16",
+      "weekday": "thursday",
+      "weekdayPt": "quinta-feira",
+      "cycle": 2,
+      "totalMinutes": 180,
+      "newStudyMinutes": 126,
+      "revisionMinutes": 54,
+      "subjects": [
+        {
+          "name": "Direito Processual Penal",
+          "minutes": 70,
+          "subtopics": [
+            "Medidas assecuratórias"
+          ],
+          "sourceSubtopicIds": [
+            "dpp-9"
+          ],
+          "activities": [
+            "leitura dirigida com comparação entre institutos",
+            "marcação de exceções e prazos",
+            "questões FGV com engenharia reversa das alternativas"
+          ]
+        },
+        {
+          "name": "Noções Gerais de Direito e Formação Humanística",
+          "minutes": 56,
+          "subtopics": [
+            "O conceito de Justiça"
+          ],
+          "sourceSubtopicIds": [
+            "ng-9"
+          ],
+          "activities": [
+            "leitura dirigida com comparação entre institutos",
+            "marcação de exceções e prazos",
+            "questões FGV com engenharia reversa das alternativas"
+          ]
+        }
+      ],
+      "revisionPlan": {
+        "minutes": 54,
+        "items": [
+          {
+            "discipline": "Direito Processual Penal",
+            "subtopics": [
+              "Juizados Especiais Criminais"
+            ],
+            "method": "questões FGV + releitura do erro ou destaque do estudo anterior"
+          },
+          {
+            "discipline": "Noções Gerais de Direito e Formação Humanística",
+            "subtopics": [
+              "Judicialização da política"
+            ],
+            "method": "questões FGV + releitura do erro ou destaque do estudo anterior"
+          }
+        ]
+      }
+    },
+    {
+      "dayNumber": 37,
+      "date": "2026-07-17",
+      "weekday": "friday",
+      "weekdayPt": "sexta-feira",
+      "cycle": 2,
+      "totalMinutes": 180,
+      "newStudyMinutes": 126,
+      "revisionMinutes": 54,
+      "subjects": [
+        {
+          "name": "Direito Constitucional",
+          "minutes": 70,
+          "subtopics": [
+            "Direitos políticos"
+          ],
+          "sourceSubtopicIds": [
+            "dconst-9"
+          ],
+          "activities": [
+            "leitura dirigida com comparação entre institutos",
+            "marcação de exceções e prazos",
+            "questões FGV com engenharia reversa das alternativas"
+          ]
+        },
+        {
+          "name": "Direito Tributário e Financeiro",
+          "minutes": 56,
+          "subtopics": [
+            "Denúncia espontânea"
+          ],
+          "sourceSubtopicIds": [
+            "dtrib-9"
+          ],
+          "activities": [
+            "leitura dirigida com comparação entre institutos",
+            "marcação de exceções e prazos",
+            "questões FGV com engenharia reversa das alternativas"
+          ]
+        }
+      ],
+      "revisionPlan": {
+        "minutes": 54,
+        "items": [
+          {
+            "discipline": "Direito Constitucional",
+            "subtopics": [
+              "Servidores Públicos"
+            ],
+            "method": "questões FGV + releitura do erro ou destaque do estudo anterior"
+          },
+          {
+            "discipline": "Direito Tributário e Financeiro",
+            "subtopics": [
+              "Decadência"
+            ],
+            "method": "questões FGV + releitura do erro ou destaque do estudo anterior"
+          }
+        ]
+      }
+    },
+    {
+      "dayNumber": 38,
+      "date": "2026-07-18",
+      "weekday": "saturday",
+      "weekdayPt": "sábado",
+      "cycle": 2,
+      "totalMinutes": 240,
+      "newStudyMinutes": 168,
+      "revisionMinutes": 72,
+      "subjects": [
+        {
+          "name": "Direito Administrativo",
+          "minutes": 92,
+          "subtopics": [
+            "Parcerias Público-Privadas"
+          ],
+          "sourceSubtopicIds": [
+            "dadm-9"
+          ],
+          "activities": [
+            "leitura dirigida com comparação entre institutos",
+            "marcação de exceções e prazos",
+            "questões FGV com engenharia reversa das alternativas"
+          ]
+        },
+        {
+          "name": "Direito Empresarial",
+          "minutes": 76,
+          "subtopics": [
+            "Protesto"
+          ],
+          "sourceSubtopicIds": [
+            "demp-9"
+          ],
+          "activities": [
+            "leitura dirigida com comparação entre institutos",
+            "marcação de exceções e prazos",
+            "questões FGV com engenharia reversa das alternativas"
+          ]
+        }
+      ],
+      "revisionPlan": {
+        "minutes": 72,
+        "items": [
+          {
+            "discipline": "Direito Administrativo",
+            "subtopics": [
+              "Organização administrativa"
+            ],
+            "method": "questões FGV + releitura do erro ou destaque do estudo anterior"
+          },
+          {
+            "discipline": "Direito Empresarial",
+            "subtopics": [
+              "Sociedade Cooperativa"
+            ],
+            "method": "questões FGV + releitura do erro ou destaque do estudo anterior"
+          }
+        ]
+      }
+    },
+    {
+      "dayNumber": 39,
+      "date": "2026-07-19",
+      "weekday": "sunday",
+      "weekdayPt": "domingo",
+      "cycle": 2,
+      "totalMinutes": 240,
+      "newStudyMinutes": 168,
+      "revisionMinutes": 72,
+      "subjects": [
+        {
+          "name": "Direito do Consumidor",
+          "minutes": 92,
+          "subtopics": [
+            "Sanções administrativas"
+          ],
+          "sourceSubtopicIds": [
+            "dcons-9"
+          ],
+          "activities": [
+            "leitura dirigida com comparação entre institutos",
+            "marcação de exceções e prazos",
+            "questões FGV com engenharia reversa das alternativas"
+          ]
+        },
+        {
+          "name": "Direito da Criança e do Adolescente",
+          "minutes": 76,
+          "subtopics": [
+            "Lei Orgânica da Assistência Social"
+          ],
+          "sourceSubtopicIds": [
+            "dca-9"
+          ],
+          "activities": [
+            "leitura dirigida com comparação entre institutos",
+            "marcação de exceções e prazos",
+            "questões FGV com engenharia reversa das alternativas"
+          ]
+        }
+      ],
+      "revisionPlan": {
+        "minutes": 72,
+        "items": [
+          {
+            "discipline": "Direito do Consumidor",
+            "subtopics": [
+              "Cadastro Positivo"
+            ],
+            "method": "questões FGV + releitura do erro ou destaque do estudo anterior"
+          },
+          {
+            "discipline": "Direito da Criança e do Adolescente",
+            "subtopics": [
+              "Autorização de viagem"
+            ],
+            "method": "questões FGV + releitura do erro ou destaque do estudo anterior"
+          }
+        ]
+      }
+    },
+    {
+      "dayNumber": 40,
+      "date": "2026-07-20",
+      "weekday": "monday",
+      "weekdayPt": "segunda-feira",
+      "cycle": 2,
+      "totalMinutes": 180,
+      "newStudyMinutes": 126,
+      "revisionMinutes": 54,
+      "subjects": [
+        {
+          "name": "Direito Processual Civil",
+          "minutes": 70,
+          "subtopics": [
+            "Provas (Produção e ônus)"
+          ],
+          "sourceSubtopicIds": [
+            "dpc-9"
+          ],
+          "activities": [
+            "leitura dirigida com comparação entre institutos",
+            "marcação de exceções e prazos",
+            "questões FGV com engenharia reversa das alternativas"
+          ]
+        },
+        {
+          "name": "Direito Eleitoral",
+          "minutes": 56,
+          "subtopics": [
+            "Captação ilícita de recursos"
+          ],
+          "sourceSubtopicIds": [
+            "del-9"
+          ],
+          "activities": [
+            "leitura dirigida com comparação entre institutos",
+            "marcação de exceções e prazos",
+            "questões FGV com engenharia reversa das alternativas"
+          ]
+        }
+      ],
+      "revisionPlan": {
+        "minutes": 54,
+        "items": [
+          {
+            "discipline": "Direito Processual Civil",
+            "subtopics": [
+              "Competência"
+            ],
+            "method": "questões FGV + releitura do erro ou destaque do estudo anterior"
+          },
+          {
+            "discipline": "Direito Eleitoral",
+            "subtopics": [
+              "Ação de impugnação de mandato eletivo"
+            ],
+            "method": "questões FGV + releitura do erro ou destaque do estudo anterior"
+          }
+        ]
+      }
+    },
+    {
+      "dayNumber": 41,
+      "date": "2026-07-21",
+      "weekday": "tuesday",
+      "weekdayPt": "terça-feira",
+      "cycle": 2,
+      "totalMinutes": 180,
+      "newStudyMinutes": 126,
+      "revisionMinutes": 54,
+      "subjects": [
+        {
+          "name": "Direito Civil",
+          "minutes": 70,
+          "subtopics": [
+            "Simulação (Dos Fatos jurídicos)"
+          ],
+          "sourceSubtopicIds": [
+            "dc-9"
+          ],
+          "activities": [
+            "leitura dirigida com comparação entre institutos",
+            "marcação de exceções e prazos",
+            "questões FGV com engenharia reversa das alternativas"
+          ]
+        },
+        {
+          "name": "Direito Ambiental",
+          "minutes": 56,
+          "subtopics": [
+            "Lei da Mata Atlântica"
+          ],
+          "sourceSubtopicIds": [
+            "damb-9"
+          ],
+          "activities": [
+            "leitura dirigida com comparação entre institutos",
+            "marcação de exceções e prazos",
+            "questões FGV com engenharia reversa das alternativas"
+          ]
+        }
+      ],
+      "revisionPlan": {
+        "minutes": 54,
+        "items": [
+          {
+            "discipline": "Direito Civil",
+            "subtopics": [
+              "Desconsideração da personalidade jurídica"
+            ],
+            "method": "questões FGV + releitura do erro ou destaque do estudo anterior"
+          },
+          {
+            "discipline": "Direito Ambiental",
+            "subtopics": [
+              "Política Nacional de Recursos Hídricos"
+            ],
+            "method": "questões FGV + releitura do erro ou destaque do estudo anterior"
+          }
+        ]
+      }
+    },
+    {
+      "dayNumber": 42,
+      "date": "2026-07-22",
+      "weekday": "wednesday",
+      "weekdayPt": "quarta-feira",
+      "cycle": 2,
+      "totalMinutes": 180,
+      "newStudyMinutes": 126,
+      "revisionMinutes": 54,
+      "subjects": [
+        {
+          "name": "Direito Penal",
+          "minutes": 70,
+          "subtopics": [
+            "Concurso de pessoas"
+          ],
+          "sourceSubtopicIds": [
+            "dp-9"
+          ],
+          "activities": [
+            "leitura dirigida com comparação entre institutos",
+            "marcação de exceções e prazos",
+            "questões FGV com engenharia reversa das alternativas"
+          ]
+        },
+        {
+          "name": "Direitos Humanos",
+          "minutes": 56,
+          "subtopics": [
+            "Jurisprudência do STF em matéria de direitos humanos"
+          ],
+          "sourceSubtopicIds": [
+            "dhum-9"
+          ],
+          "activities": [
+            "leitura dirigida com comparação entre institutos",
+            "marcação de exceções e prazos",
+            "questões FGV com engenharia reversa das alternativas"
+          ]
+        }
+      ],
+      "revisionPlan": {
+        "minutes": 54,
+        "items": [
+          {
+            "discipline": "Direito Penal",
+            "subtopics": [
+              "Direito Penal Militar"
+            ],
+            "method": "questões FGV + releitura do erro ou destaque do estudo anterior"
+          },
+          {
+            "discipline": "Direitos Humanos",
+            "subtopics": [
+              "Súmula Vinculante"
+            ],
+            "method": "questões FGV + releitura do erro ou destaque do estudo anterior"
+          }
+        ]
+      }
+    },
+    {
+      "dayNumber": 43,
+      "date": "2026-07-23",
+      "weekday": "thursday",
+      "weekdayPt": "quinta-feira",
+      "cycle": 2,
+      "totalMinutes": 180,
+      "newStudyMinutes": 126,
+      "revisionMinutes": 54,
+      "subjects": [
+        {
+          "name": "Direito Processual Penal",
+          "minutes": 70,
+          "subtopics": [
+            "Tribunal do Júri"
+          ],
+          "sourceSubtopicIds": [
+            "dpp-10"
+          ],
+          "activities": [
+            "leitura dirigida com comparação entre institutos",
+            "marcação de exceções e prazos",
+            "questões FGV com engenharia reversa das alternativas"
+          ]
+        },
+        {
+          "name": "Noções Gerais de Direito e Formação Humanística",
+          "minutes": 56,
+          "subtopics": [
+            "Psicologia Judiciária"
+          ],
+          "sourceSubtopicIds": [
+            "ng-10"
+          ],
+          "activities": [
+            "leitura dirigida com comparação entre institutos",
+            "marcação de exceções e prazos",
+            "questões FGV com engenharia reversa das alternativas"
+          ]
+        }
+      ],
+      "revisionPlan": {
+        "minutes": 54,
+        "items": [
+          {
+            "discipline": "Direito Processual Penal",
+            "subtopics": [
+              "Medidas assecuratórias"
+            ],
+            "method": "questões FGV + releitura do erro ou destaque do estudo anterior"
+          },
+          {
+            "discipline": "Noções Gerais de Direito e Formação Humanística",
+            "subtopics": [
+              "O conceito de Justiça"
+            ],
+            "method": "questões FGV + releitura do erro ou destaque do estudo anterior"
+          }
+        ]
+      }
+    },
+    {
+      "dayNumber": 44,
+      "date": "2026-07-24",
+      "weekday": "friday",
+      "weekdayPt": "sexta-feira",
+      "cycle": 2,
+      "totalMinutes": 180,
+      "newStudyMinutes": 126,
+      "revisionMinutes": 54,
+      "subjects": [
+        {
+          "name": "Direito Constitucional",
+          "minutes": 70,
+          "subtopics": [
+            "Interpretação da Constituição"
+          ],
+          "sourceSubtopicIds": [
+            "dconst-10"
+          ],
+          "activities": [
+            "leitura dirigida com comparação entre institutos",
+            "marcação de exceções e prazos",
+            "questões FGV com engenharia reversa das alternativas"
+          ]
+        },
+        {
+          "name": "Direito Tributário e Financeiro",
+          "minutes": 56,
+          "subtopics": [
+            "Responsabilidade tributária"
+          ],
+          "sourceSubtopicIds": [
+            "dtrib-10"
+          ],
+          "activities": [
+            "leitura dirigida com comparação entre institutos",
+            "marcação de exceções e prazos",
+            "questões FGV com engenharia reversa das alternativas"
+          ]
+        }
+      ],
+      "revisionPlan": {
+        "minutes": 54,
+        "items": [
+          {
+            "discipline": "Direito Constitucional",
+            "subtopics": [
+              "Direitos políticos"
+            ],
+            "method": "questões FGV + releitura do erro ou destaque do estudo anterior"
+          },
+          {
+            "discipline": "Direito Tributário e Financeiro",
+            "subtopics": [
+              "Denúncia espontânea"
+            ],
+            "method": "questões FGV + releitura do erro ou destaque do estudo anterior"
+          }
+        ]
+      }
+    },
+    {
+      "dayNumber": 45,
+      "date": "2026-07-25",
+      "weekday": "saturday",
+      "weekdayPt": "sábado",
+      "cycle": 2,
+      "totalMinutes": 240,
+      "newStudyMinutes": 168,
+      "revisionMinutes": 72,
+      "subjects": [
+        {
+          "name": "Direito Administrativo",
+          "minutes": 92,
+          "subtopics": [
+            "Parcerias com o terceiro setor"
+          ],
+          "sourceSubtopicIds": [
+            "dadm-10"
+          ],
+          "activities": [
+            "leitura dirigida com comparação entre institutos",
+            "marcação de exceções e prazos",
+            "questões FGV com engenharia reversa das alternativas"
+          ]
+        },
+        {
+          "name": "Direito Empresarial",
+          "minutes": 76,
+          "subtopics": [
+            "Cheque"
+          ],
+          "sourceSubtopicIds": [
+            "demp-10"
+          ],
+          "activities": [
+            "leitura dirigida com comparação entre institutos",
+            "marcação de exceções e prazos",
+            "questões FGV com engenharia reversa das alternativas"
+          ]
+        }
+      ],
+      "revisionPlan": {
+        "minutes": 72,
+        "items": [
+          {
+            "discipline": "Direito Administrativo",
+            "subtopics": [
+              "Parcerias Público-Privadas"
+            ],
+            "method": "questões FGV + releitura do erro ou destaque do estudo anterior"
+          },
+          {
+            "discipline": "Direito Empresarial",
+            "subtopics": [
+              "Protesto"
+            ],
+            "method": "questões FGV + releitura do erro ou destaque do estudo anterior"
+          }
+        ]
+      }
+    },
+    {
+      "dayNumber": 46,
+      "date": "2026-07-26",
+      "weekday": "sunday",
+      "weekdayPt": "domingo",
+      "cycle": 2,
+      "totalMinutes": 240,
+      "newStudyMinutes": 168,
+      "revisionMinutes": 72,
+      "subjects": [
+        {
+          "name": "Direito do Consumidor",
+          "minutes": 92,
+          "subtopics": [
+            "Regulamentação de Serviços (ANATEL/ANEEL)"
+          ],
+          "sourceSubtopicIds": [
+            "dcons-10"
+          ],
+          "activities": [
+            "leitura dirigida com comparação entre institutos",
+            "marcação de exceções e prazos",
+            "questões FGV com engenharia reversa das alternativas"
+          ]
+        },
+        {
+          "name": "Direito da Criança e do Adolescente",
+          "minutes": 76,
+          "subtopics": [
+            "Acolhimento institucional e familiar"
+          ],
+          "sourceSubtopicIds": [
+            "dca-10"
+          ],
+          "activities": [
+            "leitura dirigida com comparação entre institutos",
+            "marcação de exceções e prazos",
+            "questões FGV com engenharia reversa das alternativas"
+          ]
+        }
+      ],
+      "revisionPlan": {
+        "minutes": 72,
+        "items": [
+          {
+            "discipline": "Direito do Consumidor",
+            "subtopics": [
+              "Sanções administrativas"
+            ],
+            "method": "questões FGV + releitura do erro ou destaque do estudo anterior"
+          },
+          {
+            "discipline": "Direito da Criança e do Adolescente",
+            "subtopics": [
+              "Lei Orgânica da Assistência Social"
+            ],
+            "method": "questões FGV + releitura do erro ou destaque do estudo anterior"
+          }
+        ]
+      }
+    },
+    {
+      "dayNumber": 47,
+      "date": "2026-07-27",
+      "weekday": "monday",
+      "weekdayPt": "segunda-feira",
+      "cycle": 2,
+      "totalMinutes": 180,
+      "newStudyMinutes": 126,
+      "revisionMinutes": 54,
+      "subjects": [
+        {
+          "name": "Direito Processual Civil",
+          "minutes": 70,
+          "subtopics": [
+            "Embargos à execução"
+          ],
+          "sourceSubtopicIds": [
+            "dpc-10"
+          ],
+          "activities": [
+            "leitura dirigida com comparação entre institutos",
+            "marcação de exceções e prazos",
+            "questões FGV com engenharia reversa das alternativas"
+          ]
+        },
+        {
+          "name": "Direito Eleitoral",
+          "minutes": 56,
+          "subtopics": [
+            "Recursos eleitorais"
+          ],
+          "sourceSubtopicIds": [
+            "del-10"
+          ],
+          "activities": [
+            "leitura dirigida com comparação entre institutos",
+            "marcação de exceções e prazos",
+            "questões FGV com engenharia reversa das alternativas"
+          ]
+        }
+      ],
+      "revisionPlan": {
+        "minutes": 54,
+        "items": [
+          {
+            "discipline": "Direito Processual Civil",
+            "subtopics": [
+              "Provas (Produção e ônus)"
+            ],
+            "method": "questões FGV + releitura do erro ou destaque do estudo anterior"
+          },
+          {
+            "discipline": "Direito Eleitoral",
+            "subtopics": [
+              "Captação ilícita de recursos"
+            ],
+            "method": "questões FGV + releitura do erro ou destaque do estudo anterior"
+          }
+        ]
+      }
+    },
+    {
+      "dayNumber": 48,
+      "date": "2026-07-28",
+      "weekday": "tuesday",
+      "weekdayPt": "terça-feira",
+      "cycle": 2,
+      "totalMinutes": 180,
+      "newStudyMinutes": 126,
+      "revisionMinutes": 54,
+      "subjects": [
+        {
+          "name": "Direito Civil",
+          "minutes": 70,
+          "subtopics": [
+            "Casamento (Direito das famílias)"
+          ],
+          "sourceSubtopicIds": [
+            "dc-10"
+          ],
+          "activities": [
+            "leitura dirigida com comparação entre institutos",
+            "marcação de exceções e prazos",
+            "questões FGV com engenharia reversa das alternativas"
+          ]
+        },
+        {
+          "name": "Direito Ambiental",
+          "minutes": 56,
+          "subtopics": [
+            "Pagamento por Serviços Ambientais"
+          ],
+          "sourceSubtopicIds": [
+            "damb-10"
+          ],
+          "activities": [
+            "leitura dirigida com comparação entre institutos",
+            "marcação de exceções e prazos",
+            "questões FGV com engenharia reversa das alternativas"
+          ]
+        }
+      ],
+      "revisionPlan": {
+        "minutes": 54,
+        "items": [
+          {
+            "discipline": "Direito Civil",
+            "subtopics": [
+              "Simulação (Dos Fatos jurídicos)"
+            ],
+            "method": "questões FGV + releitura do erro ou destaque do estudo anterior"
+          },
+          {
+            "discipline": "Direito Ambiental",
+            "subtopics": [
+              "Lei da Mata Atlântica"
+            ],
+            "method": "questões FGV + releitura do erro ou destaque do estudo anterior"
+          }
+        ]
+      }
+    },
+    {
+      "dayNumber": 49,
+      "date": "2026-07-29",
+      "weekday": "wednesday",
+      "weekdayPt": "quarta-feira",
+      "cycle": 2,
+      "totalMinutes": 180,
+      "newStudyMinutes": 126,
+      "revisionMinutes": 54,
+      "subjects": [
+        {
+          "name": "Direito Penal",
+          "minutes": 70,
+          "subtopics": [
+            "Fixação da pena"
+          ],
+          "sourceSubtopicIds": [
+            "dp-10"
+          ],
+          "activities": [
+            "leitura dirigida com comparação entre institutos",
+            "marcação de exceções e prazos",
+            "questões FGV com engenharia reversa das alternativas"
+          ]
+        },
+        {
+          "name": "Direitos Humanos",
+          "minutes": 56,
+          "subtopics": [
+            "Sistema regional interamericano de proteção"
+          ],
+          "sourceSubtopicIds": [
+            "dhum-1"
+          ],
+          "activities": [
+            "leitura dirigida com comparação entre institutos",
+            "marcação de exceções e prazos",
+            "questões FGV com engenharia reversa das alternativas"
+          ]
+        }
+      ],
+      "revisionPlan": {
+        "minutes": 54,
+        "items": [
+          {
+            "discipline": "Direito Penal",
+            "subtopics": [
+              "Concurso de pessoas"
+            ],
+            "method": "questões FGV + releitura do erro ou destaque do estudo anterior"
+          },
+          {
+            "discipline": "Direitos Humanos",
+            "subtopics": [
+              "Jurisprudência do STF em matéria de direitos humanos"
+            ],
+            "method": "questões FGV + releitura do erro ou destaque do estudo anterior"
+          }
+        ]
+      }
+    },
+    {
+      "dayNumber": 50,
+      "date": "2026-07-30",
+      "weekday": "thursday",
+      "weekdayPt": "quinta-feira",
+      "cycle": 2,
+      "totalMinutes": 180,
+      "newStudyMinutes": 126,
+      "revisionMinutes": 54,
+      "subjects": [
+        {
+          "name": "Direito Processual Penal",
+          "minutes": 70,
+          "subtopics": [
+            "Inquérito Policial"
+          ],
+          "sourceSubtopicIds": [
+            "dpp-11"
+          ],
+          "activities": [
+            "leitura dirigida com comparação entre institutos",
+            "marcação de exceções e prazos",
+            "questões FGV com engenharia reversa das alternativas"
+          ]
+        },
+        {
+          "name": "Noções Gerais de Direito e Formação Humanística",
+          "minutes": 56,
+          "subtopics": [
+            "Sociologia do Direito"
+          ],
+          "sourceSubtopicIds": [
+            "ng-11"
+          ],
+          "activities": [
+            "leitura dirigida com comparação entre institutos",
+            "marcação de exceções e prazos",
+            "questões FGV com engenharia reversa das alternativas"
+          ]
+        }
+      ],
+      "revisionPlan": {
+        "minutes": 54,
+        "items": [
+          {
+            "discipline": "Direito Processual Penal",
+            "subtopics": [
+              "Tribunal do Júri"
+            ],
+            "method": "questões FGV + releitura do erro ou destaque do estudo anterior"
+          },
+          {
+            "discipline": "Noções Gerais de Direito e Formação Humanística",
+            "subtopics": [
+              "Psicologia Judiciária"
+            ],
+            "method": "questões FGV + releitura do erro ou destaque do estudo anterior"
+          }
+        ]
+      }
+    },
+    {
+      "dayNumber": 51,
+      "date": "2026-07-31",
+      "weekday": "friday",
+      "weekdayPt": "sexta-feira",
+      "cycle": 2,
+      "totalMinutes": 180,
+      "newStudyMinutes": 126,
+      "revisionMinutes": 54,
+      "subjects": [
+        {
+          "name": "Direito Constitucional",
+          "minutes": 70,
+          "subtopics": [
+            "Nacionalidade"
+          ],
+          "sourceSubtopicIds": [
+            "dconst-11"
+          ],
+          "activities": [
+            "leitura dirigida com comparação entre institutos",
+            "marcação de exceções e prazos",
+            "questões FGV com engenharia reversa das alternativas"
+          ]
+        },
+        {
+          "name": "Direito Tributário e Financeiro",
+          "minutes": 56,
+          "subtopics": [
+            "ISS"
+          ],
+          "sourceSubtopicIds": [
+            "dtrib-11"
+          ],
+          "activities": [
+            "leitura dirigida com comparação entre institutos",
+            "marcação de exceções e prazos",
+            "questões FGV com engenharia reversa das alternativas"
+          ]
+        }
+      ],
+      "revisionPlan": {
+        "minutes": 54,
+        "items": [
+          {
+            "discipline": "Direito Constitucional",
+            "subtopics": [
+              "Interpretação da Constituição"
+            ],
+            "method": "questões FGV + releitura do erro ou destaque do estudo anterior"
+          },
+          {
+            "discipline": "Direito Tributário e Financeiro",
+            "subtopics": [
+              "Responsabilidade tributária"
+            ],
+            "method": "questões FGV + releitura do erro ou destaque do estudo anterior"
+          }
+        ]
+      }
+    },
+    {
+      "dayNumber": 52,
+      "date": "2026-08-01",
+      "weekday": "saturday",
+      "weekdayPt": "sábado",
+      "cycle": 2,
+      "totalMinutes": 240,
+      "newStudyMinutes": 168,
+      "revisionMinutes": 72,
+      "subjects": [
+        {
+          "name": "Direito Administrativo",
+          "minutes": 92,
+          "subtopics": [
+            "Lei de Introdução às Normas do Direito Brasileiro (LINDB)"
+          ],
+          "sourceSubtopicIds": [
+            "dadm-11"
+          ],
+          "activities": [
+            "leitura dirigida com comparação entre institutos",
+            "marcação de exceções e prazos",
+            "questões FGV com engenharia reversa das alternativas"
+          ]
+        },
+        {
+          "name": "Direito Empresarial",
+          "minutes": 76,
+          "subtopics": [
+            "Desconsideração da personalidade jurídica"
+          ],
+          "sourceSubtopicIds": [
+            "demp-11"
+          ],
+          "activities": [
+            "leitura dirigida com comparação entre institutos",
+            "marcação de exceções e prazos",
+            "questões FGV com engenharia reversa das alternativas"
+          ]
+        }
+      ],
+      "revisionPlan": {
+        "minutes": 72,
+        "items": [
+          {
+            "discipline": "Direito Administrativo",
+            "subtopics": [
+              "Parcerias com o terceiro setor"
+            ],
+            "method": "questões FGV + releitura do erro ou destaque do estudo anterior"
+          },
+          {
+            "discipline": "Direito Empresarial",
+            "subtopics": [
+              "Cheque"
+            ],
+            "method": "questões FGV + releitura do erro ou destaque do estudo anterior"
+          }
+        ]
+      }
+    },
+    {
+      "dayNumber": 53,
+      "date": "2026-08-02",
+      "weekday": "sunday",
+      "weekdayPt": "domingo",
+      "cycle": 2,
+      "totalMinutes": 240,
+      "newStudyMinutes": 168,
+      "revisionMinutes": 72,
+      "subjects": [
+        {
+          "name": "Direito do Consumidor",
+          "minutes": 92,
+          "subtopics": [
+            "Direitos Básicos do Consumidor"
+          ],
+          "sourceSubtopicIds": [
+            "dcons-11"
+          ],
+          "activities": [
+            "leitura dirigida com comparação entre institutos",
+            "marcação de exceções e prazos",
+            "questões FGV com engenharia reversa das alternativas"
+          ]
+        },
+        {
+          "name": "Direito da Criança e do Adolescente",
+          "minutes": 76,
+          "subtopics": [
+            "Violência doméstica contra a criança e o adolescente"
+          ],
+          "sourceSubtopicIds": [
+            "dca-11"
+          ],
+          "activities": [
+            "leitura dirigida com comparação entre institutos",
+            "marcação de exceções e prazos",
+            "questões FGV com engenharia reversa das alternativas"
+          ]
+        }
+      ],
+      "revisionPlan": {
+        "minutes": 72,
+        "items": [
+          {
+            "discipline": "Direito do Consumidor",
+            "subtopics": [
+              "Regulamentação de Serviços (ANATEL/ANEEL)"
+            ],
+            "method": "questões FGV + releitura do erro ou destaque do estudo anterior"
+          },
+          {
+            "discipline": "Direito da Criança e do Adolescente",
+            "subtopics": [
+              "Acolhimento institucional e familiar"
+            ],
+            "method": "questões FGV + releitura do erro ou destaque do estudo anterior"
+          }
+        ]
+      }
+    },
+    {
+      "dayNumber": 54,
+      "date": "2026-08-03",
+      "weekday": "monday",
+      "weekdayPt": "segunda-feira",
+      "cycle": 2,
+      "totalMinutes": 180,
+      "newStudyMinutes": 126,
+      "revisionMinutes": 54,
+      "subjects": [
+        {
+          "name": "Direito Processual Civil",
+          "minutes": 70,
+          "subtopics": [
+            "Agravo de instrumento"
+          ],
+          "sourceSubtopicIds": [
+            "dpc-11"
+          ],
+          "activities": [
+            "leitura dirigida com comparação entre institutos",
+            "marcação de exceções e prazos",
+            "questões FGV com engenharia reversa das alternativas"
+          ]
+        },
+        {
+          "name": "Direito Eleitoral",
+          "minutes": 56,
+          "subtopics": [
+            "Arrecadação e aplicação de recursos"
+          ],
+          "sourceSubtopicIds": [
+            "del-11"
+          ],
+          "activities": [
+            "leitura dirigida com comparação entre institutos",
+            "marcação de exceções e prazos",
+            "questões FGV com engenharia reversa das alternativas"
+          ]
+        }
+      ],
+      "revisionPlan": {
+        "minutes": 54,
+        "items": [
+          {
+            "discipline": "Direito Processual Civil",
+            "subtopics": [
+              "Embargos à execução"
+            ],
+            "method": "questões FGV + releitura do erro ou destaque do estudo anterior"
+          },
+          {
+            "discipline": "Direito Eleitoral",
+            "subtopics": [
+              "Recursos eleitorais"
+            ],
+            "method": "questões FGV + releitura do erro ou destaque do estudo anterior"
+          }
+        ]
+      }
+    },
+    {
+      "dayNumber": 55,
+      "date": "2026-08-04",
+      "weekday": "tuesday",
+      "weekdayPt": "terça-feira",
+      "cycle": 2,
+      "totalMinutes": 180,
+      "newStudyMinutes": 126,
+      "revisionMinutes": 54,
+      "subjects": [
+        {
+          "name": "Direito Civil",
+          "minutes": 70,
+          "subtopics": [
+            "Obrigações (Modalidades, transmissão, extinção)"
+          ],
+          "sourceSubtopicIds": [
+            "dc-11"
+          ],
+          "activities": [
+            "leitura dirigida com comparação entre institutos",
+            "marcação de exceções e prazos",
+            "questões FGV com engenharia reversa das alternativas"
+          ]
+        },
+        {
+          "name": "Direito Ambiental",
+          "minutes": 56,
+          "subtopics": [
+            "Política Nacional de Resíduos Sólidos"
+          ],
+          "sourceSubtopicIds": [
+            "damb-11"
+          ],
+          "activities": [
+            "leitura dirigida com comparação entre institutos",
+            "marcação de exceções e prazos",
+            "questões FGV com engenharia reversa das alternativas"
+          ]
+        }
+      ],
+      "revisionPlan": {
+        "minutes": 54,
+        "items": [
+          {
+            "discipline": "Direito Civil",
+            "subtopics": [
+              "Casamento (Direito das famílias)"
+            ],
+            "method": "questões FGV + releitura do erro ou destaque do estudo anterior"
+          },
+          {
+            "discipline": "Direito Ambiental",
+            "subtopics": [
+              "Pagamento por Serviços Ambientais"
+            ],
+            "method": "questões FGV + releitura do erro ou destaque do estudo anterior"
+          }
+        ]
+      }
+    },
+    {
+      "dayNumber": 56,
+      "date": "2026-08-05",
+      "weekday": "wednesday",
+      "weekdayPt": "quarta-feira",
+      "cycle": 2,
+      "totalMinutes": 180,
+      "newStudyMinutes": 126,
+      "revisionMinutes": 54,
+      "subjects": [
+        {
+          "name": "Direito Penal",
+          "minutes": 70,
+          "subtopics": [
+            "Causas de justificação"
+          ],
+          "sourceSubtopicIds": [
+            "dp-11"
+          ],
+          "activities": [
+            "leitura dirigida com comparação entre institutos",
+            "marcação de exceções e prazos",
+            "questões FGV com engenharia reversa das alternativas"
+          ]
+        },
+        {
+          "name": "Direitos Humanos",
+          "minutes": 56,
+          "subtopics": [
+            "Teoria Geral dos Direitos Humanos"
+          ],
+          "sourceSubtopicIds": [
+            "dhum-2"
+          ],
+          "activities": [
+            "leitura dirigida com comparação entre institutos",
+            "marcação de exceções e prazos",
+            "questões FGV com engenharia reversa das alternativas"
+          ]
+        }
+      ],
+      "revisionPlan": {
+        "minutes": 54,
+        "items": [
+          {
+            "discipline": "Direito Penal",
+            "subtopics": [
+              "Fixação da pena"
+            ],
+            "method": "questões FGV + releitura do erro ou destaque do estudo anterior"
+          },
+          {
+            "discipline": "Direitos Humanos",
+            "subtopics": [
+              "Sistema regional interamericano de proteção"
+            ],
+            "method": "questões FGV + releitura do erro ou destaque do estudo anterior"
+          }
+        ]
+      }
+    },
+    {
+      "dayNumber": 57,
+      "date": "2026-08-06",
+      "weekday": "thursday",
+      "weekdayPt": "quinta-feira",
+      "cycle": 3,
+      "totalMinutes": 180,
+      "newStudyMinutes": 126,
+      "revisionMinutes": 54,
+      "subjects": [
+        {
+          "name": "Direito Processual Penal",
+          "minutes": 70,
+          "subtopics": [
+            "Prisão e Medidas Cautelares"
+          ],
+          "sourceSubtopicIds": [
+            "dpp-1"
+          ],
+          "activities": [
+            "releitura orientada por incidência",
+            "mapa de pegadinhas normativas",
+            "questões FGV com registro de erro recorrente"
+          ]
+        },
+        {
+          "name": "Noções Gerais de Direito e Formação Humanística",
+          "minutes": 56,
+          "subtopics": [
+            "Legislação Estadual"
+          ],
+          "sourceSubtopicIds": [
+            "ng-1"
+          ],
+          "activities": [
+            "releitura orientada por incidência",
+            "mapa de pegadinhas normativas",
+            "questões FGV com registro de erro recorrente"
+          ]
+        }
+      ],
+      "revisionPlan": {
+        "minutes": 54,
+        "items": [
+          {
+            "discipline": "Direito Processual Penal",
+            "subtopics": [
+              "Inquérito Policial"
+            ],
+            "method": "questões FGV + releitura do erro ou destaque do estudo anterior"
+          },
+          {
+            "discipline": "Noções Gerais de Direito e Formação Humanística",
+            "subtopics": [
+              "Sociologia do Direito"
+            ],
+            "method": "questões FGV + releitura do erro ou destaque do estudo anterior"
+          }
+        ]
+      }
+    },
+    {
+      "dayNumber": 58,
+      "date": "2026-08-07",
+      "weekday": "friday",
+      "weekdayPt": "sexta-feira",
+      "cycle": 3,
+      "totalMinutes": 180,
+      "newStudyMinutes": 126,
+      "revisionMinutes": 54,
+      "subjects": [
+        {
+          "name": "Direito Constitucional",
+          "minutes": 70,
+          "subtopics": [
+            "Repartição de competências"
+          ],
+          "sourceSubtopicIds": [
+            "dconst-1"
+          ],
+          "activities": [
+            "releitura orientada por incidência",
+            "mapa de pegadinhas normativas",
+            "questões FGV com registro de erro recorrente"
+          ]
+        },
+        {
+          "name": "Direito Tributário e Financeiro",
+          "minutes": 56,
+          "subtopics": [
+            "Imunidades tributárias"
+          ],
+          "sourceSubtopicIds": [
+            "dtrib-1"
+          ],
+          "activities": [
+            "releitura orientada por incidência",
+            "mapa de pegadinhas normativas",
+            "questões FGV com registro de erro recorrente"
+          ]
+        }
+      ],
+      "revisionPlan": {
+        "minutes": 54,
+        "items": [
+          {
+            "discipline": "Direito Constitucional",
+            "subtopics": [
+              "Nacionalidade"
+            ],
+            "method": "questões FGV + releitura do erro ou destaque do estudo anterior"
+          },
+          {
+            "discipline": "Direito Tributário e Financeiro",
+            "subtopics": [
+              "ISS"
+            ],
+            "method": "questões FGV + releitura do erro ou destaque do estudo anterior"
+          }
+        ]
+      }
+    },
+    {
+      "dayNumber": 59,
+      "date": "2026-08-08",
+      "weekday": "saturday",
+      "weekdayPt": "sábado",
+      "cycle": 3,
+      "totalMinutes": 240,
+      "newStudyMinutes": 168,
+      "revisionMinutes": 72,
+      "subjects": [
+        {
+          "name": "Direito Administrativo",
+          "minutes": 92,
+          "subtopics": [
+            "Servidores Públicos"
+          ],
+          "sourceSubtopicIds": [
+            "dadm-1"
+          ],
+          "activities": [
+            "releitura orientada por incidência",
+            "mapa de pegadinhas normativas",
+            "questões FGV com registro de erro recorrente"
+          ]
+        },
+        {
+          "name": "Direito Empresarial",
+          "minutes": 76,
+          "subtopics": [
+            "Recuperação judicial"
+          ],
+          "sourceSubtopicIds": [
+            "demp-1"
+          ],
+          "activities": [
+            "releitura orientada por incidência",
+            "mapa de pegadinhas normativas",
+            "questões FGV com registro de erro recorrente"
+          ]
+        }
+      ],
+      "revisionPlan": {
+        "minutes": 72,
+        "items": [
+          {
+            "discipline": "Direito Administrativo",
+            "subtopics": [
+              "Lei de Introdução às Normas do Direito Brasileiro (LINDB)"
+            ],
+            "method": "questões FGV + releitura do erro ou destaque do estudo anterior"
+          },
+          {
+            "discipline": "Direito Empresarial",
+            "subtopics": [
+              "Desconsideração da personalidade jurídica"
+            ],
+            "method": "questões FGV + releitura do erro ou destaque do estudo anterior"
+          }
+        ]
+      }
+    },
+    {
+      "dayNumber": 60,
+      "date": "2026-08-09",
+      "weekday": "sunday",
+      "weekdayPt": "domingo",
+      "cycle": 3,
+      "totalMinutes": 240,
+      "newStudyMinutes": 168,
+      "revisionMinutes": 72,
+      "subjects": [
+        {
+          "name": "Direito do Consumidor",
+          "minutes": 92,
+          "subtopics": [
+            "Responsabilidade pelo fato e do produto e do serviço"
+          ],
+          "sourceSubtopicIds": [
+            "dcons-1"
+          ],
+          "activities": [
+            "releitura orientada por incidência",
+            "mapa de pegadinhas normativas",
+            "questões FGV com registro de erro recorrente"
+          ]
+        },
+        {
+          "name": "Direito da Criança e do Adolescente",
+          "minutes": 76,
+          "subtopics": [
+            "Adoção (ECA)"
+          ],
+          "sourceSubtopicIds": [
+            "dca-2"
+          ],
+          "activities": [
+            "releitura orientada por incidência",
+            "mapa de pegadinhas normativas",
+            "questões FGV com registro de erro recorrente"
+          ]
+        }
+      ],
+      "revisionPlan": {
+        "minutes": 72,
+        "items": [
+          {
+            "discipline": "Direito do Consumidor",
+            "subtopics": [
+              "Direitos Básicos do Consumidor"
+            ],
+            "method": "questões FGV + releitura do erro ou destaque do estudo anterior"
+          },
+          {
+            "discipline": "Direito da Criança e do Adolescente",
+            "subtopics": [
+              "Violência doméstica contra a criança e o adolescente"
+            ],
+            "method": "questões FGV + releitura do erro ou destaque do estudo anterior"
+          }
+        ]
+      }
+    },
+    {
+      "dayNumber": 61,
+      "date": "2026-08-10",
+      "weekday": "monday",
+      "weekdayPt": "segunda-feira",
+      "cycle": 3,
+      "totalMinutes": 180,
+      "newStudyMinutes": 126,
+      "revisionMinutes": 54,
+      "subjects": [
+        {
+          "name": "Direito Processual Civil",
+          "minutes": 70,
+          "subtopics": [
+            "Apelação (Recursos em espécie)"
+          ],
+          "sourceSubtopicIds": [
+            "dpc-1"
+          ],
+          "activities": [
+            "releitura orientada por incidência",
+            "mapa de pegadinhas normativas",
+            "questões FGV com registro de erro recorrente"
+          ]
+        },
+        {
+          "name": "Direito Eleitoral",
+          "minutes": 56,
+          "subtopics": [
+            "Direitos políticos"
+          ],
+          "sourceSubtopicIds": [
+            "del-4"
+          ],
+          "activities": [
+            "releitura orientada por incidência",
+            "mapa de pegadinhas normativas",
+            "questões FGV com registro de erro recorrente"
+          ]
+        }
+      ],
+      "revisionPlan": {
+        "minutes": 54,
+        "items": [
+          {
+            "discipline": "Direito Processual Civil",
+            "subtopics": [
+              "Agravo de instrumento"
+            ],
+            "method": "questões FGV + releitura do erro ou destaque do estudo anterior"
+          },
+          {
+            "discipline": "Direito Eleitoral",
+            "subtopics": [
+              "Arrecadação e aplicação de recursos"
+            ],
+            "method": "questões FGV + releitura do erro ou destaque do estudo anterior"
+          }
+        ]
+      }
+    },
+    {
+      "dayNumber": 62,
+      "date": "2026-08-11",
+      "weekday": "tuesday",
+      "weekdayPt": "terça-feira",
+      "cycle": 3,
+      "totalMinutes": 180,
+      "newStudyMinutes": 126,
+      "revisionMinutes": 54,
+      "subjects": [
+        {
+          "name": "Direito Civil",
+          "minutes": 70,
+          "subtopics": [
+            "Regimes de bens (Direito das Famílias)"
+          ],
+          "sourceSubtopicIds": [
+            "dc-1"
+          ],
+          "activities": [
+            "releitura orientada por incidência",
+            "mapa de pegadinhas normativas",
+            "questões FGV com registro de erro recorrente"
+          ]
+        },
+        {
+          "name": "Direito Ambiental",
+          "minutes": 56,
+          "subtopics": [
+            "Código Florestal (incluindo APP, CAR, etc.)"
+          ],
+          "sourceSubtopicIds": [
+            "damb-1"
+          ],
+          "activities": [
+            "releitura orientada por incidência",
+            "mapa de pegadinhas normativas",
+            "questões FGV com registro de erro recorrente"
+          ]
+        }
+      ],
+      "revisionPlan": {
+        "minutes": 54,
+        "items": [
+          {
+            "discipline": "Direito Civil",
+            "subtopics": [
+              "Obrigações (Modalidades, transmissão, extinção)"
+            ],
+            "method": "questões FGV + releitura do erro ou destaque do estudo anterior"
+          },
+          {
+            "discipline": "Direito Ambiental",
+            "subtopics": [
+              "Política Nacional de Resíduos Sólidos"
+            ],
+            "method": "questões FGV + releitura do erro ou destaque do estudo anterior"
+          }
+        ]
+      }
+    },
+    {
+      "dayNumber": 63,
+      "date": "2026-08-12",
+      "weekday": "wednesday",
+      "weekdayPt": "quarta-feira",
+      "cycle": 3,
+      "totalMinutes": 180,
+      "newStudyMinutes": 126,
+      "revisionMinutes": 54,
+      "subjects": [
+        {
+          "name": "Direito Penal",
+          "minutes": 70,
+          "subtopics": [
+            "Crimes contra a administração pública"
+          ],
+          "sourceSubtopicIds": [
+            "dp-1"
+          ],
+          "activities": [
+            "releitura orientada por incidência",
+            "mapa de pegadinhas normativas",
+            "questões FGV com registro de erro recorrente"
+          ]
+        },
+        {
+          "name": "Direitos Humanos",
+          "minutes": 56,
+          "subtopics": [
+            "Incidente de deslocamento de competência"
+          ],
+          "sourceSubtopicIds": [
+            "dhum-7"
+          ],
+          "activities": [
+            "releitura orientada por incidência",
+            "mapa de pegadinhas normativas",
+            "questões FGV com registro de erro recorrente"
+          ]
+        }
+      ],
+      "revisionPlan": {
+        "minutes": 54,
+        "items": [
+          {
+            "discipline": "Direito Penal",
+            "subtopics": [
+              "Causas de justificação"
+            ],
+            "method": "questões FGV + releitura do erro ou destaque do estudo anterior"
+          },
+          {
+            "discipline": "Direitos Humanos",
+            "subtopics": [
+              "Teoria Geral dos Direitos Humanos"
+            ],
+            "method": "questões FGV + releitura do erro ou destaque do estudo anterior"
+          }
+        ]
+      }
+    },
+    {
+      "dayNumber": 64,
+      "date": "2026-08-13",
+      "weekday": "thursday",
+      "weekdayPt": "quinta-feira",
+      "cycle": 3,
+      "totalMinutes": 180,
+      "newStudyMinutes": 126,
+      "revisionMinutes": 54,
+      "subjects": [
+        {
+          "name": "Direito Processual Penal",
+          "minutes": 70,
+          "subtopics": [
+            "Recursos em Geral"
+          ],
+          "sourceSubtopicIds": [
+            "dpp-2"
+          ],
+          "activities": [
+            "releitura orientada por incidência",
+            "mapa de pegadinhas normativas",
+            "questões FGV com registro de erro recorrente"
+          ]
+        },
+        {
+          "name": "Noções Gerais de Direito e Formação Humanística",
+          "minutes": 56,
+          "subtopics": [
+            "Lógica do razoável"
+          ],
+          "sourceSubtopicIds": [
+            "ng-2"
+          ],
+          "activities": [
+            "releitura orientada por incidência",
+            "mapa de pegadinhas normativas",
+            "questões FGV com registro de erro recorrente"
+          ]
+        }
+      ],
+      "revisionPlan": {
+        "minutes": 54,
+        "items": [
+          {
+            "discipline": "Direito Processual Penal",
+            "subtopics": [
+              "Prisão e Medidas Cautelares"
+            ],
+            "method": "questões FGV + releitura do erro ou destaque do estudo anterior"
+          },
+          {
+            "discipline": "Noções Gerais de Direito e Formação Humanística",
+            "subtopics": [
+              "Legislação Estadual"
+            ],
+            "method": "questões FGV + releitura do erro ou destaque do estudo anterior"
+          }
+        ]
+      }
+    },
+    {
+      "dayNumber": 65,
+      "date": "2026-08-14",
+      "weekday": "friday",
+      "weekdayPt": "sexta-feira",
+      "cycle": 3,
+      "totalMinutes": 180,
+      "newStudyMinutes": 126,
+      "revisionMinutes": 54,
+      "subjects": [
+        {
+          "name": "Direito Constitucional",
+          "minutes": 70,
+          "subtopics": [
+            "Controle de constitucionalidade"
+          ],
+          "sourceSubtopicIds": [
+            "dconst-2"
+          ],
+          "activities": [
+            "releitura orientada por incidência",
+            "mapa de pegadinhas normativas",
+            "questões FGV com registro de erro recorrente"
+          ]
+        },
+        {
+          "name": "Direito Tributário e Financeiro",
+          "minutes": 56,
+          "subtopics": [
+            "ICMS"
+          ],
+          "sourceSubtopicIds": [
+            "dtrib-2"
+          ],
+          "activities": [
+            "releitura orientada por incidência",
+            "mapa de pegadinhas normativas",
+            "questões FGV com registro de erro recorrente"
+          ]
+        }
+      ],
+      "revisionPlan": {
+        "minutes": 54,
+        "items": [
+          {
+            "discipline": "Direito Constitucional",
+            "subtopics": [
+              "Repartição de competências"
+            ],
+            "method": "questões FGV + releitura do erro ou destaque do estudo anterior"
+          },
+          {
+            "discipline": "Direito Tributário e Financeiro",
+            "subtopics": [
+              "Imunidades tributárias"
+            ],
+            "method": "questões FGV + releitura do erro ou destaque do estudo anterior"
+          }
+        ]
+      }
+    },
+    {
+      "dayNumber": 66,
+      "date": "2026-08-15",
+      "weekday": "saturday",
+      "weekdayPt": "sábado",
+      "cycle": 3,
+      "totalMinutes": 240,
+      "newStudyMinutes": 168,
+      "revisionMinutes": 72,
+      "subjects": [
+        {
+          "name": "Direito Administrativo",
+          "minutes": 92,
+          "subtopics": [
+            "Improbidade administrativa"
+          ],
+          "sourceSubtopicIds": [
+            "dadm-2"
+          ],
+          "activities": [
+            "releitura orientada por incidência",
+            "mapa de pegadinhas normativas",
+            "questões FGV com registro de erro recorrente"
+          ]
+        },
+        {
+          "name": "Direito Empresarial",
+          "minutes": 76,
+          "subtopics": [
+            "Sociedade anônima"
+          ],
+          "sourceSubtopicIds": [
+            "demp-2"
+          ],
+          "activities": [
+            "releitura orientada por incidência",
+            "mapa de pegadinhas normativas",
+            "questões FGV com registro de erro recorrente"
+          ]
+        }
+      ],
+      "revisionPlan": {
+        "minutes": 72,
+        "items": [
+          {
+            "discipline": "Direito Administrativo",
+            "subtopics": [
+              "Servidores Públicos"
+            ],
+            "method": "questões FGV + releitura do erro ou destaque do estudo anterior"
+          },
+          {
+            "discipline": "Direito Empresarial",
+            "subtopics": [
+              "Recuperação judicial"
+            ],
+            "method": "questões FGV + releitura do erro ou destaque do estudo anterior"
+          }
+        ]
+      }
+    },
+    {
+      "dayNumber": 67,
+      "date": "2026-08-16",
+      "weekday": "sunday",
+      "weekdayPt": "domingo",
+      "cycle": 3,
+      "totalMinutes": 240,
+      "newStudyMinutes": 168,
+      "revisionMinutes": 72,
+      "subjects": [
+        {
+          "name": "Direito do Consumidor",
+          "minutes": 92,
+          "subtopics": [
+            "Defesa dos Direitos do Consumidor em Juízo"
+          ],
+          "sourceSubtopicIds": [
+            "dcons-2"
+          ],
+          "activities": [
+            "releitura orientada por incidência",
+            "mapa de pegadinhas normativas",
+            "questões FGV com registro de erro recorrente"
+          ]
+        },
+        {
+          "name": "Direito da Criança e do Adolescente",
+          "minutes": 76,
+          "subtopics": [
+            "Infrações Administrativas (ECA)"
+          ],
+          "sourceSubtopicIds": [
+            "dca-3"
+          ],
+          "activities": [
+            "releitura orientada por incidência",
+            "mapa de pegadinhas normativas",
+            "questões FGV com registro de erro recorrente"
+          ]
+        }
+      ],
+      "revisionPlan": {
+        "minutes": 72,
+        "items": [
+          {
+            "discipline": "Direito do Consumidor",
+            "subtopics": [
+              "Responsabilidade pelo fato e do produto e do serviço"
+            ],
+            "method": "questões FGV + releitura do erro ou destaque do estudo anterior"
+          },
+          {
+            "discipline": "Direito da Criança e do Adolescente",
+            "subtopics": [
+              "Adoção (ECA)"
+            ],
+            "method": "questões FGV + releitura do erro ou destaque do estudo anterior"
+          }
+        ]
+      }
+    },
+    {
+      "dayNumber": 68,
+      "date": "2026-08-17",
+      "weekday": "monday",
+      "weekdayPt": "segunda-feira",
+      "cycle": 3,
+      "totalMinutes": 180,
+      "newStudyMinutes": 126,
+      "revisionMinutes": 54,
+      "subjects": [
+        {
+          "name": "Direito Processual Civil",
+          "minutes": 70,
+          "subtopics": [
+            "Tutelas provisórias"
+          ],
+          "sourceSubtopicIds": [
+            "dpc-2"
+          ],
+          "activities": [
+            "releitura orientada por incidência",
+            "mapa de pegadinhas normativas",
+            "questões FGV com registro de erro recorrente"
+          ]
+        },
+        {
+          "name": "Direito Eleitoral",
+          "minutes": 56,
+          "subtopics": [
+            "Competência da justiça eleitoral"
+          ],
+          "sourceSubtopicIds": [
+            "del-5"
+          ],
+          "activities": [
+            "releitura orientada por incidência",
+            "mapa de pegadinhas normativas",
+            "questões FGV com registro de erro recorrente"
+          ]
+        }
+      ],
+      "revisionPlan": {
+        "minutes": 54,
+        "items": [
+          {
+            "discipline": "Direito Processual Civil",
+            "subtopics": [
+              "Apelação (Recursos em espécie)"
+            ],
+            "method": "questões FGV + releitura do erro ou destaque do estudo anterior"
+          },
+          {
+            "discipline": "Direito Eleitoral",
+            "subtopics": [
+              "Direitos políticos"
+            ],
+            "method": "questões FGV + releitura do erro ou destaque do estudo anterior"
+          }
+        ]
+      }
+    },
+    {
+      "dayNumber": 69,
+      "date": "2026-08-18",
+      "weekday": "tuesday",
+      "weekdayPt": "terça-feira",
+      "cycle": 3,
+      "totalMinutes": 180,
+      "newStudyMinutes": 126,
+      "revisionMinutes": 54,
+      "subjects": [
+        {
+          "name": "Direito Civil",
+          "minutes": 70,
+          "subtopics": [
+            "Doação (Contratos em espécie)"
+          ],
+          "sourceSubtopicIds": [
+            "dc-2"
+          ],
+          "activities": [
+            "releitura orientada por incidência",
+            "mapa de pegadinhas normativas",
+            "questões FGV com registro de erro recorrente"
+          ]
+        },
+        {
+          "name": "Direito Ambiental",
+          "minutes": 56,
+          "subtopics": [
+            "Reparação do Dano Ambiental"
+          ],
+          "sourceSubtopicIds": [
+            "damb-2"
+          ],
+          "activities": [
+            "releitura orientada por incidência",
+            "mapa de pegadinhas normativas",
+            "questões FGV com registro de erro recorrente"
+          ]
+        }
+      ],
+      "revisionPlan": {
+        "minutes": 54,
+        "items": [
+          {
+            "discipline": "Direito Civil",
+            "subtopics": [
+              "Regimes de bens (Direito das Famílias)"
+            ],
+            "method": "questões FGV + releitura do erro ou destaque do estudo anterior"
+          },
+          {
+            "discipline": "Direito Ambiental",
+            "subtopics": [
+              "Código Florestal (incluindo APP, CAR, etc.)"
+            ],
+            "method": "questões FGV + releitura do erro ou destaque do estudo anterior"
+          }
+        ]
+      }
+    },
+    {
+      "dayNumber": 70,
+      "date": "2026-08-19",
+      "weekday": "wednesday",
+      "weekdayPt": "quarta-feira",
+      "cycle": 3,
+      "totalMinutes": 180,
+      "newStudyMinutes": 126,
+      "revisionMinutes": 54,
+      "subjects": [
+        {
+          "name": "Direito Penal",
+          "minutes": 70,
+          "subtopics": [
+            "Crimes contra o patrimônio"
+          ],
+          "sourceSubtopicIds": [
+            "dp-2"
+          ],
+          "activities": [
+            "releitura orientada por incidência",
+            "mapa de pegadinhas normativas",
+            "questões FGV com registro de erro recorrente"
+          ]
+        },
+        {
+          "name": "Direitos Humanos",
+          "minutes": 56,
+          "subtopics": [
+            "Súmula Vinculante"
+          ],
+          "sourceSubtopicIds": [
+            "dhum-8"
+          ],
+          "activities": [
+            "releitura orientada por incidência",
+            "mapa de pegadinhas normativas",
+            "questões FGV com registro de erro recorrente"
+          ]
+        }
+      ],
+      "revisionPlan": {
+        "minutes": 54,
+        "items": [
+          {
+            "discipline": "Direito Penal",
+            "subtopics": [
+              "Crimes contra a administração pública"
+            ],
+            "method": "questões FGV + releitura do erro ou destaque do estudo anterior"
+          },
+          {
+            "discipline": "Direitos Humanos",
+            "subtopics": [
+              "Incidente de deslocamento de competência"
+            ],
+            "method": "questões FGV + releitura do erro ou destaque do estudo anterior"
+          }
+        ]
+      }
+    },
+    {
+      "dayNumber": 71,
+      "date": "2026-08-20",
+      "weekday": "thursday",
+      "weekdayPt": "quinta-feira",
+      "cycle": 3,
+      "totalMinutes": 180,
+      "newStudyMinutes": 126,
+      "revisionMinutes": 54,
+      "subjects": [
+        {
+          "name": "Direito Processual Penal",
+          "minutes": 70,
+          "subtopics": [
+            "Prova"
+          ],
+          "sourceSubtopicIds": [
+            "dpp-3"
+          ],
+          "activities": [
+            "releitura orientada por incidência",
+            "mapa de pegadinhas normativas",
+            "questões FGV com registro de erro recorrente"
+          ]
+        },
+        {
+          "name": "Noções Gerais de Direito e Formação Humanística",
+          "minutes": 56,
+          "subtopics": [
+            "Estatuto da Magistratura"
+          ],
+          "sourceSubtopicIds": [
+            "ng-3"
+          ],
+          "activities": [
+            "releitura orientada por incidência",
+            "mapa de pegadinhas normativas",
+            "questões FGV com registro de erro recorrente"
+          ]
+        }
+      ],
+      "revisionPlan": {
+        "minutes": 54,
+        "items": [
+          {
+            "discipline": "Direito Processual Penal",
+            "subtopics": [
+              "Recursos em Geral"
+            ],
+            "method": "questões FGV + releitura do erro ou destaque do estudo anterior"
+          },
+          {
+            "discipline": "Noções Gerais de Direito e Formação Humanística",
+            "subtopics": [
+              "Lógica do razoável"
+            ],
+            "method": "questões FGV + releitura do erro ou destaque do estudo anterior"
+          }
+        ]
+      }
+    },
+    {
+      "dayNumber": 72,
+      "date": "2026-08-21",
+      "weekday": "friday",
+      "weekdayPt": "sexta-feira",
+      "cycle": 3,
+      "totalMinutes": 180,
+      "newStudyMinutes": 126,
+      "revisionMinutes": 54,
+      "subjects": [
+        {
+          "name": "Direito Constitucional",
+          "minutes": 70,
+          "subtopics": [
+            "Direitos sociais"
+          ],
+          "sourceSubtopicIds": [
+            "dconst-3"
+          ],
+          "activities": [
+            "releitura orientada por incidência",
+            "mapa de pegadinhas normativas",
+            "questões FGV com registro de erro recorrente"
+          ]
+        },
+        {
+          "name": "Direito Tributário e Financeiro",
+          "minutes": 56,
+          "subtopics": [
+            "IPVA"
+          ],
+          "sourceSubtopicIds": [
+            "dtrib-3"
+          ],
+          "activities": [
+            "releitura orientada por incidência",
+            "mapa de pegadinhas normativas",
+            "questões FGV com registro de erro recorrente"
+          ]
+        }
+      ],
+      "revisionPlan": {
+        "minutes": 54,
+        "items": [
+          {
+            "discipline": "Direito Constitucional",
+            "subtopics": [
+              "Controle de constitucionalidade"
+            ],
+            "method": "questões FGV + releitura do erro ou destaque do estudo anterior"
+          },
+          {
+            "discipline": "Direito Tributário e Financeiro",
+            "subtopics": [
+              "ICMS"
+            ],
+            "method": "questões FGV + releitura do erro ou destaque do estudo anterior"
+          }
+        ]
+      }
+    },
+    {
+      "dayNumber": 73,
+      "date": "2026-08-22",
+      "weekday": "saturday",
+      "weekdayPt": "sábado",
+      "cycle": 3,
+      "totalMinutes": 240,
+      "newStudyMinutes": 168,
+      "revisionMinutes": 72,
+      "subjects": [
+        {
+          "name": "Direito Administrativo",
+          "minutes": 92,
+          "subtopics": [
+            "Licitação"
+          ],
+          "sourceSubtopicIds": [
+            "dadm-3"
+          ],
+          "activities": [
+            "releitura orientada por incidência",
+            "mapa de pegadinhas normativas",
+            "questões FGV com registro de erro recorrente"
+          ]
+        },
+        {
+          "name": "Direito Empresarial",
+          "minutes": 76,
+          "subtopics": [
+            "Falência"
+          ],
+          "sourceSubtopicIds": [
+            "demp-3"
+          ],
+          "activities": [
+            "releitura orientada por incidência",
+            "mapa de pegadinhas normativas",
+            "questões FGV com registro de erro recorrente"
+          ]
+        }
+      ],
+      "revisionPlan": {
+        "minutes": 72,
+        "items": [
+          {
+            "discipline": "Direito Administrativo",
+            "subtopics": [
+              "Improbidade administrativa"
+            ],
+            "method": "questões FGV + releitura do erro ou destaque do estudo anterior"
+          },
+          {
+            "discipline": "Direito Empresarial",
+            "subtopics": [
+              "Sociedade anônima"
+            ],
+            "method": "questões FGV + releitura do erro ou destaque do estudo anterior"
+          }
+        ]
+      }
+    },
+    {
+      "dayNumber": 74,
+      "date": "2026-08-23",
+      "weekday": "sunday",
+      "weekdayPt": "domingo",
+      "cycle": 3,
+      "totalMinutes": 240,
+      "newStudyMinutes": 168,
+      "revisionMinutes": 72,
+      "subjects": [
+        {
+          "name": "Direito do Consumidor",
+          "minutes": 92,
+          "subtopics": [
+            "Relação de Consumo"
+          ],
+          "sourceSubtopicIds": [
+            "dcons-3"
+          ],
+          "activities": [
+            "releitura orientada por incidência",
+            "mapa de pegadinhas normativas",
+            "questões FGV com registro de erro recorrente"
+          ]
+        },
+        {
+          "name": "Direito da Criança e do Adolescente",
+          "minutes": 76,
+          "subtopics": [
+            "Depoimento especial e Escuta especializada"
+          ],
+          "sourceSubtopicIds": [
+            "dca-4"
+          ],
+          "activities": [
+            "releitura orientada por incidência",
+            "mapa de pegadinhas normativas",
+            "questões FGV com registro de erro recorrente"
+          ]
+        }
+      ],
+      "revisionPlan": {
+        "minutes": 72,
+        "items": [
+          {
+            "discipline": "Direito do Consumidor",
+            "subtopics": [
+              "Defesa dos Direitos do Consumidor em Juízo"
+            ],
+            "method": "questões FGV + releitura do erro ou destaque do estudo anterior"
+          },
+          {
+            "discipline": "Direito da Criança e do Adolescente",
+            "subtopics": [
+              "Infrações Administrativas (ECA)"
+            ],
+            "method": "questões FGV + releitura do erro ou destaque do estudo anterior"
+          }
+        ]
+      }
+    },
+    {
+      "dayNumber": 75,
+      "date": "2026-08-24",
+      "weekday": "monday",
+      "weekdayPt": "segunda-feira",
+      "cycle": 3,
+      "totalMinutes": 180,
+      "newStudyMinutes": 126,
+      "revisionMinutes": 54,
+      "subjects": [
+        {
+          "name": "Direito Processual Civil",
+          "minutes": 70,
+          "subtopics": [
+            "Litisconsórcio (Sujeitos do processo)"
+          ],
+          "sourceSubtopicIds": [
+            "dpc-3"
+          ],
+          "activities": [
+            "releitura orientada por incidência",
+            "mapa de pegadinhas normativas",
+            "questões FGV com registro de erro recorrente"
+          ]
+        },
+        {
+          "name": "Direito Eleitoral",
+          "minutes": 56,
+          "subtopics": [
+            "Prestação de contas"
+          ],
+          "sourceSubtopicIds": [
+            "del-6"
+          ],
+          "activities": [
+            "releitura orientada por incidência",
+            "mapa de pegadinhas normativas",
+            "questões FGV com registro de erro recorrente"
+          ]
+        }
+      ],
+      "revisionPlan": {
+        "minutes": 54,
+        "items": [
+          {
+            "discipline": "Direito Processual Civil",
+            "subtopics": [
+              "Tutelas provisórias"
+            ],
+            "method": "questões FGV + releitura do erro ou destaque do estudo anterior"
+          },
+          {
+            "discipline": "Direito Eleitoral",
+            "subtopics": [
+              "Competência da justiça eleitoral"
+            ],
+            "method": "questões FGV + releitura do erro ou destaque do estudo anterior"
+          }
+        ]
+      }
+    },
+    {
+      "dayNumber": 76,
+      "date": "2026-08-25",
+      "weekday": "tuesday",
+      "weekdayPt": "terça-feira",
+      "cycle": 3,
+      "totalMinutes": 180,
+      "newStudyMinutes": 126,
+      "revisionMinutes": 54,
+      "subjects": [
+        {
+          "name": "Direito Civil",
+          "minutes": 70,
+          "subtopics": [
+            "Sucessão legítima (Do Direito das Sucessões)"
+          ],
+          "sourceSubtopicIds": [
+            "dc-3"
+          ],
+          "activities": [
+            "releitura orientada por incidência",
+            "mapa de pegadinhas normativas",
+            "questões FGV com registro de erro recorrente"
+          ]
+        },
+        {
+          "name": "Direito Ambiental",
+          "minutes": 56,
+          "subtopics": [
+            "Competência legislativa em matéria ambiental"
+          ],
+          "sourceSubtopicIds": [
+            "damb-3"
+          ],
+          "activities": [
+            "releitura orientada por incidência",
+            "mapa de pegadinhas normativas",
+            "questões FGV com registro de erro recorrente"
+          ]
+        }
+      ],
+      "revisionPlan": {
+        "minutes": 54,
+        "items": [
+          {
+            "discipline": "Direito Civil",
+            "subtopics": [
+              "Doação (Contratos em espécie)"
+            ],
+            "method": "questões FGV + releitura do erro ou destaque do estudo anterior"
+          },
+          {
+            "discipline": "Direito Ambiental",
+            "subtopics": [
+              "Reparação do Dano Ambiental"
+            ],
+            "method": "questões FGV + releitura do erro ou destaque do estudo anterior"
+          }
+        ]
+      }
+    },
+    {
+      "dayNumber": 77,
+      "date": "2026-08-26",
+      "weekday": "wednesday",
+      "weekdayPt": "quarta-feira",
+      "cycle": 3,
+      "totalMinutes": 180,
+      "newStudyMinutes": 126,
+      "revisionMinutes": 54,
+      "subjects": [
+        {
+          "name": "Direito Penal",
+          "minutes": 70,
+          "subtopics": [
+            "Crimes contra a dignidade sexual"
+          ],
+          "sourceSubtopicIds": [
+            "dp-3"
+          ],
+          "activities": [
+            "releitura orientada por incidência",
+            "mapa de pegadinhas normativas",
+            "questões FGV com registro de erro recorrente"
+          ]
+        },
+        {
+          "name": "Direitos Humanos",
+          "minutes": 56,
+          "subtopics": [
+            "Jurisprudência do STF em matéria de direitos humanos"
+          ],
+          "sourceSubtopicIds": [
+            "dhum-9"
+          ],
+          "activities": [
+            "releitura orientada por incidência",
+            "mapa de pegadinhas normativas",
+            "questões FGV com registro de erro recorrente"
+          ]
+        }
+      ],
+      "revisionPlan": {
+        "minutes": 54,
+        "items": [
+          {
+            "discipline": "Direito Penal",
+            "subtopics": [
+              "Crimes contra o patrimônio"
+            ],
+            "method": "questões FGV + releitura do erro ou destaque do estudo anterior"
+          },
+          {
+            "discipline": "Direitos Humanos",
+            "subtopics": [
+              "Súmula Vinculante"
+            ],
+            "method": "questões FGV + releitura do erro ou destaque do estudo anterior"
+          }
+        ]
+      }
+    },
+    {
+      "dayNumber": 78,
+      "date": "2026-08-27",
+      "weekday": "thursday",
+      "weekdayPt": "quinta-feira",
+      "cycle": 3,
+      "totalMinutes": 180,
+      "newStudyMinutes": 126,
+      "revisionMinutes": 54,
+      "subjects": [
+        {
+          "name": "Direito Processual Penal",
+          "minutes": 70,
+          "subtopics": [
+            "Ação Penal"
+          ],
+          "sourceSubtopicIds": [
+            "dpp-4"
+          ],
+          "activities": [
+            "releitura orientada por incidência",
+            "mapa de pegadinhas normativas",
+            "questões FGV com registro de erro recorrente"
+          ]
+        },
+        {
+          "name": "Noções Gerais de Direito e Formação Humanística",
+          "minutes": 56,
+          "subtopics": [
+            "Direito Digital"
+          ],
+          "sourceSubtopicIds": [
+            "ng-4"
+          ],
+          "activities": [
+            "releitura orientada por incidência",
+            "mapa de pegadinhas normativas",
+            "questões FGV com registro de erro recorrente"
+          ]
+        }
+      ],
+      "revisionPlan": {
+        "minutes": 54,
+        "items": [
+          {
+            "discipline": "Direito Processual Penal",
+            "subtopics": [
+              "Prova"
+            ],
+            "method": "questões FGV + releitura do erro ou destaque do estudo anterior"
+          },
+          {
+            "discipline": "Noções Gerais de Direito e Formação Humanística",
+            "subtopics": [
+              "Estatuto da Magistratura"
+            ],
+            "method": "questões FGV + releitura do erro ou destaque do estudo anterior"
+          }
+        ]
+      }
+    },
+    {
+      "dayNumber": 79,
+      "date": "2026-08-28",
+      "weekday": "friday",
+      "weekdayPt": "sexta-feira",
+      "cycle": 3,
+      "totalMinutes": 180,
+      "newStudyMinutes": 126,
+      "revisionMinutes": 54,
+      "subjects": [
+        {
+          "name": "Direito Constitucional",
+          "minutes": 70,
+          "subtopics": [
+            "Processo legislativo"
+          ],
+          "sourceSubtopicIds": [
+            "dconst-4"
+          ],
+          "activities": [
+            "releitura orientada por incidência",
+            "mapa de pegadinhas normativas",
+            "questões FGV com registro de erro recorrente"
+          ]
+        },
+        {
+          "name": "Direito Tributário e Financeiro",
+          "minutes": 56,
+          "subtopics": [
+            "Execução fiscal"
+          ],
+          "sourceSubtopicIds": [
+            "dtrib-4"
+          ],
+          "activities": [
+            "releitura orientada por incidência",
+            "mapa de pegadinhas normativas",
+            "questões FGV com registro de erro recorrente"
+          ]
+        }
+      ],
+      "revisionPlan": {
+        "minutes": 54,
+        "items": [
+          {
+            "discipline": "Direito Constitucional",
+            "subtopics": [
+              "Direitos sociais"
+            ],
+            "method": "questões FGV + releitura do erro ou destaque do estudo anterior"
+          },
+          {
+            "discipline": "Direito Tributário e Financeiro",
+            "subtopics": [
+              "IPVA"
+            ],
+            "method": "questões FGV + releitura do erro ou destaque do estudo anterior"
+          }
+        ]
+      }
+    },
+    {
+      "dayNumber": 80,
+      "date": "2026-08-29",
+      "weekday": "saturday",
+      "weekdayPt": "sábado",
+      "cycle": 3,
+      "totalMinutes": 240,
+      "newStudyMinutes": 168,
+      "revisionMinutes": 72,
+      "subjects": [
+        {
+          "name": "Direito Administrativo",
+          "minutes": 92,
+          "subtopics": [
+            "Responsabilidade civil do Estado"
+          ],
+          "sourceSubtopicIds": [
+            "dadm-4"
+          ],
+          "activities": [
+            "releitura orientada por incidência",
+            "mapa de pegadinhas normativas",
+            "questões FGV com registro de erro recorrente"
+          ]
+        },
+        {
+          "name": "Direito Empresarial",
+          "minutes": 76,
+          "subtopics": [
+            "Sociedade limitada"
+          ],
+          "sourceSubtopicIds": [
+            "demp-4"
+          ],
+          "activities": [
+            "releitura orientada por incidência",
+            "mapa de pegadinhas normativas",
+            "questões FGV com registro de erro recorrente"
+          ]
+        }
+      ],
+      "revisionPlan": {
+        "minutes": 72,
+        "items": [
+          {
+            "discipline": "Direito Administrativo",
+            "subtopics": [
+              "Licitação"
+            ],
+            "method": "questões FGV + releitura do erro ou destaque do estudo anterior"
+          },
+          {
+            "discipline": "Direito Empresarial",
+            "subtopics": [
+              "Falência"
+            ],
+            "method": "questões FGV + releitura do erro ou destaque do estudo anterior"
+          }
+        ]
+      }
+    },
+    {
+      "dayNumber": 81,
+      "date": "2026-08-30",
+      "weekday": "sunday",
+      "weekdayPt": "domingo",
+      "cycle": 3,
+      "totalMinutes": 240,
+      "newStudyMinutes": 168,
+      "revisionMinutes": 72,
+      "subjects": [
+        {
+          "name": "Direito do Consumidor",
+          "minutes": 92,
+          "subtopics": [
+            "Superendividamento"
+          ],
+          "sourceSubtopicIds": [
+            "dcons-4"
+          ],
+          "activities": [
+            "releitura orientada por incidência",
+            "mapa de pegadinhas normativas",
+            "questões FGV com registro de erro recorrente"
+          ]
+        },
+        {
+          "name": "Direito da Criança e do Adolescente",
+          "minutes": 76,
+          "subtopics": [
+            "Conselho Tutelar"
+          ],
+          "sourceSubtopicIds": [
+            "dca-5"
+          ],
+          "activities": [
+            "releitura orientada por incidência",
+            "mapa de pegadinhas normativas",
+            "questões FGV com registro de erro recorrente"
+          ]
+        }
+      ],
+      "revisionPlan": {
+        "minutes": 72,
+        "items": [
+          {
+            "discipline": "Direito do Consumidor",
+            "subtopics": [
+              "Relação de Consumo"
+            ],
+            "method": "questões FGV + releitura do erro ou destaque do estudo anterior"
+          },
+          {
+            "discipline": "Direito da Criança e do Adolescente",
+            "subtopics": [
+              "Depoimento especial e Escuta especializada"
+            ],
+            "method": "questões FGV + releitura do erro ou destaque do estudo anterior"
+          }
+        ]
+      }
+    },
+    {
+      "dayNumber": 82,
+      "date": "2026-08-31",
+      "weekday": "monday",
+      "weekdayPt": "segunda-feira",
+      "cycle": 3,
+      "totalMinutes": 180,
+      "newStudyMinutes": 126,
+      "revisionMinutes": 54,
+      "subjects": [
+        {
+          "name": "Direito Processual Civil",
+          "minutes": 70,
+          "subtopics": [
+            "Cumprimento de Sentença"
+          ],
+          "sourceSubtopicIds": [
+            "dpc-4"
+          ],
+          "activities": [
+            "releitura orientada por incidência",
+            "mapa de pegadinhas normativas",
+            "questões FGV com registro de erro recorrente"
+          ]
+        },
+        {
+          "name": "Direito Eleitoral",
+          "minutes": 56,
+          "subtopics": [
+            "Condutas vedadas aos agentes públicos"
+          ],
+          "sourceSubtopicIds": [
+            "del-7"
+          ],
+          "activities": [
+            "releitura orientada por incidência",
+            "mapa de pegadinhas normativas",
+            "questões FGV com registro de erro recorrente"
+          ]
+        }
+      ],
+      "revisionPlan": {
+        "minutes": 54,
+        "items": [
+          {
+            "discipline": "Direito Processual Civil",
+            "subtopics": [
+              "Litisconsórcio (Sujeitos do processo)"
+            ],
+            "method": "questões FGV + releitura do erro ou destaque do estudo anterior"
+          },
+          {
+            "discipline": "Direito Eleitoral",
+            "subtopics": [
+              "Prestação de contas"
+            ],
+            "method": "questões FGV + releitura do erro ou destaque do estudo anterior"
+          }
+        ]
+      }
+    },
+    {
+      "dayNumber": 83,
+      "date": "2026-09-01",
+      "weekday": "tuesday",
+      "weekdayPt": "terça-feira",
+      "cycle": 3,
+      "totalMinutes": 180,
+      "newStudyMinutes": 126,
+      "revisionMinutes": 54,
+      "subjects": [
+        {
+          "name": "Direito Civil",
+          "minutes": 70,
+          "subtopics": [
+            "Prescrição e decadência"
+          ],
+          "sourceSubtopicIds": [
+            "dc-4"
+          ],
+          "activities": [
+            "releitura orientada por incidência",
+            "mapa de pegadinhas normativas",
+            "questões FGV com registro de erro recorrente"
+          ]
+        },
+        {
+          "name": "Direito Ambiental",
+          "minutes": 56,
+          "subtopics": [
+            "Licenciamento Ambiental"
+          ],
+          "sourceSubtopicIds": [
+            "damb-4"
+          ],
+          "activities": [
+            "releitura orientada por incidência",
+            "mapa de pegadinhas normativas",
+            "questões FGV com registro de erro recorrente"
+          ]
+        }
+      ],
+      "revisionPlan": {
+        "minutes": 54,
+        "items": [
+          {
+            "discipline": "Direito Civil",
+            "subtopics": [
+              "Sucessão legítima (Do Direito das Sucessões)"
+            ],
+            "method": "questões FGV + releitura do erro ou destaque do estudo anterior"
+          },
+          {
+            "discipline": "Direito Ambiental",
+            "subtopics": [
+              "Competência legislativa em matéria ambiental"
+            ],
+            "method": "questões FGV + releitura do erro ou destaque do estudo anterior"
+          }
+        ]
+      }
+    },
+    {
+      "dayNumber": 84,
+      "date": "2026-09-02",
+      "weekday": "wednesday",
+      "weekdayPt": "quarta-feira",
+      "cycle": 3,
+      "totalMinutes": 180,
+      "newStudyMinutes": 126,
+      "revisionMinutes": 54,
+      "subjects": [
+        {
+          "name": "Direito Penal",
+          "minutes": 70,
+          "subtopics": [
+            "Violência doméstica e familiar"
+          ],
+          "sourceSubtopicIds": [
+            "dp-4"
+          ],
+          "activities": [
+            "releitura orientada por incidência",
+            "mapa de pegadinhas normativas",
+            "questões FGV com registro de erro recorrente"
+          ]
+        },
+        {
+          "name": "Direitos Humanos",
+          "minutes": 56,
+          "subtopics": [
+            "Sistema regional interamericano de proteção"
+          ],
+          "sourceSubtopicIds": [
+            "dhum-1"
+          ],
+          "activities": [
+            "releitura orientada por incidência",
+            "mapa de pegadinhas normativas",
+            "questões FGV com registro de erro recorrente"
+          ]
+        }
+      ],
+      "revisionPlan": {
+        "minutes": 54,
+        "items": [
+          {
+            "discipline": "Direito Penal",
+            "subtopics": [
+              "Crimes contra a dignidade sexual"
+            ],
+            "method": "questões FGV + releitura do erro ou destaque do estudo anterior"
+          },
+          {
+            "discipline": "Direitos Humanos",
+            "subtopics": [
+              "Jurisprudência do STF em matéria de direitos humanos"
+            ],
+            "method": "questões FGV + releitura do erro ou destaque do estudo anterior"
+          }
+        ]
+      }
+    },
+    {
+      "dayNumber": 85,
+      "date": "2026-09-03",
+      "weekday": "thursday",
+      "weekdayPt": "quinta-feira",
+      "cycle": 4,
+      "totalMinutes": 180,
+      "newStudyMinutes": 126,
+      "revisionMinutes": 54,
+      "subjects": [
+        {
+          "name": "Direito Processual Penal",
+          "minutes": 70,
+          "subtopics": [
+            "Medidas assecuratórias"
+          ],
+          "sourceSubtopicIds": [
+            "dpp-9"
+          ],
+          "activities": [
+            "simulado setorial cronometrado",
+            "correção ativa do caderno de erros",
+            "revisão final por assertivas FGV"
+          ]
+        },
+        {
+          "name": "Noções Gerais de Direito e Formação Humanística",
+          "minutes": 56,
+          "subtopics": [
+            "O conceito de Justiça"
+          ],
+          "sourceSubtopicIds": [
+            "ng-9"
+          ],
+          "activities": [
+            "simulado setorial cronometrado",
+            "correção ativa do caderno de erros",
+            "revisão final por assertivas FGV"
+          ]
+        }
+      ],
+      "revisionPlan": {
+        "minutes": 54,
+        "items": [
+          {
+            "discipline": "Direito Processual Penal",
+            "subtopics": [
+              "Ação Penal"
+            ],
+            "method": "questões FGV + releitura do erro ou destaque do estudo anterior"
+          },
+          {
+            "discipline": "Noções Gerais de Direito e Formação Humanística",
+            "subtopics": [
+              "Direito Digital"
+            ],
+            "method": "questões FGV + releitura do erro ou destaque do estudo anterior"
+          }
+        ]
+      }
+    },
+    {
+      "dayNumber": 86,
+      "date": "2026-09-04",
+      "weekday": "friday",
+      "weekdayPt": "sexta-feira",
+      "cycle": 4,
+      "totalMinutes": 180,
+      "newStudyMinutes": 126,
+      "revisionMinutes": 54,
+      "subjects": [
+        {
+          "name": "Direito Constitucional",
+          "minutes": 70,
+          "subtopics": [
+            "Direitos políticos"
+          ],
+          "sourceSubtopicIds": [
+            "dconst-9"
+          ],
+          "activities": [
+            "simulado setorial cronometrado",
+            "correção ativa do caderno de erros",
+            "revisão final por assertivas FGV"
+          ]
+        },
+        {
+          "name": "Direito Tributário e Financeiro",
+          "minutes": 56,
+          "subtopics": [
+            "Denúncia espontânea"
+          ],
+          "sourceSubtopicIds": [
+            "dtrib-9"
+          ],
+          "activities": [
+            "simulado setorial cronometrado",
+            "correção ativa do caderno de erros",
+            "revisão final por assertivas FGV"
+          ]
+        }
+      ],
+      "revisionPlan": {
+        "minutes": 54,
+        "items": [
+          {
+            "discipline": "Direito Constitucional",
+            "subtopics": [
+              "Processo legislativo"
+            ],
+            "method": "questões FGV + releitura do erro ou destaque do estudo anterior"
+          },
+          {
+            "discipline": "Direito Tributário e Financeiro",
+            "subtopics": [
+              "Execução fiscal"
+            ],
+            "method": "questões FGV + releitura do erro ou destaque do estudo anterior"
+          }
+        ]
+      }
+    },
+    {
+      "dayNumber": 87,
+      "date": "2026-09-05",
+      "weekday": "saturday",
+      "weekdayPt": "sábado",
+      "cycle": 4,
+      "totalMinutes": 240,
+      "newStudyMinutes": 168,
+      "revisionMinutes": 72,
+      "subjects": [
+        {
+          "name": "Direito Administrativo",
+          "minutes": 92,
+          "subtopics": [
+            "Parcerias Público-Privadas"
+          ],
+          "sourceSubtopicIds": [
+            "dadm-9"
+          ],
+          "activities": [
+            "simulado setorial cronometrado",
+            "correção ativa do caderno de erros",
+            "revisão final por assertivas FGV"
+          ]
+        },
+        {
+          "name": "Direito Empresarial",
+          "minutes": 76,
+          "subtopics": [
+            "Protesto"
+          ],
+          "sourceSubtopicIds": [
+            "demp-9"
+          ],
+          "activities": [
+            "simulado setorial cronometrado",
+            "correção ativa do caderno de erros",
+            "revisão final por assertivas FGV"
+          ]
+        }
+      ],
+      "revisionPlan": {
+        "minutes": 72,
+        "items": [
+          {
+            "discipline": "Direito Administrativo",
+            "subtopics": [
+              "Responsabilidade civil do Estado"
+            ],
+            "method": "questões FGV + releitura do erro ou destaque do estudo anterior"
+          },
+          {
+            "discipline": "Direito Empresarial",
+            "subtopics": [
+              "Sociedade limitada"
+            ],
+            "method": "questões FGV + releitura do erro ou destaque do estudo anterior"
+          }
+        ]
+      }
+    },
+    {
+      "dayNumber": 88,
+      "date": "2026-09-06",
+      "weekday": "sunday",
+      "weekdayPt": "domingo",
+      "cycle": 4,
+      "totalMinutes": 240,
+      "newStudyMinutes": 168,
+      "revisionMinutes": 72,
+      "subjects": [
+        {
+          "name": "Direito do Consumidor",
+          "minutes": 92,
+          "subtopics": [
+            "Sanções administrativas"
+          ],
+          "sourceSubtopicIds": [
+            "dcons-9"
+          ],
+          "activities": [
+            "simulado setorial cronometrado",
+            "correção ativa do caderno de erros",
+            "revisão final por assertivas FGV"
+          ]
+        },
+        {
+          "name": "Direito da Criança e do Adolescente",
+          "minutes": 76,
+          "subtopics": [
+            "Acolhimento institucional e familiar"
+          ],
+          "sourceSubtopicIds": [
+            "dca-10"
+          ],
+          "activities": [
+            "simulado setorial cronometrado",
+            "correção ativa do caderno de erros",
+            "revisão final por assertivas FGV"
+          ]
+        }
+      ],
+      "revisionPlan": {
+        "minutes": 72,
+        "items": [
+          {
+            "discipline": "Direito do Consumidor",
+            "subtopics": [
+              "Superendividamento"
+            ],
+            "method": "questões FGV + releitura do erro ou destaque do estudo anterior"
+          },
+          {
+            "discipline": "Direito da Criança e do Adolescente",
+            "subtopics": [
+              "Conselho Tutelar"
+            ],
+            "method": "questões FGV + releitura do erro ou destaque do estudo anterior"
+          }
+        ]
+      }
+    },
+    {
+      "dayNumber": 89,
+      "date": "2026-09-07",
+      "weekday": "monday",
+      "weekdayPt": "segunda-feira",
+      "cycle": 4,
+      "totalMinutes": 180,
+      "newStudyMinutes": 126,
+      "revisionMinutes": 54,
+      "subjects": [
+        {
+          "name": "Direito Processual Civil",
+          "minutes": 70,
+          "subtopics": [
+            "Provas (Produção e ônus)"
+          ],
+          "sourceSubtopicIds": [
+            "dpc-9"
+          ],
+          "activities": [
+            "simulado setorial cronometrado",
+            "correção ativa do caderno de erros",
+            "revisão final por assertivas FGV"
+          ]
+        },
+        {
+          "name": "Direito Eleitoral",
+          "minutes": 56,
+          "subtopics": [
+            "Alistamento e Poder normativo do TSE"
+          ],
+          "sourceSubtopicIds": [
+            "del-12"
+          ],
+          "activities": [
+            "simulado setorial cronometrado",
+            "correção ativa do caderno de erros",
+            "revisão final por assertivas FGV"
+          ]
+        }
+      ],
+      "revisionPlan": {
+        "minutes": 54,
+        "items": [
+          {
+            "discipline": "Direito Processual Civil",
+            "subtopics": [
+              "Cumprimento de Sentença"
+            ],
+            "method": "questões FGV + releitura do erro ou destaque do estudo anterior"
+          },
+          {
+            "discipline": "Direito Eleitoral",
+            "subtopics": [
+              "Condutas vedadas aos agentes públicos"
+            ],
+            "method": "questões FGV + releitura do erro ou destaque do estudo anterior"
+          }
+        ]
+      }
+    },
+    {
+      "dayNumber": 90,
+      "date": "2026-09-08",
+      "weekday": "tuesday",
+      "weekdayPt": "terça-feira",
+      "cycle": 4,
+      "totalMinutes": 180,
+      "newStudyMinutes": 126,
+      "revisionMinutes": 54,
+      "subjects": [
+        {
+          "name": "Direito Civil",
+          "minutes": 70,
+          "subtopics": [
+            "Simulação (Dos Fatos jurídicos)"
+          ],
+          "sourceSubtopicIds": [
+            "dc-9"
+          ],
+          "activities": [
+            "simulado setorial cronometrado",
+            "correção ativa do caderno de erros",
+            "revisão final por assertivas FGV"
+          ]
+        },
+        {
+          "name": "Direito Ambiental",
+          "minutes": 56,
+          "subtopics": [
+            "Lei da Mata Atlântica"
+          ],
+          "sourceSubtopicIds": [
+            "damb-9"
+          ],
+          "activities": [
+            "simulado setorial cronometrado",
+            "correção ativa do caderno de erros",
+            "revisão final por assertivas FGV"
+          ]
+        }
+      ],
+      "revisionPlan": {
+        "minutes": 54,
+        "items": [
+          {
+            "discipline": "Direito Civil",
+            "subtopics": [
+              "Prescrição e decadência"
+            ],
+            "method": "questões FGV + releitura do erro ou destaque do estudo anterior"
+          },
+          {
+            "discipline": "Direito Ambiental",
+            "subtopics": [
+              "Licenciamento Ambiental"
+            ],
+            "method": "questões FGV + releitura do erro ou destaque do estudo anterior"
+          }
+        ]
+      }
+    },
+    {
+      "dayNumber": 91,
+      "date": "2026-09-09",
+      "weekday": "wednesday",
+      "weekdayPt": "quarta-feira",
+      "cycle": 4,
+      "totalMinutes": 180,
+      "newStudyMinutes": 126,
+      "revisionMinutes": 54,
+      "subjects": [
+        {
+          "name": "Direito Penal",
+          "minutes": 70,
+          "subtopics": [
+            "Concurso de pessoas"
+          ],
+          "sourceSubtopicIds": [
+            "dp-9"
+          ],
+          "activities": [
+            "simulado setorial cronometrado",
+            "correção ativa do caderno de erros",
+            "revisão final por assertivas FGV"
+          ]
+        },
+        {
+          "name": "Direitos Humanos",
+          "minutes": 56,
+          "subtopics": [
+            "Convenção sobre os Direitos das Pessoas com Deficiência"
+          ],
+          "sourceSubtopicIds": [
+            "dhum-6"
+          ],
+          "activities": [
+            "simulado setorial cronometrado",
+            "correção ativa do caderno de erros",
+            "revisão final por assertivas FGV"
+          ]
+        }
+      ],
+      "revisionPlan": {
+        "minutes": 54,
+        "items": [
+          {
+            "discipline": "Direito Penal",
+            "subtopics": [
+              "Violência doméstica e familiar"
+            ],
+            "method": "questões FGV + releitura do erro ou destaque do estudo anterior"
+          },
+          {
+            "discipline": "Direitos Humanos",
+            "subtopics": [
+              "Sistema regional interamericano de proteção"
+            ],
+            "method": "questões FGV + releitura do erro ou destaque do estudo anterior"
+          }
+        ]
+      }
+    },
+    {
+      "dayNumber": 92,
+      "date": "2026-09-10",
+      "weekday": "thursday",
+      "weekdayPt": "quinta-feira",
+      "cycle": 4,
+      "totalMinutes": 180,
+      "newStudyMinutes": 126,
+      "revisionMinutes": 54,
+      "subjects": [
+        {
+          "name": "Direito Processual Penal",
+          "minutes": 70,
+          "subtopics": [
+            "Tribunal do Júri"
+          ],
+          "sourceSubtopicIds": [
+            "dpp-10"
+          ],
+          "activities": [
+            "simulado setorial cronometrado",
+            "correção ativa do caderno de erros",
+            "revisão final por assertivas FGV"
+          ]
+        },
+        {
+          "name": "Noções Gerais de Direito e Formação Humanística",
+          "minutes": 56,
+          "subtopics": [
+            "Psicologia Judiciária"
+          ],
+          "sourceSubtopicIds": [
+            "ng-10"
+          ],
+          "activities": [
+            "simulado setorial cronometrado",
+            "correção ativa do caderno de erros",
+            "revisão final por assertivas FGV"
+          ]
+        }
+      ],
+      "revisionPlan": {
+        "minutes": 54,
+        "items": [
+          {
+            "discipline": "Direito Processual Penal",
+            "subtopics": [
+              "Medidas assecuratórias"
+            ],
+            "method": "questões FGV + releitura do erro ou destaque do estudo anterior"
+          },
+          {
+            "discipline": "Noções Gerais de Direito e Formação Humanística",
+            "subtopics": [
+              "O conceito de Justiça"
+            ],
+            "method": "questões FGV + releitura do erro ou destaque do estudo anterior"
+          }
+        ]
+      }
+    },
+    {
+      "dayNumber": 93,
+      "date": "2026-09-11",
+      "weekday": "friday",
+      "weekdayPt": "sexta-feira",
+      "cycle": 4,
+      "totalMinutes": 180,
+      "newStudyMinutes": 126,
+      "revisionMinutes": 54,
+      "subjects": [
+        {
+          "name": "Direito Constitucional",
+          "minutes": 70,
+          "subtopics": [
+            "Interpretação da Constituição"
+          ],
+          "sourceSubtopicIds": [
+            "dconst-10"
+          ],
+          "activities": [
+            "simulado setorial cronometrado",
+            "correção ativa do caderno de erros",
+            "revisão final por assertivas FGV"
+          ]
+        },
+        {
+          "name": "Direito Tributário e Financeiro",
+          "minutes": 56,
+          "subtopics": [
+            "Responsabilidade tributária"
+          ],
+          "sourceSubtopicIds": [
+            "dtrib-10"
+          ],
+          "activities": [
+            "simulado setorial cronometrado",
+            "correção ativa do caderno de erros",
+            "revisão final por assertivas FGV"
+          ]
+        }
+      ],
+      "revisionPlan": {
+        "minutes": 54,
+        "items": [
+          {
+            "discipline": "Direito Constitucional",
+            "subtopics": [
+              "Direitos políticos"
+            ],
+            "method": "questões FGV + releitura do erro ou destaque do estudo anterior"
+          },
+          {
+            "discipline": "Direito Tributário e Financeiro",
+            "subtopics": [
+              "Denúncia espontânea"
+            ],
+            "method": "questões FGV + releitura do erro ou destaque do estudo anterior"
+          }
+        ]
+      }
+    },
+    {
+      "dayNumber": 94,
+      "date": "2026-09-12",
+      "weekday": "saturday",
+      "weekdayPt": "sábado",
+      "cycle": 4,
+      "totalMinutes": 240,
+      "newStudyMinutes": 168,
+      "revisionMinutes": 72,
+      "subjects": [
+        {
+          "name": "Direito Administrativo",
+          "minutes": 92,
+          "subtopics": [
+            "Parcerias com o terceiro setor"
+          ],
+          "sourceSubtopicIds": [
+            "dadm-10"
+          ],
+          "activities": [
+            "simulado setorial cronometrado",
+            "correção ativa do caderno de erros",
+            "revisão final por assertivas FGV"
+          ]
+        },
+        {
+          "name": "Direito Empresarial",
+          "minutes": 76,
+          "subtopics": [
+            "Cheque"
+          ],
+          "sourceSubtopicIds": [
+            "demp-10"
+          ],
+          "activities": [
+            "simulado setorial cronometrado",
+            "correção ativa do caderno de erros",
+            "revisão final por assertivas FGV"
+          ]
+        }
+      ],
+      "revisionPlan": {
+        "minutes": 72,
+        "items": [
+          {
+            "discipline": "Direito Administrativo",
+            "subtopics": [
+              "Parcerias Público-Privadas"
+            ],
+            "method": "questões FGV + releitura do erro ou destaque do estudo anterior"
+          },
+          {
+            "discipline": "Direito Empresarial",
+            "subtopics": [
+              "Protesto"
+            ],
+            "method": "questões FGV + releitura do erro ou destaque do estudo anterior"
+          }
+        ]
+      }
+    },
+    {
+      "dayNumber": 95,
+      "date": "2026-09-13",
+      "weekday": "sunday",
+      "weekdayPt": "domingo",
+      "cycle": 4,
+      "totalMinutes": 240,
+      "newStudyMinutes": 168,
+      "revisionMinutes": 72,
+      "subjects": [
+        {
+          "name": "Direito do Consumidor",
+          "minutes": 92,
+          "subtopics": [
+            "Regulamentação de Serviços (ANATEL/ANEEL)"
+          ],
+          "sourceSubtopicIds": [
+            "dcons-10"
+          ],
+          "activities": [
+            "simulado setorial cronometrado",
+            "correção ativa do caderno de erros",
+            "revisão final por assertivas FGV"
+          ]
+        },
+        {
+          "name": "Direito da Criança e do Adolescente",
+          "minutes": 76,
+          "subtopics": [
+            "Violência doméstica contra a criança e o adolescente"
+          ],
+          "sourceSubtopicIds": [
+            "dca-11"
+          ],
+          "activities": [
+            "simulado setorial cronometrado",
+            "correção ativa do caderno de erros",
+            "revisão final por assertivas FGV"
+          ]
+        }
+      ],
+      "revisionPlan": {
+        "minutes": 72,
+        "items": [
+          {
+            "discipline": "Direito do Consumidor",
+            "subtopics": [
+              "Sanções administrativas"
+            ],
+            "method": "questões FGV + releitura do erro ou destaque do estudo anterior"
+          },
+          {
+            "discipline": "Direito da Criança e do Adolescente",
+            "subtopics": [
+              "Acolhimento institucional e familiar"
+            ],
+            "method": "questões FGV + releitura do erro ou destaque do estudo anterior"
+          }
+        ]
+      }
+    },
+    {
+      "dayNumber": 96,
+      "date": "2026-09-14",
+      "weekday": "monday",
+      "weekdayPt": "segunda-feira",
+      "cycle": 4,
+      "totalMinutes": 180,
+      "newStudyMinutes": 126,
+      "revisionMinutes": 54,
+      "subjects": [
+        {
+          "name": "Direito Processual Civil",
+          "minutes": 70,
+          "subtopics": [
+            "Embargos à execução"
+          ],
+          "sourceSubtopicIds": [
+            "dpc-10"
+          ],
+          "activities": [
+            "simulado setorial cronometrado",
+            "correção ativa do caderno de erros",
+            "revisão final por assertivas FGV"
+          ]
+        },
+        {
+          "name": "Direito Eleitoral",
+          "minutes": 56,
+          "subtopics": [
+            "Crimes eleitorais"
+          ],
+          "sourceSubtopicIds": [
+            "del-1"
+          ],
+          "activities": [
+            "simulado setorial cronometrado",
+            "correção ativa do caderno de erros",
+            "revisão final por assertivas FGV"
+          ]
+        }
+      ],
+      "revisionPlan": {
+        "minutes": 54,
+        "items": [
+          {
+            "discipline": "Direito Processual Civil",
+            "subtopics": [
+              "Provas (Produção e ônus)"
+            ],
+            "method": "questões FGV + releitura do erro ou destaque do estudo anterior"
+          },
+          {
+            "discipline": "Direito Eleitoral",
+            "subtopics": [
+              "Alistamento e Poder normativo do TSE"
+            ],
+            "method": "questões FGV + releitura do erro ou destaque do estudo anterior"
+          }
+        ]
+      }
+    },
+    {
+      "dayNumber": 97,
+      "date": "2026-09-15",
+      "weekday": "tuesday",
+      "weekdayPt": "terça-feira",
+      "cycle": 4,
+      "totalMinutes": 180,
+      "newStudyMinutes": 126,
+      "revisionMinutes": 54,
+      "subjects": [
+        {
+          "name": "Direito Civil",
+          "minutes": 70,
+          "subtopics": [
+            "Casamento (Direito das famílias)"
+          ],
+          "sourceSubtopicIds": [
+            "dc-10"
+          ],
+          "activities": [
+            "simulado setorial cronometrado",
+            "correção ativa do caderno de erros",
+            "revisão final por assertivas FGV"
+          ]
+        },
+        {
+          "name": "Direito Ambiental",
+          "minutes": 56,
+          "subtopics": [
+            "Pagamento por Serviços Ambientais"
+          ],
+          "sourceSubtopicIds": [
+            "damb-10"
+          ],
+          "activities": [
+            "simulado setorial cronometrado",
+            "correção ativa do caderno de erros",
+            "revisão final por assertivas FGV"
+          ]
+        }
+      ],
+      "revisionPlan": {
+        "minutes": 54,
+        "items": [
+          {
+            "discipline": "Direito Civil",
+            "subtopics": [
+              "Simulação (Dos Fatos jurídicos)"
+            ],
+            "method": "questões FGV + releitura do erro ou destaque do estudo anterior"
+          },
+          {
+            "discipline": "Direito Ambiental",
+            "subtopics": [
+              "Lei da Mata Atlântica"
+            ],
+            "method": "questões FGV + releitura do erro ou destaque do estudo anterior"
+          }
+        ]
+      }
+    },
+    {
+      "dayNumber": 98,
+      "date": "2026-09-16",
+      "weekday": "wednesday",
+      "weekdayPt": "quarta-feira",
+      "cycle": 4,
+      "totalMinutes": 180,
+      "newStudyMinutes": 126,
+      "revisionMinutes": 54,
+      "subjects": [
+        {
+          "name": "Direito Penal",
+          "minutes": 70,
+          "subtopics": [
+            "Fixação da pena"
+          ],
+          "sourceSubtopicIds": [
+            "dp-10"
+          ],
+          "activities": [
+            "simulado setorial cronometrado",
+            "correção ativa do caderno de erros",
+            "revisão final por assertivas FGV"
+          ]
+        },
+        {
+          "name": "Direitos Humanos",
+          "minutes": 56,
+          "subtopics": [
+            "Incidente de deslocamento de competência"
+          ],
+          "sourceSubtopicIds": [
+            "dhum-7"
+          ],
+          "activities": [
+            "simulado setorial cronometrado",
+            "correção ativa do caderno de erros",
+            "revisão final por assertivas FGV"
+          ]
+        }
+      ],
+      "revisionPlan": {
+        "minutes": 54,
+        "items": [
+          {
+            "discipline": "Direito Penal",
+            "subtopics": [
+              "Concurso de pessoas"
+            ],
+            "method": "questões FGV + releitura do erro ou destaque do estudo anterior"
+          },
+          {
+            "discipline": "Direitos Humanos",
+            "subtopics": [
+              "Convenção sobre os Direitos das Pessoas com Deficiência"
+            ],
+            "method": "questões FGV + releitura do erro ou destaque do estudo anterior"
+          }
+        ]
+      }
+    },
+    {
+      "dayNumber": 99,
+      "date": "2026-09-17",
+      "weekday": "thursday",
+      "weekdayPt": "quinta-feira",
+      "cycle": 4,
+      "totalMinutes": 180,
+      "newStudyMinutes": 126,
+      "revisionMinutes": 54,
+      "subjects": [
+        {
+          "name": "Direito Processual Penal",
+          "minutes": 70,
+          "subtopics": [
+            "Inquérito Policial"
+          ],
+          "sourceSubtopicIds": [
+            "dpp-11"
+          ],
+          "activities": [
+            "simulado setorial cronometrado",
+            "correção ativa do caderno de erros",
+            "revisão final por assertivas FGV"
+          ]
+        },
+        {
+          "name": "Noções Gerais de Direito e Formação Humanística",
+          "minutes": 56,
+          "subtopics": [
+            "Sociologia do Direito"
+          ],
+          "sourceSubtopicIds": [
+            "ng-11"
+          ],
+          "activities": [
+            "simulado setorial cronometrado",
+            "correção ativa do caderno de erros",
+            "revisão final por assertivas FGV"
+          ]
+        }
+      ],
+      "revisionPlan": {
+        "minutes": 54,
+        "items": [
+          {
+            "discipline": "Direito Processual Penal",
+            "subtopics": [
+              "Tribunal do Júri"
+            ],
+            "method": "questões FGV + releitura do erro ou destaque do estudo anterior"
+          },
+          {
+            "discipline": "Noções Gerais de Direito e Formação Humanística",
+            "subtopics": [
+              "Psicologia Judiciária"
+            ],
+            "method": "questões FGV + releitura do erro ou destaque do estudo anterior"
+          }
+        ]
+      }
+    },
+    {
+      "dayNumber": 100,
+      "date": "2026-09-18",
+      "weekday": "friday",
+      "weekdayPt": "sexta-feira",
+      "cycle": 4,
+      "totalMinutes": 180,
+      "newStudyMinutes": 126,
+      "revisionMinutes": 54,
+      "subjects": [
+        {
+          "name": "Direito Constitucional",
+          "minutes": 70,
+          "subtopics": [
+            "Nacionalidade"
+          ],
+          "sourceSubtopicIds": [
+            "dconst-11"
+          ],
+          "activities": [
+            "simulado setorial cronometrado",
+            "correção ativa do caderno de erros",
+            "revisão final por assertivas FGV"
+          ]
+        },
+        {
+          "name": "Direito Tributário e Financeiro",
+          "minutes": 56,
+          "subtopics": [
+            "ISS"
+          ],
+          "sourceSubtopicIds": [
+            "dtrib-11"
+          ],
+          "activities": [
+            "simulado setorial cronometrado",
+            "correção ativa do caderno de erros",
+            "revisão final por assertivas FGV"
+          ]
+        }
+      ],
+      "revisionPlan": {
+        "minutes": 54,
+        "items": [
+          {
+            "discipline": "Direito Constitucional",
+            "subtopics": [
+              "Interpretação da Constituição"
+            ],
+            "method": "questões FGV + releitura do erro ou destaque do estudo anterior"
+          },
+          {
+            "discipline": "Direito Tributário e Financeiro",
+            "subtopics": [
+              "Responsabilidade tributária"
+            ],
+            "method": "questões FGV + releitura do erro ou destaque do estudo anterior"
+          }
+        ]
+      }
+    },
+    {
+      "dayNumber": 101,
+      "date": "2026-09-19",
+      "weekday": "saturday",
+      "weekdayPt": "sábado",
+      "cycle": 4,
+      "totalMinutes": 240,
+      "newStudyMinutes": 168,
+      "revisionMinutes": 72,
+      "subjects": [
+        {
+          "name": "Direito Administrativo",
+          "minutes": 92,
+          "subtopics": [
+            "Lei de Introdução às Normas do Direito Brasileiro (LINDB)"
+          ],
+          "sourceSubtopicIds": [
+            "dadm-11"
+          ],
+          "activities": [
+            "simulado setorial cronometrado",
+            "correção ativa do caderno de erros",
+            "revisão final por assertivas FGV"
+          ]
+        },
+        {
+          "name": "Direito Empresarial",
+          "minutes": 76,
+          "subtopics": [
+            "Desconsideração da personalidade jurídica"
+          ],
+          "sourceSubtopicIds": [
+            "demp-11"
+          ],
+          "activities": [
+            "simulado setorial cronometrado",
+            "correção ativa do caderno de erros",
+            "revisão final por assertivas FGV"
+          ]
+        }
+      ],
+      "revisionPlan": {
+        "minutes": 72,
+        "items": [
+          {
+            "discipline": "Direito Administrativo",
+            "subtopics": [
+              "Parcerias com o terceiro setor"
+            ],
+            "method": "questões FGV + releitura do erro ou destaque do estudo anterior"
+          },
+          {
+            "discipline": "Direito Empresarial",
+            "subtopics": [
+              "Cheque"
+            ],
+            "method": "questões FGV + releitura do erro ou destaque do estudo anterior"
+          }
+        ]
+      }
+    },
+    {
+      "dayNumber": 102,
+      "date": "2026-09-20",
+      "weekday": "sunday",
+      "weekdayPt": "domingo",
+      "cycle": 4,
+      "totalMinutes": 240,
+      "newStudyMinutes": 168,
+      "revisionMinutes": 72,
+      "subjects": [
+        {
+          "name": "Direito do Consumidor",
+          "minutes": 92,
+          "subtopics": [
+            "Direitos Básicos do Consumidor"
+          ],
+          "sourceSubtopicIds": [
+            "dcons-11"
+          ],
+          "activities": [
+            "simulado setorial cronometrado",
+            "correção ativa do caderno de erros",
+            "revisão final por assertivas FGV"
+          ]
+        },
+        {
+          "name": "Direito da Criança e do Adolescente",
+          "minutes": 76,
+          "subtopics": [
+            "Direito à Saúde"
+          ],
+          "sourceSubtopicIds": [
+            "dca-12"
+          ],
+          "activities": [
+            "simulado setorial cronometrado",
+            "correção ativa do caderno de erros",
+            "revisão final por assertivas FGV"
+          ]
+        }
+      ],
+      "revisionPlan": {
+        "minutes": 72,
+        "items": [
+          {
+            "discipline": "Direito do Consumidor",
+            "subtopics": [
+              "Regulamentação de Serviços (ANATEL/ANEEL)"
+            ],
+            "method": "questões FGV + releitura do erro ou destaque do estudo anterior"
+          },
+          {
+            "discipline": "Direito da Criança e do Adolescente",
+            "subtopics": [
+              "Violência doméstica contra a criança e o adolescente"
+            ],
+            "method": "questões FGV + releitura do erro ou destaque do estudo anterior"
+          }
+        ]
+      }
+    },
+    {
+      "dayNumber": 103,
+      "date": "2026-09-21",
+      "weekday": "monday",
+      "weekdayPt": "segunda-feira",
+      "cycle": 4,
+      "totalMinutes": 180,
+      "newStudyMinutes": 126,
+      "revisionMinutes": 54,
+      "subjects": [
+        {
+          "name": "Direito Processual Civil",
+          "minutes": 70,
+          "subtopics": [
+            "Agravo de instrumento"
+          ],
+          "sourceSubtopicIds": [
+            "dpc-11"
+          ],
+          "activities": [
+            "simulado setorial cronometrado",
+            "correção ativa do caderno de erros",
+            "revisão final por assertivas FGV"
+          ]
+        },
+        {
+          "name": "Direito Eleitoral",
+          "minutes": 56,
+          "subtopics": [
+            "Registro de candidatos"
+          ],
+          "sourceSubtopicIds": [
+            "del-2"
+          ],
+          "activities": [
+            "simulado setorial cronometrado",
+            "correção ativa do caderno de erros",
+            "revisão final por assertivas FGV"
+          ]
+        }
+      ],
+      "revisionPlan": {
+        "minutes": 54,
+        "items": [
+          {
+            "discipline": "Direito Processual Civil",
+            "subtopics": [
+              "Embargos à execução"
+            ],
+            "method": "questões FGV + releitura do erro ou destaque do estudo anterior"
+          },
+          {
+            "discipline": "Direito Eleitoral",
+            "subtopics": [
+              "Crimes eleitorais"
+            ],
+            "method": "questões FGV + releitura do erro ou destaque do estudo anterior"
+          }
+        ]
+      }
+    },
+    {
+      "dayNumber": 104,
+      "date": "2026-09-22",
+      "weekday": "tuesday",
+      "weekdayPt": "terça-feira",
+      "cycle": 4,
+      "totalMinutes": 180,
+      "newStudyMinutes": 126,
+      "revisionMinutes": 54,
+      "subjects": [
+        {
+          "name": "Direito Civil",
+          "minutes": 70,
+          "subtopics": [
+            "Obrigações (Modalidades, transmissão, extinção)"
+          ],
+          "sourceSubtopicIds": [
+            "dc-11"
+          ],
+          "activities": [
+            "simulado setorial cronometrado",
+            "correção ativa do caderno de erros",
+            "revisão final por assertivas FGV"
+          ]
+        },
+        {
+          "name": "Direito Ambiental",
+          "minutes": 56,
+          "subtopics": [
+            "Política Nacional de Resíduos Sólidos"
+          ],
+          "sourceSubtopicIds": [
+            "damb-11"
+          ],
+          "activities": [
+            "simulado setorial cronometrado",
+            "correção ativa do caderno de erros",
+            "revisão final por assertivas FGV"
+          ]
+        }
+      ],
+      "revisionPlan": {
+        "minutes": 54,
+        "items": [
+          {
+            "discipline": "Direito Civil",
+            "subtopics": [
+              "Casamento (Direito das famílias)"
+            ],
+            "method": "questões FGV + releitura do erro ou destaque do estudo anterior"
+          },
+          {
+            "discipline": "Direito Ambiental",
+            "subtopics": [
+              "Pagamento por Serviços Ambientais"
+            ],
+            "method": "questões FGV + releitura do erro ou destaque do estudo anterior"
+          }
+        ]
+      }
+    },
+    {
+      "dayNumber": 105,
+      "date": "2026-09-23",
+      "weekday": "wednesday",
+      "weekdayPt": "quarta-feira",
+      "cycle": 4,
+      "totalMinutes": 180,
+      "newStudyMinutes": 126,
+      "revisionMinutes": 54,
+      "subjects": [
+        {
+          "name": "Direito Penal",
+          "minutes": 70,
+          "subtopics": [
+            "Causas de justificação"
+          ],
+          "sourceSubtopicIds": [
+            "dp-11"
+          ],
+          "activities": [
+            "simulado setorial cronometrado",
+            "correção ativa do caderno de erros",
+            "revisão final por assertivas FGV"
+          ]
+        },
+        {
+          "name": "Direitos Humanos",
+          "minutes": 56,
+          "subtopics": [
+            "Súmula Vinculante"
+          ],
+          "sourceSubtopicIds": [
+            "dhum-8"
+          ],
+          "activities": [
+            "simulado setorial cronometrado",
+            "correção ativa do caderno de erros",
+            "revisão final por assertivas FGV"
+          ]
+        }
+      ],
+      "revisionPlan": {
+        "minutes": 54,
+        "items": [
+          {
+            "discipline": "Direito Penal",
+            "subtopics": [
+              "Fixação da pena"
+            ],
+            "method": "questões FGV + releitura do erro ou destaque do estudo anterior"
+          },
+          {
+            "discipline": "Direitos Humanos",
+            "subtopics": [
+              "Incidente de deslocamento de competência"
+            ],
+            "method": "questões FGV + releitura do erro ou destaque do estudo anterior"
+          }
+        ]
+      }
+    },
+    {
+      "dayNumber": 106,
+      "date": "2026-09-24",
+      "weekday": "thursday",
+      "weekdayPt": "quinta-feira",
+      "cycle": 4,
+      "totalMinutes": 180,
+      "newStudyMinutes": 126,
+      "revisionMinutes": 54,
+      "subjects": [
+        {
+          "name": "Direito Processual Penal",
+          "minutes": 70,
+          "subtopics": [
+            "Assistente de acusação"
+          ],
+          "sourceSubtopicIds": [
+            "dpp-12"
+          ],
+          "activities": [
+            "simulado setorial cronometrado",
+            "correção ativa do caderno de erros",
+            "revisão final por assertivas FGV"
+          ]
+        },
+        {
+          "name": "Noções Gerais de Direito e Formação Humanística",
+          "minutes": 56,
+          "subtopics": [
+            "O conceito de Direito"
+          ],
+          "sourceSubtopicIds": [
+            "ng-12"
+          ],
+          "activities": [
+            "simulado setorial cronometrado",
+            "correção ativa do caderno de erros",
+            "revisão final por assertivas FGV"
+          ]
+        }
+      ],
+      "revisionPlan": {
+        "minutes": 54,
+        "items": [
+          {
+            "discipline": "Direito Processual Penal",
+            "subtopics": [
+              "Inquérito Policial"
+            ],
+            "method": "questões FGV + releitura do erro ou destaque do estudo anterior"
+          },
+          {
+            "discipline": "Noções Gerais de Direito e Formação Humanística",
+            "subtopics": [
+              "Sociologia do Direito"
+            ],
+            "method": "questões FGV + releitura do erro ou destaque do estudo anterior"
+          }
+        ]
+      }
+    },
+    {
+      "dayNumber": 107,
+      "date": "2026-09-25",
+      "weekday": "friday",
+      "weekdayPt": "sexta-feira",
+      "cycle": 4,
+      "totalMinutes": 180,
+      "newStudyMinutes": 126,
+      "revisionMinutes": 54,
+      "subjects": [
+        {
+          "name": "Direito Constitucional",
+          "minutes": 70,
+          "subtopics": [
+            "Poder Constituinte"
+          ],
+          "sourceSubtopicIds": [
+            "dconst-12"
+          ],
+          "activities": [
+            "simulado setorial cronometrado",
+            "correção ativa do caderno de erros",
+            "revisão final por assertivas FGV"
+          ]
+        },
+        {
+          "name": "Direito Tributário e Financeiro",
+          "minutes": 56,
+          "subtopics": [
+            "Administração tributária"
+          ],
+          "sourceSubtopicIds": [
+            "dtrib-12"
+          ],
+          "activities": [
+            "simulado setorial cronometrado",
+            "correção ativa do caderno de erros",
+            "revisão final por assertivas FGV"
+          ]
+        }
+      ],
+      "revisionPlan": {
+        "minutes": 54,
+        "items": [
+          {
+            "discipline": "Direito Constitucional",
+            "subtopics": [
+              "Nacionalidade"
+            ],
+            "method": "questões FGV + releitura do erro ou destaque do estudo anterior"
+          },
+          {
+            "discipline": "Direito Tributário e Financeiro",
+            "subtopics": [
+              "ISS"
+            ],
+            "method": "questões FGV + releitura do erro ou destaque do estudo anterior"
+          }
+        ]
+      }
+    },
+    {
+      "dayNumber": 108,
+      "date": "2026-09-26",
+      "weekday": "saturday",
+      "weekdayPt": "sábado",
+      "cycle": 4,
+      "totalMinutes": 240,
+      "newStudyMinutes": 168,
+      "revisionMinutes": 72,
+      "subjects": [
+        {
+          "name": "Direito Administrativo",
+          "minutes": 92,
+          "subtopics": [
+            "Empresas Estatais"
+          ],
+          "sourceSubtopicIds": [
+            "dadm-12"
+          ],
+          "activities": [
+            "simulado setorial cronometrado",
+            "correção ativa do caderno de erros",
+            "revisão final por assertivas FGV"
+          ]
+        },
+        {
+          "name": "Direito Empresarial",
+          "minutes": 76,
+          "subtopics": [
+            "Estabelecimento empresarial"
+          ],
+          "sourceSubtopicIds": [
+            "demp-12"
+          ],
+          "activities": [
+            "simulado setorial cronometrado",
+            "correção ativa do caderno de erros",
+            "revisão final por assertivas FGV"
+          ]
+        }
+      ],
+      "revisionPlan": {
+        "minutes": 72,
+        "items": [
+          {
+            "discipline": "Direito Administrativo",
+            "subtopics": [
+              "Lei de Introdução às Normas do Direito Brasileiro (LINDB)"
+            ],
+            "method": "questões FGV + releitura do erro ou destaque do estudo anterior"
+          },
+          {
+            "discipline": "Direito Empresarial",
+            "subtopics": [
+              "Desconsideração da personalidade jurídica"
+            ],
+            "method": "questões FGV + releitura do erro ou destaque do estudo anterior"
+          }
+        ]
+      }
+    }
+  ]
+}
