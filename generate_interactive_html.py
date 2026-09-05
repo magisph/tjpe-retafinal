@@ -60,8 +60,14 @@ def parse_cronograma_md():
                     mins = int(m_m.group(1))
             
             # Subtópicos / Disciplinas
-            m_sub = re.search(r'-\s+\*(?:Subtópicos|Disciplina\(s\))\*:\s*([^\n]+)', s_body)
-            subtopics = m_sub.group(1).strip() if m_sub else ""
+            m_sub = re.search(r'-\s+\*Subtópicos\*:\s*([^\n]+)', s_body)
+            m_disc = re.search(r'-\s+\*Disciplina\(s\)\*:\s*([^\n]+)', s_body)
+            if m_sub:
+                subtopics = m_sub.group(1).strip()
+            elif m_disc:
+                subtopics = m_disc.group(1).strip()
+            else:
+                subtopics = ""
             
             # Método
             m_met = re.search(r'-\s+\*Método\*:\s*([^\n]+)', s_body)
@@ -936,6 +942,34 @@ def generate_html(days_data):
     .method-badge.ls {{ background: var(--method-ls-bg); color: var(--method-ls); }}
     .method-badge.j {{ background: var(--method-j-bg); color: var(--method-j); }}
     .method-badge.d {{ background: var(--method-d-bg); color: var(--method-d); }}
+    .method-badge.er {{ 
+      background: rgba(168, 85, 247, 0.12); 
+      color: #7E22CE; 
+      border: 1px solid rgba(168, 85, 247, 0.28); 
+    }}
+    [data-theme="dark"] .method-badge.er {{
+      background: rgba(192, 132, 252, 0.15); 
+      color: #C084FC; 
+      border-color: rgba(192, 132, 252, 0.35); 
+    }}
+
+    .tema-tag {{
+      display: inline-flex;
+      align-items: center;
+      font-weight: 800;
+      color: var(--primary-accent);
+      background: var(--bg-surface-active);
+      padding: 0.1rem 0.35rem;
+      border-radius: 4px;
+      font-size: 0.72rem;
+      border: 1px solid var(--border-subtle);
+      margin-right: 0.25rem;
+    }}
+    .tema-sep {{
+      color: var(--judiciary-gold);
+      font-weight: 800;
+      margin: 0 0.4rem;
+    }}
 
     .session-body {{
       font-size: 0.8rem;
@@ -1412,12 +1446,19 @@ def generate_html(days_data):
             ${{day.sessions.map(session => {{
               const isDone = completedSessions.has(session.id);
               
-              // Extração de tags de método ([LS], [J], [D])
+              // Extração de tags de método ([LS], [J], [D], [ER])
               let methodBadges = "";
               if (session.method.includes("[LS]")) methodBadges += '<span class="method-badge ls">[LS] Lei Seca</span> ';
               if (session.method.includes("[J]")) methodBadges += '<span class="method-badge j">[J] Jurisprudência</span> ';
               if (session.method.includes("[D]")) methodBadges += '<span class="method-badge d">[D] Doutrina</span> ';
+              if (session.method.includes("[ER]")) methodBadges += '<span class="method-badge er">[ER] Estudo Reverso FGV</span> ';
               if (!methodBadges) methodBadges = `<span class="method-badge">${{session.method}}</span>`;
+
+              // Formatação de Subtópicos (Tema A / Tema B)
+              let formattedSubtopics = session.subtopics
+                .replace(/\\*\\*(Tema [AB])\\*\\*:\\s*/g, '<span class="tema-tag">$1</span> ')
+                .replace(/\\*\\*(Tema [AB])\\*\\*/g, '<span class="tema-tag">$1</span>')
+                .replace(/\\s*\\|\\s*/g, ' <span class="tema-sep">◆</span> ');
 
               return `
                 <div class="session-item ${{isDone ? 'done' : ''}}" onclick="toggleSessionClick(event, '${{session.id}}')">
@@ -1436,7 +1477,7 @@ def generate_html(days_data):
                     </div>
                   </div>
                   <div class="session-body">
-                    <strong>Tópicos:</strong> ${{session.subtopics}}
+                    <strong>Tópicos:</strong> ${{formattedSubtopics}}
                   </div>
                   <div class="session-activity">
                     <strong>Atividade:</strong> ${{session.activity}}
