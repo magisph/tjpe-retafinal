@@ -39,7 +39,7 @@
 - **Carga Horária Total**: 6 horas (360 minutos)
 - **Sessão 1 (Administrativo — 140 min)**:
   - *Subtópicos*: Licitações e Contratos Administrativos (Lei nº 14.133/2021).
-  - *Método*: `[LS]` Artigos 1º a 32 e 71 a 95 da Lei nº 14.133/21 + `[J]` Súmulas do TCU e precedentes do STJ sobre vinculação ao instrumento convocatório e reequilíbrio econômico-financeiro.
+  - *Método*: `[LS]` Artigos 1º a 32 e 71 a 95 da Lei nº 14.133/21 + `[J]` Precedentes do STJ sobre vinculação ao instrumento convocatório e reequilíbrio econômico-financeiro.
   - *Atividade*: Leitura cruzada dos artigos mais cobrados com marcação de prazos de impugnação do edital + estudo das hipóteses taxativas de contratação direta.
 - **Sessão 2 (Empresarial — 120 min)**:
   - *Subtópicos*: Recuperação Judicial e Falência.

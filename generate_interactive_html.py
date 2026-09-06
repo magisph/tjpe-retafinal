@@ -7,6 +7,20 @@ MD_FILE = BASE_DIR / "cronograma_reta_final_tjpe_2026.md"
 HTML_FILE = BASE_DIR / "cronograma_interativo_tjpe_2026.html"
 INDEX_FILE = BASE_DIR / "index.html"
 
+def parse_method_items(raw_method):
+    if not raw_method:
+        return []
+    clean = raw_method.replace("`", "")
+    pattern = re.compile(r'\[(LS|J|D|ER)\]:?\s*(.*?)(?=\s*\+\s*\[(?:LS|J|D|ER)\]|$)', re.DOTALL)
+    matches = pattern.findall(clean)
+    items = []
+    for tag, text in matches:
+        clean_text = text.strip().rstrip(' .;')
+        items.append({"tag": tag, "text": clean_text})
+    if not items and raw_method:
+        items.append({"tag": "", "text": raw_method.strip(" `").rstrip(" .;")})
+    return items
+
 def parse_cronograma_md():
     content = MD_FILE.read_text(encoding="utf-8")
     
@@ -72,6 +86,7 @@ def parse_cronograma_md():
             # Método
             m_met = re.search(r'-\s+\*Método\*:\s*([^\n]+)', s_body)
             method = m_met.group(1).strip() if m_met else ""
+            method_details = parse_method_items(method)
             
             # Atividade
             m_atv = re.search(r'-\s+\*Atividade\*:\s*([^\n]+)', s_body)
@@ -84,6 +99,7 @@ def parse_cronograma_md():
                 "minutes": mins,
                 "subtopics": subtopics,
                 "method": method,
+                "methodDetails": method_details,
                 "activity": activity
             })
             
@@ -1065,8 +1081,8 @@ def generate_html(days_data):
       font-size: 0.85em;
     }}
 
-    /* Accordion de Atividade Prática Retrátil */
-    .activity-accordion {{
+    /* Accordion de Anotações Retrátil (Métodos, Fontes e Atividade Prática) */
+    .notes-accordion {{
       margin-top: 0.45rem;
       padding-top: 0.35rem;
       border-top: 1px dashed var(--border-subtle);
@@ -1115,26 +1131,112 @@ def generate_html(days_data):
       color: var(--primary-accent);
     }}
 
-    .activity-accordion[open] .activity-toggle-icon {{
+    .notes-accordion[open] .activity-toggle-icon {{
       transform: rotate(90deg);
     }}
 
-    .activity-content {{
+    .notes-content {{
       margin-top: 0.35rem;
       padding: 0.5rem 0.75rem;
       background: var(--bg-surface);
       border-radius: var(--radius-sm);
-      border-left: 3px solid var(--judiciary-gold);
+      border-left: 3px solid var(--primary-accent);
       color: var(--text-secondary);
       font-size: 0.78rem;
+      line-height: 1.55;
+    }}
+
+    [data-theme="dark"] .notes-content {{
+      background: rgba(0, 0, 0, 0.25);
+      border-left: 3px solid var(--primary-accent);
+      color: #E2E8F0;
+    }}
+
+    .notes-activity-section {{
+      margin-top: 0.55rem;
+      padding-top: 0.45rem;
+      border-top: 1px dashed var(--border-subtle);
+      font-size: 0.78rem;
       line-height: 1.5;
+    }}
+
+    .notes-activity-title {{
+      display: inline-flex;
+      align-items: center;
+      gap: 0.35rem;
+      font-weight: 600;
+      color: var(--text-muted);
+      margin-bottom: 0.2rem;
+      font-size: 0.70rem;
+      text-transform: none;
+      letter-spacing: normal;
+    }}
+
+    [data-theme="dark"] .notes-activity-title {{
+      color: var(--text-muted);
+    }}
+
+    .notes-activity-text {{
+      color: var(--text-secondary);
       font-style: normal;
     }}
 
-    [data-theme="dark"] .activity-content {{
-      background: rgba(0, 0, 0, 0.25);
-      border-left: 3px solid var(--judiciary-gold);
+    [data-theme="dark"] .notes-activity-text {{
       color: #E2E8F0;
+    }}
+
+    .method-notes-list {{
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 0.45rem;
+    }}
+
+    .method-notes-list li {{
+      display: flex;
+      align-items: flex-start;
+      gap: 0.45rem;
+      line-height: 1.45;
+      font-size: 0.78rem;
+      color: var(--text-secondary);
+    }}
+
+    [data-theme="dark"] .method-notes-list li {{
+      color: #E2E8F0;
+    }}
+
+    .method-tag {{
+      display: inline-block;
+      font-size: 0.68rem;
+      font-family: var(--font-mono);
+      font-weight: 800;
+      padding: 0.1rem 0.35rem;
+      border-radius: 4px;
+      flex-shrink: 0;
+      margin-top: 0.1rem;
+    }}
+
+    .method-tag.ls {{
+      background: var(--method-ls-bg);
+      color: var(--method-ls);
+      border: 1px solid var(--method-ls-border);
+    }}
+    .method-tag.j {{
+      background: var(--method-j-bg);
+      color: var(--method-j);
+      border: 1px solid var(--method-j-border);
+    }}
+    .method-tag.d {{
+      background: var(--method-d-bg);
+      color: var(--method-d);
+      border: 1px solid var(--method-d-border);
+    }}
+    .method-tag.er {{
+      background: var(--method-er-bg);
+      color: var(--method-er);
+      border: 1px solid var(--method-er-border);
     }}
 
     .session-item.done .session-subject {{
@@ -1633,6 +1735,46 @@ def generate_html(days_data):
                 topicsHtml = `<strong>Tópicos:</strong> ${{formattedSubtopics}}`;
               }}
 
+              let notesAccordionHtml = "";
+              const hasMethodDetails = session.methodDetails && session.methodDetails.length > 0;
+              const hasActivity = session.activity && session.activity.trim().length > 0;
+
+              if (hasMethodDetails || hasActivity) {{
+                let notesListHtml = "";
+                if (hasMethodDetails) {{
+                  const notesListItems = session.methodDetails.map(item => {{
+                    const tagClass = item.tag ? item.tag.toLowerCase() : "";
+                    const tagBadge = item.tag ? `<span class="method-tag ${{tagClass}}">[${{item.tag}}]</span>` : "";
+                    const itemText = item.text.endsWith('.') ? item.text : item.text + '.';
+                    return `<li>${{tagBadge}}<span>${{itemText}}</span></li>`;
+                  }}).join("");
+                  notesListHtml = `<ul class="method-notes-list">${{notesListItems}}</ul>`;
+                }}
+
+                let activityBlockHtml = "";
+                if (hasActivity) {{
+                  activityBlockHtml = `
+                    <div class="notes-activity-section">
+                      <div class="notes-activity-title">Atividade Prática</div>
+                      <div class="notes-activity-text">${{session.activity}}</div>
+                    </div>
+                  `;
+                }}
+
+                notesAccordionHtml = `
+                  <details class="notes-accordion" onclick="event.stopPropagation();">
+                    <summary class="activity-summary">
+                      <span class="activity-toggle-icon">›</span>
+                      <span class="activity-summary-text">Anotações</span>
+                    </summary>
+                    <div class="activity-content notes-content">
+                      ${{notesListHtml}}
+                      ${{activityBlockHtml}}
+                    </div>
+                  </details>
+                `;
+              }}
+
               return `
                 <div class="session-item ${{isDone ? 'done' : ''}}" onclick="toggleSessionClick(event, '${{session.id}}')">
                   <div class="session-header">
@@ -1652,15 +1794,7 @@ def generate_html(days_data):
                   <div class="session-body">
                     ${{topicsHtml}}
                   </div>
-                  <details class="activity-accordion" onclick="event.stopPropagation();">
-                    <summary class="activity-summary">
-                      <span class="activity-toggle-icon">›</span>
-                      <span class="activity-summary-text">Atividade Prática</span>
-                    </summary>
-                    <div class="activity-content">
-                      ${{session.activity}}
-                    </div>
-                  </details>
+                  ${{notesAccordionHtml}}
                 </div>
               `;
             }}).join("")}}
