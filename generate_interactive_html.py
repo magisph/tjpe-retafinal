@@ -191,8 +191,8 @@ def generate_html(days_data):
       --border-strong: #334155;
       
       --text-primary: #F8FAFC;
-      --text-secondary: #94A3B8;
-      --text-muted: #64748B;
+      --text-secondary: #CBD5E1;
+      --text-muted: #94A3B8;
       --text-inverse: #090E17;
 
       --primary-navy: #38BDF8;
@@ -740,6 +740,11 @@ def generate_html(days_data):
       box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.15);
     }}
 
+    .search-input-box input::placeholder {{
+      color: var(--text-muted);
+      opacity: 0.9;
+    }}
+
     .search-icon {{
       position: absolute;
       left: 0.6rem;
@@ -822,7 +827,7 @@ def generate_html(days_data):
 
     .day-number-badge {{
       background: var(--primary-navy);
-      color: #FFF;
+      color: var(--text-inverse);
       font-size: 0.85rem;
       font-weight: 800;
       font-family: var(--font-mono);
@@ -858,6 +863,37 @@ def generate_html(days_data):
     .badge-fase2 {{ background: #FEF3C7; color: #92400E; }}
     .badge-fase3 {{ background: #FCE7F3; color: #9D174D; }}
     .badge-hours {{ background: var(--bg-surface-elevated); color: var(--text-secondary); font-family: var(--font-mono); }}
+
+    [data-theme="dark"] .badge-fase1 {{
+      background: rgba(99, 102, 241, 0.2);
+      color: #C7D2FE;
+      border: 1px solid rgba(165, 180, 252, 0.35);
+    }}
+    [data-theme="dark"] .badge-fase2 {{
+      background: rgba(245, 158, 11, 0.2);
+      color: #FDE68A;
+      border: 1px solid rgba(251, 191, 36, 0.35);
+    }}
+    [data-theme="dark"] .badge-fase3 {{
+      background: rgba(244, 63, 94, 0.2);
+      color: #FECDD3;
+      border: 1px solid rgba(251, 113, 133, 0.35);
+    }}
+    [data-theme="dark"] .badge-hours {{
+      background: rgba(255, 255, 255, 0.08);
+      color: #E2E8F0;
+      border: 1px solid rgba(255, 255, 255, 0.15);
+    }}
+    [data-theme="dark"] .day-badge-partial {{
+      background: var(--bg-surface-elevated);
+      color: #CBD5E1;
+      border-color: var(--border-subtle);
+    }}
+    [data-theme="dark"] .day-badge-complete {{
+      background: rgba(16, 185, 129, 0.18);
+      color: #6EE7B7;
+      border-color: rgba(16, 185, 129, 0.45);
+    }}
 
     /* Sessões de Estudo */
     .sessions-container {{
@@ -942,6 +978,12 @@ def generate_html(days_data):
       border: 1px solid var(--border-subtle);
     }}
 
+    [data-theme="dark"] .session-time {{
+      background: rgba(255, 255, 255, 0.06);
+      color: #CBD5E1;
+      border-color: rgba(255, 255, 255, 0.14);
+    }}
+
     .method-badge {{
       display: inline-block;
       font-size: 0.68rem;
@@ -988,10 +1030,21 @@ def generate_html(days_data):
       vertical-align: middle;
     }}
 
+    [data-theme="dark"] .tema-tag {{
+      background: rgba(56, 189, 248, 0.15);
+      color: #7DD3FC;
+      border-color: rgba(56, 189, 248, 0.35);
+    }}
+
     .session-body {{
-      font-size: 0.8rem;
+      font-size: 0.82rem;
       color: var(--text-secondary);
-      line-height: 1.5;
+      line-height: 1.55;
+    }}
+
+    .session-body strong {{
+      color: var(--text-primary);
+      font-weight: 700;
     }}
 
     .session-temas-bullets {{
@@ -1004,7 +1057,7 @@ def generate_html(days_data):
       margin: 0.25rem 0;
       line-height: 1.45;
       color: var(--text-secondary);
-      font-size: 0.8rem;
+      font-size: 0.82rem;
     }}
 
     .session-temas-bullets li::marker {{
@@ -1028,10 +1081,10 @@ def generate_html(days_data):
       user-select: none;
       list-style: none;
       font-weight: 600;
-      font-size: 0.75rem;
-      color: var(--text-muted);
+      font-size: 0.78rem;
+      color: var(--text-secondary);
       transition: color var(--transition-fast);
-      padding: 0.15rem 0;
+      padding: 0.2rem 0;
     }}
 
     .activity-summary::-webkit-details-marker {{
@@ -1055,7 +1108,7 @@ def generate_html(days_data):
       line-height: 1;
       transform-origin: center;
       transition: transform var(--transition-fast);
-      color: var(--text-muted);
+      color: var(--judiciary-gold);
     }}
 
     .activity-summary:hover .activity-toggle-icon {{
@@ -1068,19 +1121,31 @@ def generate_html(days_data):
 
     .activity-content {{
       margin-top: 0.35rem;
-      padding: 0.45rem 0.65rem;
-      background: var(--bg-surface-elevated);
+      padding: 0.5rem 0.75rem;
+      background: var(--bg-surface);
       border-radius: var(--radius-sm);
-      border-left: 2px solid var(--judiciary-gold);
+      border-left: 3px solid var(--judiciary-gold);
       color: var(--text-secondary);
-      font-size: 0.76rem;
-      line-height: 1.45;
-      font-style: italic;
+      font-size: 0.78rem;
+      line-height: 1.5;
+      font-style: normal;
+    }}
+
+    [data-theme="dark"] .activity-content {{
+      background: rgba(0, 0, 0, 0.25);
+      border-left: 3px solid var(--judiciary-gold);
+      color: #E2E8F0;
     }}
 
     .session-item.done .session-subject {{
       text-decoration: line-through;
       color: var(--text-muted);
+    }}
+
+    [data-theme="dark"] .session-item.done {{
+      background: rgba(16, 185, 129, 0.05);
+      border-color: rgba(16, 185, 129, 0.35);
+      opacity: 0.88;
     }}
 
     /* Rodapé */
@@ -1701,7 +1766,7 @@ def generate_html(days_data):
     // Inicialização dos Gráficos Chart.js
     function initCharts() {{
       const isDark = document.documentElement.getAttribute("data-theme") === "dark";
-      const textColor = isDark ? "#94A3B8" : "#475569";
+      const textColor = isDark ? "#CBD5E1" : "#475569";
       const gridColor = isDark ? "#243147" : "#E2E8F0";
 
       // 1. Donut Chart de Conclusão Global
@@ -1839,7 +1904,7 @@ def generate_html(days_data):
 
     function updateChartsTheme() {{
       const isDark = document.documentElement.getAttribute("data-theme") === "dark";
-      const textColor = isDark ? "#94A3B8" : "#475569";
+      const textColor = isDark ? "#CBD5E1" : "#475569";
       const gridColor = isDark ? "#243147" : "#E2E8F0";
 
       if (doughnutChart) {{
